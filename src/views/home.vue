@@ -1,0 +1,103 @@
+<template>
+	<div class="home-wrapper">
+		<ul class="list-wrapper">
+			<li v-for="(item,index) in demoList" :key="index" class="list-item">
+				<router-link :to="item.link" class="link" @click="goPath(item.link)">{{item.name}}</router-link>
+			</li>
+		</ul>
+		<div class="content-wrapper">
+			<img src="../common/images/arrow-left.png" class="arrow arrow-left" @click="goPrePath">
+			<router-view class="content"></router-view>
+			<img src="../common/images/arrow-right.png" class="arrow arrow-right" @click="goNextPath">
+		</div>
+	</div>
+</template>
+
+<script type='text/ecmascript-6'>
+const demoList = [
+  {
+    name: '起步',
+    link: '/start'
+  },
+  {
+    name: 'Scroll组件纵向滚动演示',
+    link: '/scroll-vertical'
+  }
+]
+export default {
+  data () {
+    return {
+      demoList,
+      currentPath: ''
+    }
+  },
+  created () {
+    this.currentPath = window.location.pathname
+  },
+  methods: {
+    goPath (link) {
+      this.currentPath = link
+    },
+    goNextPath () {
+      const index = this.findPathIndex()
+      if (index === this.demoList.length - 1) {
+        return
+      }
+      const link = this.demoList[index + 1].link
+      this.currentPath = link
+      this.$router.push(link)
+    },
+    goPrePath () {
+      const index = this.findPathIndex()
+      if (index === 0) {
+        return
+      }
+      const link = this.demoList[index - 1].link
+      this.currentPath = link
+      this.$router.push(link)
+    },
+    findPathIndex () {
+      return this.demoList.findIndex((item) => {
+        return item.link === this.currentPath
+      })
+    }
+  }
+}
+</script>
+
+<style lang="stylus">
+.home-wrapper
+	height 100%
+	width 100%
+	display flex
+	.list-wrapper
+		width 300px
+		border-right 1px solid #ddd
+		box-shadow 0 0 5px #ddd
+		.list-item
+			padding 10px 15px
+			font-weight bold
+			letter-spacing 0px
+			.link
+				color #7f8c8d
+				font-size 15px
+				text-decoration none
+	.content-wrapper
+		flex 1
+		.content
+			margin 0 auto
+			width 70%
+		.arrow
+			height 50px
+			width 50px
+			border-radius 50%
+			box-shadow 0 0 5px #cccccc
+		.arrow-left
+			position fixed
+			top 50%
+			left 320px
+		.arrow-right
+			position fixed
+			top 50%
+			right 20px
+</style>
