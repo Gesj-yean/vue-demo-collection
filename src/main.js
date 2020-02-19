@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import 'common/css/reset.css'
+import 'common/stylus/reset.styl'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/foundation.css'
 Vue.use(VueHighlightJS)
