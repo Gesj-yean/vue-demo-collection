@@ -12,12 +12,17 @@ const routes = [
       {
         path: '/start',
         meta: { title: '起步' },
-        component: () => import('components/start/start')
+        component: () => import('views/start')
       },
       {
         path: '/scroll-vertical',
         meta: { title: '纵向滚动' },
-        component: () => import('components/scroll-vertical/scroll-vertical')
+        component: () => import('views/scroll-vertical')
+      },
+      {
+        path: '/tree-cli',
+        meta: { title: 'tree-cli踩坑' },
+        component: () => import('views/tree-cli')
       }
     ]
   }

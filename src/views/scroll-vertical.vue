@@ -54,7 +54,7 @@
 <script>
 import Scroll from 'base/scroll'
 import ScrollCode from '!!raw-loader!base/scroll'
-import ScrollVerticalCode from '!!raw-loader!./scroll-vertical-apply'
+import ScrollVerticalCode from '!!raw-loader!../components/scroll-vertical-apply'
 export default {
   data () {
     return {
@@ -97,7 +97,7 @@ export default {
 }
 </script>
 <style lang="stylus" ref="stylesheet/stylus">
-@import '../../common/stylus/base.styl';
+@import '../common/stylus/base.styl';
 
   .scroll-wrapper
     height 100%

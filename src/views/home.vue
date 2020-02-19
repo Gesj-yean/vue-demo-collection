@@ -20,8 +20,12 @@ const demoList = [
     link: '/start'
   },
   {
-    name: 'Scroll组件纵向滚动演示',
+    name: 'Scroll 组件纵向滚动演示',
     link: '/scroll-vertical'
+  },
+  {
+    name: 'tree-cli 使用记录',
+    link: '/tree-cli'
   }
 ]
 export default {
@@ -71,6 +75,7 @@ export default {
 	width 100%
 	display flex
 	.list-wrapper
+		min-height 100vh
 		width 300px
 		border-right 1px solid #ddd
 		box-shadow 0 0 5px #ddd
@@ -85,7 +90,7 @@ export default {
 	.content-wrapper
 		flex 1
 		.content
-			margin 0 auto
+			margin 0 auto 45px
 			width 70%
 		.arrow
 			height 50px

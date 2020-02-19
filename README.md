@@ -31,38 +31,42 @@ npm run serve
 ## 目录说明
 
 ```bash
-├── babel.config.js
-├── out.txt
-├── package-lock.json
-├── package.json
+
 ├── public
-|  ├── favicon.ico
-|  └── index.html
-├── README.md
+|  ├── favicon.ico                         // 图标
+|  └── index.html                          // 入口html
 ├── src
-|  ├── App.vue
+|  ├── App.vue                             // 入口vue
 |  ├── base
-|  |  └── scroll.vue
+|  |  └── scroll.vue                       // scroll基础组件
 |  ├── common
-|  |  ├── images
+|  |  ├── images                           // 图
 |  |  |  ├── arrow-left.png
 |  |  |  └── arrow-right.png
-|  |  ├── js
+|  |  ├── js                               // js
 |  |  └── stylus
-|  |     ├── base.styl
-|  |     ├── mixin.styl
-|  |     ├── reset.styl
-|  |     └── variable.styl
+|  |     ├── base.styl                     // 基础样式
+|  |     ├── mixin.styl                    // 混入样式
+|  |     ├── reset.styl                    // 重置样式
+|  |     └── variable.styl                 // 主题样式
 |  ├── components
-|  |  ├── scroll-vertical
-|  |  |  ├── scroll-vertical-apply.vue
-|  |  |  └── scroll-vertical.vue
-|  |  └── start
-|  |     └── start.vue
-|  ├── main.js
+|  |  └── scroll-vertical-apply.vue        // 应用
+|  ├── main.js                             // 入口js
 |  ├── router
-|  |  └── index.js
+|  |  └── index.js                         // 路由配置
 |  └── views
-|     └── home.vue
-└── vue.config.js
+|   ├── home.vue                           // 主页
+|   ├── scroll-vertical.vue                // scroll垂直滚动blog页面
+|   ├── start.vue                          // 开始blog页面
+|   └── tree-cli.vue                       // tree-cli使用blog页面
+├── babel.config.js                        // babel配置
+├── package-lock.json
+├── package.json
+├── README.md
+└── vue.config.js                          // vue配置
 ```
+
+## 项目截图
+
+![项目截图](/src/comoon/images/part1.png)
+![项目截图](/src/comoon/images/part2.png)
