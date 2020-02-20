@@ -49,7 +49,6 @@ export default {}
 </script>
 
 <style lang="stylus">
-@import '../common/stylus/base.styl';
 .img-wrapper
     width 100%
     height 580px

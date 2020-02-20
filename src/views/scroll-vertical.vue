@@ -97,7 +97,6 @@ export default {
 }
 </script>
 <style lang="stylus" ref="stylesheet/stylus">
-@import '../common/stylus/base.styl';
 
   .scroll-wrapper
     height 100%

@@ -16,12 +16,17 @@ const routes = [
       },
       {
         path: '/scroll-vertical',
-        meta: { title: '纵向滚动' },
+        meta: { title: 'Scroll 组件纵向滚动演示' },
         component: () => import('views/scroll-vertical')
       },
       {
+        path: '/slider',
+        meta: { title: 'Slider 轮播图组件演示' },
+        component: () => import('views/slider')
+      },
+      {
         path: '/tree-cli',
-        meta: { title: 'tree-cli踩坑' },
+        meta: { title: 'tree-cli 使用记录' },
         component: () => import('views/tree-cli')
       }
     ]

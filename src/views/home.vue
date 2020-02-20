@@ -7,7 +7,9 @@
 		</ul>
 		<div class="content-wrapper">
 			<img src="../common/images/arrow-left.png" class="arrow arrow-left" @click="goPrePath">
-			<router-view class="content"></router-view>
+			<div class="content">
+				<router-view ></router-view>
+			</div>
 			<img src="../common/images/arrow-right.png" class="arrow arrow-right" @click="goNextPath">
 		</div>
 	</div>
@@ -22,6 +24,10 @@ const demoList = [
   {
     name: 'Scroll 组件纵向滚动演示',
     link: '/scroll-vertical'
+  },
+  {
+    name: 'Slider 轮播图组件演示',
+    link: '/slider'
   },
   {
     name: 'tree-cli 使用记录',
@@ -92,6 +98,7 @@ export default {
 		.content
 			margin 0 auto 45px
 			width 70%
+			height 100%
 		.arrow
 			height 50px
 			width 50px
