@@ -15,9 +15,9 @@ const routes = [
         component: () => import('views/start')
       },
       {
-        path: '/scroll-vertical',
+        path: '/scroll',
         meta: { title: 'Scroll 组件纵向滚动演示' },
-        component: () => import('views/scroll-vertical')
+        component: () => import('views/scroll')
       },
       {
         path: '/slider',
@@ -28,6 +28,11 @@ const routes = [
         path: '/tree-cli',
         meta: { title: 'tree-cli 使用记录' },
         component: () => import('views/tree-cli')
+      },
+      {
+        path: '/dialog',
+        meta: { title: 'dialog对话框组件' },
+        component: () => import('views/dialog')
       }
     ]
   }

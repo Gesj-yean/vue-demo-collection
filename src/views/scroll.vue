@@ -54,7 +54,7 @@
 <script>
 import Scroll from 'base/scroll'
 import ScrollCode from '!!raw-loader!base/scroll'
-import ScrollVerticalCode from '!!raw-loader!../components/scroll-vertical-apply'
+import ScrollVerticalCode from '!!raw-loader!../components/scroll-apply'
 export default {
   data () {
     return {

@@ -23,7 +23,7 @@ const demoList = [
   },
   {
     name: 'Scroll 组件纵向滚动演示',
-    link: '/scroll-vertical'
+    link: '/scroll'
   },
   {
     name: 'Slider 轮播图组件演示',
@@ -32,6 +32,10 @@ const demoList = [
   {
     name: 'tree-cli 使用记录',
     link: '/tree-cli'
+  },
+  {
+    name: 'dialog对话框组件',
+    link: '/dialog'
   }
 ]
 export default {
