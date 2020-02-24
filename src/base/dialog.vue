@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-wrapper" v-if="visible" @click.stop ref="mask"><!-- 遮罩层 -->
+  <div class="shadow-wrapper" :class="mask?'shadow-bg':''" v-if="visible" @click.stop ref="mask"><!-- 遮罩层 -->
     <div class="dialog-wrapper">                                    <!-- 对话框 -->
       <div class="info-wrapper">                                    <!-- 对话框内容部分 -->
         <img class="icon" :src="require(`../common/images/${icon}-circle.png`)">
@@ -18,7 +18,7 @@ export default {
   props: {
     mask: { /* 控制遮罩 */
       type: Boolean,
-      default: false
+      default: true
     },
     icon: { /* 图标类型 */
       type: String,
@@ -42,13 +42,6 @@ export default {
       visible: true /* 控制对话框显示 */
     }
   },
-  mounted () {
-    setTimeout(() => { /* 确保能获取到mask修改其背景属性 */
-      if (this.mask) {
-        this.$refs.mask.style.background = 'rgba(0,0,0,.3)'
-      }
-    }, 20)
-  },
   methods: {
     show () { /* 打开对话框 */
       this.visible = true
@@ -69,6 +62,7 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '../common/stylus/mixin'
 .shadow-wrapper                   /* 覆盖整个页面 */
   position absolute
   top 0
@@ -105,10 +99,14 @@ export default {
       width 100%
       bottom 0
       .btn
+        padding 0 10px
         flex 1
         text-align center
         line-height 40px
         border-top 1px solid #ccc
+        no-wrap()
         &:first-of-type
           border-right 1px solid #ccc
+.shadow-bg
+  background rgba(0,0,0,.3)
 </style>
