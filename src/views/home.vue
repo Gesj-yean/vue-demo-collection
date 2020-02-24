@@ -2,7 +2,7 @@
 	<div class="home-wrapper">
 		<ul class="list-wrapper">
 			<li v-for="(item,index) in demoList" :key="index" class="list-item">
-				<router-link :to="item.link" class="link" @click="goPath(item.link)">{{item.name}}</router-link>
+				<router-link :to="item.path" class="link" @click="goPath(item.path)">{{item.meta.title}}</router-link>
 			</li>
 		</ul>
 		<div class="content-wrapper">
@@ -16,28 +16,8 @@
 </template>
 
 <script type='text/ecmascript-6'>
-const demoList = [
-  {
-    name: '起步',
-    link: '/start'
-  },
-  {
-    name: 'Scroll 组件纵向滚动演示',
-    link: '/scroll'
-  },
-  {
-    name: 'Slider 轮播图组件演示',
-    link: '/slider'
-  },
-  {
-    name: 'tree-cli 使用记录',
-    link: '/tree-cli'
-  },
-  {
-    name: 'dialog对话框组件',
-    link: '/dialog'
-  }
-]
+import routes from '../router/index'
+const demoList = routes.options.routes[0].children
 export default {
   data () {
     return {

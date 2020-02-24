@@ -1,5 +1,15 @@
-no-wrap()
-  text-overflow: ellipsis
+no-wrap() //  文字超出省略
+  text-overflow ellipsis
   overflow hidden
-  white-space: nowrap
+  white-space nowrap
 
+border-1px($color) // 底部1px的边框，可传入颜色
+  position: relative
+  &::after 
+    display block
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    border-top 1px solid $color
+    content ' '

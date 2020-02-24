@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 Vue.use(VueRouter)
 
-const routes = [
+export const routes = [
   {
     path: '/',
     redirect: '/start',
@@ -33,6 +35,11 @@ const routes = [
         path: '/dialog',
         meta: { title: 'dialog对话框组件' },
         component: () => import('views/dialog')
+      },
+      {
+        path: '/line-text',
+        meta: { title: 'flex实现中间文字，两边横线（1px）' },
+        component: () => import('views/line-text')
       }
     ]
   }
@@ -42,6 +49,14 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  NProgress.start()
+  next()
+})
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router

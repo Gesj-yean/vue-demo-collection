@@ -34,3 +34,16 @@ body, html
     font-family:Arial,Helvetica,sans-serif;
 .highlight
     color: $color-highlight
+    font-weight: bold
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
+    .border-1px
+        &::after
+            -webkit-transform scaleY (0.7) // 1.5*0.7 = 1.05
+            transform scaleY(0.7)
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+    .border-1px
+        &::after
+            -webkit-transform scaleY (0.5) // 2*0.5 = 1
+            transform scaleY(0.5)
+        
