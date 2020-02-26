@@ -29,6 +29,7 @@
   {
     "title": "2",
     "key": "2",
+    "disabled": "true",
     "children": [
         { "title": "2-1", "key": "2-1" },
         { "title": "2-2", "key": "2-2" },

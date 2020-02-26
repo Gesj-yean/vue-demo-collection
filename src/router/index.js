@@ -34,7 +34,7 @@ export const routes = [
       {
         path: '/tree',
         meta: { title: 'Tree 树形控件' },
-        component: () => import('components/tree-apply')
+        component: () => import('views/tree')
       },
       {
         path: '/tree-cli',

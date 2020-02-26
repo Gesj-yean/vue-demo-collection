@@ -15,6 +15,22 @@
 
 vue2 + vuex + vue-router + ES6/7 + stylus + axios
 
+## 目录
+
+- 起步
+
+- Scroll 组件纵向滚动演示
+
+- Slider 轮播图组件演示
+
+- Dialog 对话框组件
+
+- Tree 树形控件
+
+- tree-cli 使用记录
+
+- flex实现中间文字，两边横线（1px）
+
 ## 项目运行
 
 ```bash
@@ -27,7 +43,7 @@ npm install
 npm run serve
 ```
 
-## 目录说明
+## 项目目录说明
 
 ```bash
 
@@ -69,3 +85,4 @@ npm run serve
 
 ![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part1.png)
 ![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part2.png)
+![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part3.png)
