@@ -27,14 +27,19 @@ export const routes = [
         component: () => import('views/slider')
       },
       {
+        path: '/dialog',
+        meta: { title: 'Dialog 对话框组件' },
+        component: () => import('views/dialog')
+      },
+      {
+        path: '/tree',
+        meta: { title: 'Tree 树形控件' },
+        component: () => import('components/tree-apply')
+      },
+      {
         path: '/tree-cli',
         meta: { title: 'tree-cli 使用记录' },
         component: () => import('views/tree-cli')
-      },
-      {
-        path: '/dialog',
-        meta: { title: 'dialog对话框组件' },
-        component: () => import('views/dialog')
       },
       {
         path: '/line-text',

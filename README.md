@@ -66,5 +66,6 @@ npm run serve
 ```
 
 ## 项目截图
-![项目示例](https://img-blog.csdnimg.cn/2020021914582238.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDgzNDk2,size_16,color_FFFFFF,t_70)
-![项目示例](https://img-blog.csdnimg.cn/20200224174549465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDgzNDk2,size_16,color_FFFFFF,t_70)
+
+![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part1.png)
+![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part2.png)
