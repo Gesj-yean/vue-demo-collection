@@ -45,6 +45,11 @@ export const routes = [
         path: '/line-text',
         meta: { title: 'flex实现中间文字，两边横线（1px）' },
         component: () => import('views/line-text')
+      },
+      {
+        path: '/css',
+        meta: { title: '47个css技巧' },
+        component: () => import('views/css')
       }
     ]
   }
