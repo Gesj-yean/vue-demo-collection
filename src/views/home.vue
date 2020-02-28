@@ -29,30 +29,30 @@ export default {
     this.currentPath = window.location.pathname
   },
   methods: {
-    goPath (link) {
-      this.currentPath = link
+    goPath (path) {
+      this.currentPath = path
     },
     goNextPath () {
       const index = this.findPathIndex()
       if (index === this.demoList.length - 1) {
         return
       }
-      const link = this.demoList[index + 1].link
-      this.currentPath = link
-      this.$router.push(link)
+      const path = this.demoList[index + 1].path
+      this.currentPath = path
+      this.$router.push(path)
     },
     goPrePath () {
       const index = this.findPathIndex()
       if (index === 0) {
         return
       }
-      const link = this.demoList[index - 1].link
-      this.currentPath = link
-      this.$router.push(link)
+      const path = this.demoList[index - 1].path
+      this.currentPath = path
+      this.$router.push(path)
     },
     findPathIndex () {
       return this.demoList.findIndex((item) => {
-        return item.link === this.currentPath
+        return item.path === this.currentPath
       })
     }
   }
