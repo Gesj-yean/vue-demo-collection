@@ -20,6 +20,20 @@
   <div class="random2"></div>
   <div class="small-title">8. 连续的图像边框</div>
   <div class="img-border"></div>
+  <div class="small-title">9. 自适应的椭圆</div>
+  <div class="circle"></div>
+  <div class="small-title">10. 平行四边形</div>
+  <div class="four-border">内容</div>
+  <div class="small-title">11. 菱形</div>
+  <div class="diamond">
+    <img src="https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png" alt="">
+  </div>
+  <div class="small-title">12. 切角效果</div>
+  <div class="horn"></div>
+  <div class="small-title">13. 梯形标签页</div>
+  <div class="trapezoid">内容</div>
+  <div class="small-title">14. 简单的饼图</div>
+  <div class="bie"></div>
 </div>
 </template>
 
@@ -28,6 +42,7 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
+@import '../common/stylus/mixin'
 .border
   position relative
   margin 20px auto
@@ -121,4 +136,72 @@ export default {}
   padding: 10px
   border: 10px solid transparent
   background: linear-gradient(white, white) padding-box,url(https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png) border-box 0 / cover
+
+// 自适应的椭圆
+.circle
+  height 180px
+  width 300px
+  margin 40px auto
+  background #fccc
+  border-radius 50% / 100% 100%  0 0
+
+// 平行四边形
+.four-border
+  position relative
+  height 180px
+  width 300px
+  margin 40px auto
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    background: #678
+    transform: skew(10deg)
+
+// 菱形
+.diamond
+  margin 40px auto
+  text-align center
+.diamond > img
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+// 切角效果
+.horn
+  height 180px
+  width 300px
+  margin 40px auto
+  beveled-corners(#58a, 15px)
+
+// 梯形标签页
+.trapezoid
+  height 100px
+  width 200px
+  margin 40px 50%
+  transform translate(-50%)
+  padding 50px
+  color #fff
+  position relative
+  display inline-block
+  &::before
+    content: ''
+    position: absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index -1
+    background #58a
+    transform perspective(50) rotateX(5deg)
+
+// 简单的饼图
+.bie
+  height 180px
+  width 180px
+  margin 40px auto
+  border-radius 50%
+  background: conic-gradient(#eea2a2 20%, #bbc1bf  0, #bbc1bf  30%, #57c6e1 0);
 </style>

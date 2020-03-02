@@ -13,3 +13,12 @@ border-1px($color) // 底部1px的边框，可传入颜色
     width 100%
     border-top 1px solid $color
     content ' '
+
+beveled-corners($bg, $tl=0, $tr=$tl, $br=$tl, $bl=$tr) // 切角效果，传入背景颜色，左上、右上、右下、左下切割长度
+  background $bg
+  background linear-gradient(135deg, transparent $tl,$bg 0) top left,
+              linear-gradient(225deg, transparent $tr,$bg 0) top right,
+              linear-gradient(-45deg, transparent $br,$bg 0) bottom right,
+              linear-gradient(45deg, transparent $bl,$bg 0)  bottom left;
+  background-size 50% 50%
+  background-repeat no-repeat
