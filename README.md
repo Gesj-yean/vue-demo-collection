@@ -31,6 +31,8 @@ vue2 + vuex + vue-router + ES6/7 + stylus + axios
 
 - flex实现中间文字，两边横线（1px）
 
+- 《CSS揭秘》-总结47个Css技巧（更新中）
+
 ## 项目运行
 
 ```bash
@@ -52,8 +54,12 @@ npm run serve
 |  └── index.html                          // 入口html
 ├── src
 |  ├── App.vue                             // 入口vue
-|  ├── base
-|  |  └── scroll.vue                       // scroll基础组件
+|  ├── base                                // 基础组件
+|  |  ├── dialog.vue
+|  |  ├── line-text.vue
+|  |  ├── scroll.vue
+|  |  ├── slider.vue
+|  |  └── tree.vue
 |  ├── common
 |  |  ├── images                           // 图
 |  |  |  ├── arrow-left.png
@@ -64,16 +70,25 @@ npm run serve
 |  |     ├── mixin.styl                    // 混入样式
 |  |     ├── reset.styl                    // 重置样式
 |  |     └── variable.styl                 // 主题样式
-|  ├── components
-|  |  └── scroll-vertical-apply.vue        // 应用
-|  ├── main.js                             // 入口js
-|  ├── router
-|  |  └── index.js                         // 路由配置
-|  └── views
-|   ├── home.vue                           // 主页
-|   ├── scroll-vertical.vue                // scroll垂直滚动blog页面
-|   ├── start.vue                          // 开始blog页面
-|   └── tree-cli.vue                       // tree-cli使用blog页面
+|  ├── components                          // 应用组件
+|  |  ├── css-demo.vue
+|  |  ├── dialog-apply.vue
+|  |  ├── line-text-apply.vue
+|  |  ├── scroll-apply.vue
+|  |  ├── slider-apply.vue
+|  |  └── tree-apply.vue
+|  ├── main.js                             // 入口main.js
+|  ├── router                              // 路由配置
+|  |  └── index.js
+|  └── blogs                               // 博客页面
+|   ├── css-demo.vue
+|   ├── dialog.vue
+|   ├── line-text.vue
+|   ├── slider.vue
+|   ├── scroll.vue
+|   ├── start.vue
+|   ├── tree-cli.vue
+|   └── tree.vue
 ├── babel.config.js                        // babel配置
 ├── package-lock.json
 ├── package.json

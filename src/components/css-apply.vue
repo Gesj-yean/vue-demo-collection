@@ -34,6 +34,19 @@
   <div class="trapezoid">内容</div>
   <div class="small-title">14. 简单的饼图</div>
   <div class="bie"></div>
+  <div class="small-title">15. 单侧投影</div>
+  <div class="side-shadow"></div>
+  <div class="small-title">16. 不规则投影</div>
+  <div class="irregular">ABCDEFG</div>
+  <div class="small-title">17. 染色效果</div>
+  <div class="dye"></div>
+  <div class="small-title">18. 折角效果</div>
+  <div class="fold-angle"></div>
+  <div class="small-title">19. 毛玻璃效果</div>
+  <div class="glass">
+    <div class="main">ABCDEFG</div>
+  </div>
+
 </div>
 </template>
 
@@ -204,4 +217,77 @@ export default {}
   margin 40px auto
   border-radius 50%
   background: conic-gradient(#eea2a2 20%, #bbc1bf  0, #bbc1bf  30%, #57c6e1 0);
+
+// 单侧投影
+.side-shadow
+  height 180px
+  width 300px
+  margin 40px auto
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  box-shadow 0 8px 3px -3px rgba(0,0,0,.5)
+// 不规则投影
+.irregular
+  height 180px
+  width 300px
+  margin 40px auto
+  color #666
+  text-align center
+  font-size 50px
+  line-height 180px
+  border dashed 10px orange
+  filter drop-shadow(0 5px 3px #678)
+// 染色效果
+.dye
+  height: 180px
+  width: 300px
+  margin 40px auto
+  background-image url(https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png)
+  background-size: cover
+  background-color: hsl(335, 100%, 50%)
+  background-blend-mode: luminosity
+  transition: .5s background-color
+  &:hover
+    background-color: transparent
+
+// 折角效果
+.fold-angle
+  height: 180px
+  width: 300px
+  margin 40px auto
+  folded-corner(#58a, 30px, 30deg)
+
+// 毛玻璃效果
+.glass
+  height: 180px
+  width: 300px
+  margin 40px auto
+  position relative
+  font-size 50px
+  text-align center
+  background-size cover
+  background-image url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583310555581&di=17d19c3f990900846ab8cdba69d2aed8&imgtype=0&src=http%3A%2F%2Fphoto.16pic.com%2F00%2F30%2F48%2F16pic_3048628_b.jpg)
+  .main
+    position absolute
+    height 120px
+    width 240px
+    top 30px
+    left 30px
+    border-radius 7px
+    box-shadow 0 0 5px #666
+    background hsla(0,0%,100%,.3)
+    overflow hidden
+    z-index 100
+    &:before
+      content ''
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      background-image url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583310555581&di=17d19c3f990900846ab8cdba69d2aed8&imgtype=0&src=http%3A%2F%2Fphoto.16pic.com%2F00%2F30%2F48%2F16pic_3048628_b.jpg)
+      filter blur(20px)
+      z-index -1
+      background-attachment: fixed
+      margin -30px  // 防止边缘效果减弱
+
 </style>

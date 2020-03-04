@@ -5,7 +5,8 @@ module.exports = {
         base: '@/base',
         common: '@/common',
         components: '@/components',
-        views: '@/views'
+        views: '@/views',
+        blogs: '@/blogs'
       }
     }
   },
