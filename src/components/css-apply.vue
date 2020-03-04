@@ -40,13 +40,12 @@
   <div class="irregular">ABCDEFG</div>
   <div class="small-title">17. 染色效果</div>
   <div class="dye"></div>
-  <div class="small-title">18. 折角效果</div>
-  <div class="fold-angle"></div>
   <div class="small-title">19. 毛玻璃效果</div>
   <div class="glass">
     <div class="main">ABCDEFG</div>
   </div>
-
+  <div class="small-title">18. 折角效果</div>
+  <div class="fold-angle"></div>
 </div>
 </template>
 
@@ -258,10 +257,10 @@ export default {}
 
 // 毛玻璃效果
 .glass
+  position relative
   height: 180px
   width: 300px
   margin 40px auto
-  position relative
   font-size 50px
   text-align center
   background-size cover
@@ -285,9 +284,9 @@ export default {}
       left 0
       right 0
       background-image url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583310555581&di=17d19c3f990900846ab8cdba69d2aed8&imgtype=0&src=http%3A%2F%2Fphoto.16pic.com%2F00%2F30%2F48%2F16pic_3048628_b.jpg)
-      filter blur(20px)
+      filter blur(10px)
       z-index -1
-      background-attachment: fixed
+      background-size cover
       margin -30px  // 防止边缘效果减弱
 
 </style>
