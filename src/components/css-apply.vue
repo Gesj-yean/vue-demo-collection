@@ -40,12 +40,50 @@
   <div class="irregular">ABCDEFG</div>
   <div class="small-title">17. 染色效果</div>
   <div class="dye"></div>
-  <div class="small-title">19. 毛玻璃效果</div>
+  <div class="small-title">18. 毛玻璃效果</div>
   <div class="glass">
     <div class="main">ABCDEFG</div>
   </div>
-  <div class="small-title">18. 折角效果</div>
+  <div class="small-title">19. 折角效果</div>
   <div class="fold-angle"></div>
+  <div class="small-title">20. 连字符断行</div>
+  <div class="desc">注：chrom、IE11上还不支持这个属性，在fiiefox上支持</div>
+  <div class="break-line">The errors were caused by special characters and line breaks in description fields ( R2).</div>
+  <div class="small-title">21. 插入换行</div>
+  <div class="desc">书中使用dl dt dd来展示效果，现在flex布局可以完成的更好，就不介绍了。</div>
+  <div class="small-title">22. 文本行的斑马纹</div>
+  <div class="stripe">每个自定义列表项以开始。每个自定义列表项的定义以开始。 4 不同类型的有序列表 本例演示不同类型的有序列表。 5 这就是我们常用到的HTML...</div>
+  <div class="small-title">23. 调整tab的宽度</div>
+  <pre  class="tab">
+    pre,	code{
+			font-family: monospace;
+    }
+    pre {
+			display: block;
+			margin: 1em 0;
+			white-space: pre;
+    }
+  </pre>
+  <div class="small-title">24. 连字</div>
+	<div class="ligature">Difficult waffles</div>
+  <div class="small-title">25. 华丽的&符号</div>
+	<div class="symbol">略。。</div>
+  <div class="small-title">26. 自定义下划线</div>
+	<div class="underline">font-variant-ligatures: no-common-ligatures;</div>
+  <div class="small-title">27. 现实中的文字效果</div>
+	<div class="print">凸版印刷效果</div>
+	<div class="hollow">空心字效果</div>
+	<div class="light">文字外发光效果</div>
+	<div class="bulge">文字凸起效果</div>
+  <div class="small-title">28. 环形文字</div>
+	<div class="circular">
+		<svg viewBox="0 0 300 300">
+			<path d="M 100,100 a 50,50 0 1,1 0,1 z" id="circle" />
+			<text>
+				<textPath xlink:href="#circle">circular reasoning works because</textPath>
+			</text>
+		</svg>
+	</div>
 </div>
 </template>
 
@@ -289,4 +327,76 @@ export default {}
       background-size cover
       margin -30px  // 防止边缘效果减弱
 
+// 连字符断行
+.break-line
+  height: 180px
+  width: 300px
+  margin 40px auto
+  border solid 1px #666
+  hyphens auto
+
+// 文本行的斑马条纹
+.stripe
+  height: 180px
+  width: 300px
+  margin 40px auto
+  line-height 25px
+  background-image linear-gradient(to bottom, #f222 50%, #fff 0)
+  background-size auto 50px
+
+// 调整tab宽度
+.tab
+  tab-size 4
+
+// 连字
+.ligature
+	font-variant-ligatures: normal
+// 下划线
+.underline
+	background: linear-gradient(to right, red, blue) no-repeat // 颜色
+	background-size: 100% 1px // 下划线长度和宽度
+	background-position: 0 15px // 下划线未知
+	text-shadow: 1px 0 white, -1px 0 white // 设置g,y这种下划线不会穿过字母
+
+// 凸版印刷效果
+.print
+	line-height 30px
+	margin 10px
+	background hsl(210, 13%, 40%)
+	color hsl(210, 13%, 75%)
+	text-shadow 0 -1px 1px black
+
+// 空心字效果
+.hollow
+	line-height 30px
+	margin 10px
+	background: deeppink
+	color: white
+	text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black
+
+// 文字外发光效果
+.light
+	line-height 30px
+	margin 10px
+	background: #203
+	color: #ffc
+	text-shadow: 0 0 2px, 0 0 3px
+
+// 文字凸起效果
+.bulge
+	line-height 30px
+	margin 10px
+	background #58a
+	color white
+	text-shadow 0 1px hsl(0,0%,85%),0 2px hsl(0,0%,80%),0 3px hsl(0,0%,75%), 0 4px hsl(0,0%,70%),0 5px hsl(0,0%,65%),0 5px 10px black // 底部加一层阴影
+
+.circular
+	width 300px
+	height 300px
+	margin 3px auto 0
+	path
+		fill none
+.circular svg
+	display block
+	overflow visible
 </style>
