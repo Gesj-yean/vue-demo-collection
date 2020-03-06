@@ -84,6 +84,55 @@
 			</text>
 		</svg>
 	</div>
+	<div class="small-title">29. 选择合适的鼠标光标</div>
+	<div style="cursor: default">默认光标（通常是一个箭头）</div>
+	<div style="cursor: crosshair">光标呈现为十字线。</div>
+	<div style="cursor: pointer">光标呈现为指示链接的指针（一只手）</div>
+	<div style="cursor: move">此光标指示某对象可被移动。</div>
+	<div style="cursor: e-resize">此光标指示矩形框的边缘可被向右（东）移动。</div>
+	<div style="cursor: ne-resize">此光标指示矩形框的边缘可被向上及向右移动（北/东）。</div>
+	<div style="cursor: nw-resize">此光标指示矩形框的边缘可被向上及向左移动（北/西）。</div>
+	<div style="cursor: n-resize">	此光标指示矩形框的边缘可被向上（北）移动。</div>
+	<div style="cursor: se-resize">此光标指示矩形框的边缘可被向下及向右移动（南/东）。</div>
+	<div style="cursor: sw-resize">	此光标指示矩形框的边缘可被向下及向左移动（南/西）。</div>
+	<div style="cursor: s-resize">此光标指示矩形框的边缘可被向下移动（南）。</div>
+	<div style="cursor: w-resize">	此光标指示矩形框的边缘可被向左移动（西）。</div>
+	<div style="cursor: text">	此光标指示文本。</div>
+	<div style="cursor: wait">	此光标指示程序正忙（通常是一只表或沙漏）。</div>
+	<div style="cursor: help">	此光标指示可用的帮助（通常是一个问号或一个气球）。</div>
+	<div class="small-title">30. 扩大可点击区域</div>
+	<div class="button">按钮</div>
+	<div class="small-title">31. 自定义复选框</div>
+	<input type="checkbox" id="box" checked disabled>
+	<label for="box">复选框~</label>
+	<div class="small-title">32. 通过阴影来弱化背景</div>
+	<div class="dialog">111</div>
+	<div class="small-title">33. 通过模糊来弱化背景</div>
+	<div class="blur-bg">
+		<div class="main">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+		<div class="dialog">对话框~</div>
+	</div>
+	<div class="small-title">34. 滚动提示</div>
+	<ul>
+		<li>Ada Catlace</li>
+		<li>Alan Purring</li>
+		<li>Schrödingcat</li>
+		<li>Tim Purrners-Lee</li>
+		<li>WebKitty</li>
+		<li>Json</li>
+		<li>Void</li>
+		<li>Neko</li>
+		<li>NaN</li>
+		<li>Cat5</li>
+		<li>Vector</li>
+	</ul>
+	<div class="small-title">35. 交互式的图片对比控件</div>
+	<div class="image-slider">
+		<div>
+			<img src="https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png" alt="Before"/>
+		</div>
+		<img src="https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png" alt="After"/>
+	</div>
 </div>
 </template>
 
@@ -96,9 +145,9 @@ export default {}
 .border
   position relative
   margin 20px auto
-  background: #7F7FD5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background #7F7FD5;  /* fallback for old browsers */
+  background -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height 180px
   width 300px
   .content
@@ -113,9 +162,9 @@ export default {}
     width 100px
 
 .multiple-border
-  background: #C6FFDD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background #C6FFDD;  /* fallback for old browsers */
+  background -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height 180px
   width 300px
   margin 40px auto
@@ -128,18 +177,18 @@ export default {}
   height 180px
   width 300px
   margin 40px auto
-  background: url(../common/images/arrow-right.png) no-repeat bottom right #FFFDE4 // bottom right是background-position的回退方案
-  background-position: calc(100% - 20px) calc(100% - 10px)
+  background url(../common/images/arrow-right.png) no-repeat bottom right #FFFDE4 // bottom right是background-position的回退方案
+  background-position calc(100% - 20px) calc(100% - 10px)
   padding 10px
-  background-origin: content-box // 使图片跟着内容层走
+  background-origin content-box // 使图片跟着内容层走
 
 .border-inner
   height 180px
   width 300px
   margin 40px auto
-  background: #6190E8;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background #6190E8;  /* fallback for old browsers */
+  background -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+  background linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius 30px
   box-shadow 0 0 0 15px #ccc
   outline 15px solid #ccc
@@ -152,40 +201,40 @@ export default {}
   background linear-gradient(#fb3 50%, #58a 50%)
   background-size 100% 30px
 .linear2
-  background: repeating-linear-gradient(60deg, #fb3, #fb3 15px, #58a 0, #58a 30px)
+  background repeating-linear-gradient(60deg, #fb3, #fb3 15px, #58a 0, #58a 30px)
 
 .net
   height 180px
   width 300px
   margin 40px auto
-  background: white
-  background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 0),
+  background white
+  background-image linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 0),
                     linear-gradient(rgba(200,0,0,.5) 50%, transparent 0)
-  background-size: 30px 30px
+  background-size 30px 30px
 
 .random
   height 180px
   width 300px
   margin 40px auto
-  background: linear-gradient(90deg, #fb3 15%, #655 0, #655 40%, #ab4 0, #ab4 65%, hsl(20, 40%, 90%) 0)
-  background-size: 80px 100%
+  background linear-gradient(90deg, #fb3 15%, #655 0, #655 40%, #ab4 0, #ab4 65%, hsl(20, 40%, 90%) 0)
+  background-size 80px 100%
 .random2
   height 180px
   width 300px
   margin 40px auto
-  background: hsl(20, 40%, 90%)
-  background-image: linear-gradient(90deg, #fb3 10px, transparent 0),
+  background hsl(20, 40%, 90%)
+  background-image linear-gradient(90deg, #fb3 10px, transparent 0),
                     linear-gradient(90deg, #ab4 20px, transparent 0),
                     linear-gradient(90deg, #655 20px, transparent 0)
-  background-size: 80px 100%, 60px 100%, 40px 100%;
+  background-size 80px 100%, 60px 100%, 40px 100%;
 
 .img-border
   height 180px
   width 300px
   margin 40px auto
-  padding: 10px
-  border: 10px solid transparent
-  background: linear-gradient(white, white) padding-box,url(https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png) border-box 0 / cover
+  padding 10px
+  border 10px solid transparent
+  background linear-gradient(white, white) padding-box,url(https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png) border-box 0 / cover
 
 // 自适应的椭圆
 .circle
@@ -202,22 +251,22 @@ export default {}
   width 300px
   margin 40px auto
   &::before
-    content: ''
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    z-index: -1
-    background: #678
-    transform: skew(10deg)
+    content ''
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index -1
+    background #678
+    transform skew(10deg)
 
 // 菱形
 .diamond
   margin 40px auto
   text-align center
 .diamond > img
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  clip-path polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 
 // 切角效果
 .horn
@@ -237,8 +286,8 @@ export default {}
   position relative
   display inline-block
   &::before
-    content: ''
-    position: absolute
+    content ''
+    position absolute
     top 0
     right 0
     bottom 0
@@ -253,14 +302,14 @@ export default {}
   width 180px
   margin 40px auto
   border-radius 50%
-  background: conic-gradient(#eea2a2 20%, #bbc1bf  0, #bbc1bf  30%, #57c6e1 0);
+  background conic-gradient(#eea2a2 20%, #bbc1bf  0, #bbc1bf  30%, #57c6e1 0);
 
 // 单侧投影
 .side-shadow
   height 180px
   width 300px
   margin 40px auto
-  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  background-image linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
   box-shadow 0 8px 3px -3px rgba(0,0,0,.5)
 // 不规则投影
 .irregular
@@ -275,29 +324,29 @@ export default {}
   filter drop-shadow(0 5px 3px #678)
 // 染色效果
 .dye
-  height: 180px
-  width: 300px
+  height 180px
+  width 300px
   margin 40px auto
   background-image url(https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png)
-  background-size: cover
-  background-color: hsl(335, 100%, 50%)
-  background-blend-mode: luminosity
-  transition: .5s background-color
+  background-size cover
+  background-color hsl(335, 100%, 50%)
+  background-blend-mode luminosity
+  transition .5s background-color
   &:hover
-    background-color: transparent
+    background-color transparent
 
 // 折角效果
 .fold-angle
-  height: 180px
-  width: 300px
+  height 180px
+  width 300px
   margin 40px auto
   folded-corner(#58a, 30px, 30deg)
 
 // 毛玻璃效果
 .glass
   position relative
-  height: 180px
-  width: 300px
+  height 180px
+  width 300px
   margin 40px auto
   font-size 50px
   text-align center
@@ -329,16 +378,16 @@ export default {}
 
 // 连字符断行
 .break-line
-  height: 180px
-  width: 300px
+  height 180px
+  width 300px
   margin 40px auto
   border solid 1px #666
   hyphens auto
 
 // 文本行的斑马条纹
 .stripe
-  height: 180px
-  width: 300px
+  height 180px
+  width 300px
   margin 40px auto
   line-height 25px
   background-image linear-gradient(to bottom, #f222 50%, #fff 0)
@@ -350,13 +399,13 @@ export default {}
 
 // 连字
 .ligature
-	font-variant-ligatures: normal
+	font-variant-ligatures normal
 // 下划线
 .underline
-	background: linear-gradient(to right, red, blue) no-repeat // 颜色
-	background-size: 100% 1px // 下划线长度和宽度
-	background-position: 0 15px // 下划线未知
-	text-shadow: 1px 0 white, -1px 0 white // 设置g,y这种下划线不会穿过字母
+	background linear-gradient(to right, red, blue) no-repeat // 颜色
+	background-size 100% 1px // 下划线长度和宽度
+	background-position 0 15px // 下划线未知
+	text-shadow 1px 0 white, -1px 0 white // 设置g,y这种下划线不会穿过字母
 
 // 凸版印刷效果
 .print
@@ -370,17 +419,17 @@ export default {}
 .hollow
 	line-height 30px
 	margin 10px
-	background: deeppink
-	color: white
-	text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black
+	background deeppink
+	color white
+	text-shadow 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black
 
 // 文字外发光效果
 .light
 	line-height 30px
 	margin 10px
-	background: #203
-	color: #ffc
-	text-shadow: 0 0 2px, 0 0 3px
+	background #203
+	color #ffc
+	text-shadow 0 0 2px, 0 0 3px
 
 // 文字凸起效果
 .bulge
@@ -399,4 +448,108 @@ export default {}
 .circular svg
 	display block
 	overflow visible
+
+// 扩大可点击区域
+.button
+	position relative
+	background #58a
+	color #fff
+	width 100px
+	text-align center
+	padding 5px
+	&:before
+		content ''
+		position absolute
+		top -10px
+		left -10px
+		right -10px
+		bottom -10px
+		cursor pointer
+		background #f2f2f2
+		z-index -1
+
+// 自定义复选框
+input[type="checkbox"]+label::before // label前添加自定义的复选框
+	content '\a0'/* 不换行空格 */
+	display inline-block
+	vertical-align middle
+	width 16px
+	height 16px
+	margin-right 5px
+	border-radius 3px
+	background #fff
+	border solid 1px #ccc
+	text-indent 3px // 将段落的第一行缩进3px，\2713图标向右偏移3px
+	line-height 16px
+input[type="checkbox"]:checked+label::before // 勾选状态
+	content '\2713'
+	background #1296db
+	color #fff
+input[type="checkbox"]:focus+label::before // 被点击状态
+	box-shadow 0 0 1px 1px #58a
+input[type="checkbox"]:disabled+ label::before // 禁用状态
+	background gray
+	box-shadow none
+	color #555
+input[type="checkbox"] // 隐藏原有复选框
+	position absolute
+	clip rect(0,0,0,0) // clip 属性剪裁绝对定位元素。
+
+.blur-bg
+	width 300px
+	height 180px
+	margin 3px auto 0
+	position relative
+	.main
+		filter blur(2px)
+	.dialog
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		background #f2f2f2
+		padding 10px
+
+ul
+	overflow auto
+	width 300px
+	height 150px
+	padding 10px
+	border solid 1px #ccc
+	background linear-gradient(white 15px, hsla(0,0%,100%,0)) 0 0 / 100% 50px,
+			radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) 0 0 / 100% 15px,
+      linear-gradient(to top, white 15px, hsla(0,0%,100%,0)) bottom / 100% 50px,
+      radial-gradient(at bottom, rgba(0,0,0,.2), transparent 70%) bottom / 100% 15px
+	background-repeat no-repeat
+	background-attachment local, scroll,local, scroll // local:会随着内容向下而向下，白色遮住阴影；scroll：随着页面滚动
+
+// 自定义控件
+.image-slider
+	position relative
+	display inline-block
+	margin-left 50%
+	transform translate(-50%)
+.image-slider > div
+	position absolute
+	top 0
+	bottom 0
+	left 0
+	width 50% /* 初始宽度 */
+	max-width 100%
+	overflow hidden /* 让它可以裁切图片 */
+	resize horizontal
+	&::before
+		content ''
+		position absolute
+		bottom 0
+		right 0
+		width 12px
+		height 12px
+		background white
+		cursor pointer
+		padding 5px
+		background linear-gradient(-45deg, white 50%, transparent 0)
+		background-clip content-box
+.image-slider img
+	display block
 </style>
