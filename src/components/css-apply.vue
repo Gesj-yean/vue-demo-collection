@@ -133,6 +133,50 @@
 		</div>
 		<img src="https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png" alt="After"/>
 	</div>
+  <div class="small-title">36. 自适应内部元素</div>
+  <div class="adaptive-ele">
+    <img src="https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png" alt="Before"/>
+    <div>我们需要做到让父元素能够自适应图片的宽度，而不会被文字撑开宽度。</div>
+  </div>
+  <div class="small-title">37. 精确控制表格列宽</div>
+  <table class="one" width="100%">  <!--自动表格布局-->
+    <tr>
+      <td width="20%">1000000000000000000000000000</td>
+      <td width="40%">10000000</td>
+      <td width="40%">100</td>
+    </tr>
+  </table>
+  <br />
+  <table class="two" width="100%">  <!--固定表格布局-->
+    <tr>
+      <td width="20%">1000000000000000000000000000</td>
+      <td width="40%">10000000</td>
+      <td width="40%">100</td>
+    </tr>
+  </table>
+  <div class="small-title">38. 根据兄弟元素的数量来设置样式 </div>
+  <ul>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+  </ul>
+  <div class="small-title">39. 满幅的背景，定宽的内容</div>
+  <div class="small-title">40. 垂直居中</div>
+  <div class="small-title">41. 紧贴底部的页脚</div>
+  <div class="stickey">
+    <div class="main">内容</div>
+    <div class="footer">页脚</div>
+  </div>
+  <div class="small-title">42. 缓动效果</div>
+  <div class="small-title">43. 逐帧动画</div>
+  <div class="small-title">44. 闪烁效果</div>
+  <div class="small-title">45. 打字动画</div>
+  <div class="small-title">46. 状态平滑的动画</div>
+  <div class="small-title">47. 延环形路径平移的动画</div>
 </div>
 </template>
 
@@ -552,4 +596,45 @@ ul
 		background-clip content-box
 .image-slider img
 	display block
+
+// 自适应宽度
+.adaptive-ele
+  padding 5px
+  text-align center
+  border solid 1px #666
+  width min-content
+
+// 自动表格布局
+.one
+  table-layout: automatic
+  td
+    border solid 1px #666
+
+// 固定表格布局
+.two
+  table-layout: fixed
+  td
+    word-break: break-all
+    border solid 1px #666
+
+// 紧贴底部的页脚
+.stickey
+  height 160px
+  width 300px
+  border solid 2px #666
+  text-align center
+  overflow auto
+  .main
+    min-height calc(100% - 60px)
+  .footer
+    height 60px
+    background #000
+    color #ffffff
+
+li:only-child
+  color red
+
+li:first-child:nth-last-child(7),
+li:first-child:nth-last-child(7) ~ li
+  color red
 </style>
