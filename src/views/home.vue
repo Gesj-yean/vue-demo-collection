@@ -65,6 +65,7 @@ export default {
 	width 100%
 	display flex
 	.list-wrapper
+		flex-shrink 0
 		min-height 100vh
 		width 300px
 		border-right 1px solid #ddd
@@ -80,9 +81,9 @@ export default {
 	.content-wrapper
 		flex 1
 		.content
-			margin 0 auto 45px
+			margin 0 auto
 			width 70%
-			height 100%
+			padding-bottom 45px
 		.arrow
 			height 50px
 			width 50px
