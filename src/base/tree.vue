@@ -94,8 +94,8 @@ input[type="checkbox"]:checked::before // CheckBox选中状态时样式修改
   left 0
   padding-left 2px
   content: "\2713";
-  height 15px
-  width 13px
+  height 16px
+  width 15px
   font-size 12px
   font-weight: bold;
   background #1296db
@@ -108,8 +108,8 @@ input[type="checkbox"]:disabled::before // CheckBox禁用状态时样式修改
   left 0
   padding-left 2px
   content: "";
-  height 15px
-  width 13px
+  height 16px
+  width 15px
   font-size 12px
   font-weight: bold;
   background #ccc

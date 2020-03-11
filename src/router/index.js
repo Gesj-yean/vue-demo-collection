@@ -37,6 +37,11 @@ export const routes = [
         component: () => import('blogs/tree')
       },
       {
+        path: '/pagination',
+        meta: { title: 'Pagination 分页器' },
+        component: () => import('blogs/pagination')
+      },
+      {
         path: '/tree-cli',
         meta: { title: 'tree-cli 使用记录' },
         component: () => import('blogs/tree-cli')
