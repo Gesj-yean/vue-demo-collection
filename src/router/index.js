@@ -8,6 +8,7 @@ Vue.use(VueRouter)
 export const routes = [
   {
     path: '/',
+    meta: { title: '首页' },
     redirect: '/start',
     component: () => import('views/home'),
     children: [
@@ -42,19 +43,24 @@ export const routes = [
         component: () => import('blogs/pagination')
       },
       {
+        path: '/breadcrumb',
+        meta: { title: 'Breadcrumb 面包屑' },
+        component: () => import('base/breadcrumb')
+      },
+      {
         path: '/tree-cli',
         meta: { title: 'tree-cli 使用记录' },
         component: () => import('blogs/tree-cli')
       },
       {
+        path: '/css-demo',
+        meta: { title: '「CSS揭秘」读书笔记' },
+        component: () => import('blogs/css-demo')
+      },
+      {
         path: '/line-text',
         meta: { title: 'flex实现中间文字，两边横线（1px）' },
         component: () => import('blogs/line-text')
-      },
-      {
-        path: '/css-demo',
-        meta: { title: 'CSS揭秘 - 47个css技巧' },
-        component: () => import('blogs/css-demo')
       }
     ]
   }
