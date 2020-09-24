@@ -1,0 +1,48 @@
+//  文字超出省略
+no-wrap()
+  text-overflow ellipsis
+  overflow hidden
+  white-space nowrap
+
+// 底部1px的边框，可传入颜色
+border-1px($color) 
+  position: relative
+  &::after 
+    display block
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    border-top 1px solid $color
+    content ' '
+
+// 切角效果，传入背景颜色，左上、右上、右下、左下切割长度
+beveled-corners($bg, $tl=0, $tr=$tl, $br=$tl, $bl=$tr) 
+  background $bg
+  background linear-gradient(135deg, transparent $tl,$bg 0) top left,
+              linear-gradient(225deg, transparent $tr,$bg 0) top right,
+              linear-gradient(-45deg, transparent $br,$bg 0) bottom right,
+              linear-gradient(45deg, transparent $bl,$bg 0)  bottom left;
+  background-size 50% 50%
+  background-repeat no-repeat
+
+// 折角效果
+folded-corner($background, $size, $angle=30deg)
+  position: relative
+  background:$background; /* 回退样式 */
+  background: linear-gradient($angle - 180deg, transparent $size, $background 0)
+  border-radius: 8px;
+  $x=$size/ sin($angle)
+  $y=$size / cos($angle)
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4)) 100% 0 no-repeat
+    width: $y
+    height: $x
+    transform: translateY($y - $x) rotate(2*$angle - 90deg)
+    transform-origin: bottom right
+    border-bottom-left-radius: inherit
+    box-shadow: -5px 5px 3px -2px rgba(0,0,0,.2) // 折角阴影
