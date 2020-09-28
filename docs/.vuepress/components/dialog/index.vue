@@ -5,7 +5,7 @@
       <!-- 对话框 -->
       <div class="info-wrapper">
         <!-- 对话框内容部分 -->
-        <img class="icon" :src="require(`../common/images/${icon}-circle.png`)" />
+        <img class="icon" :src="require(`../../common/images/${icon}-circle.png`)" />
         <div class="text">{{info}}</div>
       </div>
       <div class="btn-wrapper">
@@ -66,7 +66,8 @@ export default {
 </script>
 
 <style lang="stylus">
-// @import '../../common/stylus/mixin'
+@import '../../common/stylus/mixin'
+
 .shadow-wrapper /* 覆盖整个页面 */
   position absolute
   top 0
