@@ -21,6 +21,7 @@ module.exports = {
           ['/base/slider', 'better-scroll实现轮播图组件'],
           ['/base/scroll', '移动端scroll组件的抽象及应用'],
           ['/base/tree', '理解Vue递归组件，实现Tree树形控件实例~'],
+          ['/base/star', 'Vue评分组件'],
         ]
       },
     ]
