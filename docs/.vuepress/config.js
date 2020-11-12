@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'vue-demo-collection',
+  title: 'Vue-Demo-Collection',
   description: 'A documentation of the excellent components encountered in VUE development',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },
       { text: 'Github', link: 'https://github.com/Gesj-yean/vue-demo-collection' },
     ],
