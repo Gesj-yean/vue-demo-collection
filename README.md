@@ -21,6 +21,7 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 - 横向滚动通知栏 Banner
 ### CSS 相关组件
 - flex实现中间文字，两边横线（1px）
+- 结合《CSS揭秘》整理的可实用代码笔记
 ### Echarts 相关组件
 
 - Tooltip 进阶之交互

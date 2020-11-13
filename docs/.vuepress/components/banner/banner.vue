@@ -35,8 +35,10 @@ export default {
         const animateParentWidth = this.$refs.animateParent.clientWidth
         const animateWidth = this.$refs.animate.clientWidth
         const itemsLength = Math.ceil(animateParentWidth / animateWidth)
+        const styleSheet = document.styleSheets[0]
+        styleSheet.cssRules.length !== 0 && styleSheet.deleteRule(0)
         // 将样式加入样式表
-        document.styleSheets[0].insertRule(
+        styleSheet.insertRule(
           `@keyframes wordsLoop { 0% { transform: translateX(100%); -webkit-transform: translateX(100%); } 100% { transform: translateX(-${itemsLength}00%); -webkit-transform: translateX(-${itemsLength}00%);}}`,
           0,
         )

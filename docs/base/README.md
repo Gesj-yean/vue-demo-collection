@@ -4,9 +4,6 @@
 
 注：此项目纯属个人在学习前端过程中的总结，代码或内容有借鉴别人的地方会注明出处。
 
-## 技术栈
-
-vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 
 ## 目录
 
@@ -21,9 +18,13 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 - 横向滚动通知栏 Banner
 ### CSS 相关组件
 - flex实现中间文字，两边横线（1px）
+- 结合《CSS揭秘》整理的可实用代码笔记
 ### Echarts 相关组件
 
 - Tooltip 进阶之交互
+## 技术栈
+
+vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 
 ## 项目运行
 

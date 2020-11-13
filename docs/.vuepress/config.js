@@ -30,7 +30,8 @@ module.exports = {
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          ['/base/line-text', 'flex实现中间文字，两边横线（1px）']
+          ['/base/line-text', 'flex实现中间文字，两边横线（1px）'],
+          ['/base/css-style', '结合《CSS揭秘》整理的可实用代码笔记']
         ]
       },
       {
