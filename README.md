@@ -19,9 +19,12 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 - 树形控件 Tree (Vue递归组件)
 - 评分组件 Rating
 - 横向滚动通知栏 Banner
+- 表单金额输入框（element-ui）PriceInput
+
 ### CSS 相关组件
 - flex实现中间文字，两边横线（1px）
 - 结合《CSS揭秘》整理的可实用代码笔记
+
 ### Echarts 相关组件
 
 - Tooltip 进阶之交互
