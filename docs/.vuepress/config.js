@@ -23,6 +23,7 @@ module.exports = {
           ['/base/tree', '树形控件 Tree (Vue递归组件)'],
           ['/base/star', '评分组件 Rating'],
           ['/base/banner', '横向滚动通知栏 Banner'],
+          ['/base/price-input', '表单金额输入框（element-ui）PriceInput'],
         ]
       },
       {
