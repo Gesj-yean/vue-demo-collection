@@ -1,21 +1,7 @@
-<template>
-  <el-form-item class="price-parent" :label="label" :prop="prop">
-    <el-input
-      :style="`width: ${width}px`"
-      ref="input"
-      v-model="form.deceivedAmount"
-      :placeholder="placeholder"
-      @blur="blurInput"
-      @focus="focusInput"
-    >
-      <div
-        class="price-mask"
-        :style="`width: ${width -30}px`"
-        v-show="showFormatPrice"
-        @click="focusInput"
-      >{{formaterPrice}}</div>
-    </el-input>
-  </el-form-item>
+<template lang="pug">
+el-form-item.price-parent(:label="label" :prop="prop" )
+  el-input(:style="`width: ${width}px`" ref="input" v-model="form.deceivedAmount" :placeholder="placeholder" @blur="blurInput" @focus="focusInput")
+  .price-mask(:style="`width: ${width -30}px`" v-show="showFormatPrice" @click="focusInput") {{formaterPrice}}
 </template>
 
 <script>
@@ -73,6 +59,11 @@ export default {
       }
     },
   },
+  mounted () {
+    this.$nextTick(() => {
+      this.$refs.input.focus()
+    })
+  },
   methods: {
     // 聚焦金额输入框
     focusInput () {
@@ -102,16 +93,19 @@ export default {
   },
 }
 </script>
-
 <style lang="less" scoped>
+.price-parent {
+  position: relative;
+}
 .price-mask {
   position: absolute;
   z-index: 2;
   top: 1px;
-  left: 125px;
+  left: 60px;
   background: white;
   width: 110px;
   overflow: auto;
   font-size: 13px;
+  height: 38px;
 }
 </style>

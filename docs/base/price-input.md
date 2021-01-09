@@ -1,3 +1,7 @@
+点击以下输入框操作：
+
+<priceInput-index />
+
 在日常的迭代开发中通常我们会遇到这样的场景：在一个表单中需要用户输入金额，并校验金额的格式。这个需求你一定遇到过，但是现在，我们还需要做到：当用户离开输入框（失去焦点）时，输入的内容变成了用逗号每隔 `3` 位分隔的数字，并展示给用户。且最后提交金额时，参数的值仍然是正常数字，不包含逗号。
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7ed0d186e3a84f4995f09443834b3321~tplv-k3u1fbpfcp-watermark.image)
@@ -18,6 +22,7 @@
 
 组件的设计思想大致如下：
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af5c7b75c3b64bc295b99dfb9e4aa01e~tplv-k3u1fbpfcp-watermark.image)
+
 
 
 完整的组件代码如下：
