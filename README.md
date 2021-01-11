@@ -41,7 +41,7 @@ npm install
 npm run docs:dev
 ```
 
-## 相关博客
+## 组件相关博客
 
 - [实现基于Vue的Dialog对话框组件](https://juejin.im/post/5e687f7be51d4526cc3b3942)
 - [利用better-scroll实现Vue轮播图组件](https://juejin.im/post/5e620c6b518825495c6599b4)
@@ -49,6 +49,11 @@ npm run docs:dev
 - [实现基于Vue的Pagination分页器组件](https://juejin.im/post/5e685aeee51d45270f52d106)
 - [《CSS揭秘》读书笔记](https://juejin.im/post/5e65f462e51d450edc0cd696)
 - [CSS元素选择器](https://juejin.im/post/5e61ffbf51882549575f9a96)
+- [基于 element-ui 封装表单金额输入框](https://juejin.cn/post/6913706130032033799)
+
+## 相关文章
+- [VuePress 开发个人博客进阶之自定义主题](https://juejin.cn/post/6869565504756023310)
+- [实现Vue 中可编辑的 SVG Icon 组件](https://juejin.cn/post/6850418116007690247)
 
 ## 项目截图
 

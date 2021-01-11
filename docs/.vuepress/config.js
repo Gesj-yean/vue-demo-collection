@@ -55,7 +55,9 @@ module.exports = {
           collapsable: false, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
-            ['/blog/ECMAScript2021', 'ECMAScript 2021新特性']
+            ['/blog/ECMAScript2021', 'ECMAScript 2021新特性'],
+            ['/blog/custom-vuepress','VuePress 之自定义主题'],
+            ['/blog/edit-svg','实现Vue 中可编辑的 SVG  Icon 组件']
           ]
         },
       ]
