@@ -29,6 +29,10 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 
 - Tooltip 进阶之交互
 
+### 其他博客
+- VuePress 之自定义主题
+- 实现Vue 中可编辑的 SVG  Icon 组件
+
 ## 项目运行
 
 ```bash
