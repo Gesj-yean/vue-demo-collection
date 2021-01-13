@@ -46,20 +46,22 @@
     </el-input>
 
     <div v-if="multiple" class="el-cascader__tags">
-      <!-- <div class="el-cascader__tags_scroll"> -->
-      <el-tag
-        v-for="(tag, index) in presentFormatTags"
-        :key="tag.key"
-        :size="tagSize"
-        :hit="tag.hitState"
-        :closable="tag.closable"
-        type="info"
-        disable-transitions
-        @close="deleteTag(index, tag)"
-      >
-        <span>{{ tag.text ? tag.text : tag.pathLabels.join(separator) }}</span>
-      </el-tag>
-      <!-- </div> -->
+      <div class="el-cascader__tags_scroll">
+        <el-tag
+          v-for="(tag, index) in presentFormatTags"
+          :key="tag.key"
+          :size="tagSize"
+          :hit="tag.hitState"
+          :closable="tag.closable"
+          type="info"
+          disable-transitions
+          @close="deleteTag(index, tag)"
+        >
+          <span>{{
+            tag.text ? tag.text : tag.pathLabels.join(separator)
+          }}</span>
+        </el-tag>
+      </div>
 
       <input
         v-if="filterable && !isDisabled"
@@ -425,7 +427,6 @@ export default {
           }
         }
       }
-      console.log(result)
       this.presentFormatTags = result
     },
     getMigratingConfig() {
@@ -735,11 +736,11 @@ export default {
 </script>
 <style lang="less" scoped>
 .el-cascader__tags_scroll {
-  // max-height: 200px;
-  // overflow-y: scroll;
+  max-height: 200px;
+  overflow-y: scroll;
 
   &::-webkit-scrollbar {
-    // display: none;
+    display: none;
   }
 }
 </style>

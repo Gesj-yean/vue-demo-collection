@@ -9,7 +9,7 @@ module.exports = {
       { text: 'Github', link: 'https://github.com/Gesj-yean/vue-demo-collection' },
     ],
     sidebar: {
-      '/base/':[
+      '/base/': [
         {
           title: 'Vue 组件',   // 必要的
           path: '/base/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
@@ -25,6 +25,7 @@ module.exports = {
             ['/base/star', '评分组件 Rating'],
             ['/base/banner', '横向滚动通知栏 Banner'],
             ['/base/price-input', '表单金额输入框（element-ui）PriceInput'],
+            ['/base/cascader', '级联选择器（element-ui）Cascader'],
           ]
         },
         {
@@ -46,7 +47,7 @@ module.exports = {
             ['/base/tooltip', 'Tooltip 进阶之交互']
           ]
         },
-        
+
       ],
       '/blog/': [
         {
@@ -56,8 +57,8 @@ module.exports = {
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/blog/ECMAScript2021', 'ECMAScript 2021新特性'],
-            ['/blog/custom-vuepress','VuePress 之自定义主题'],
-            ['/blog/edit-svg','实现Vue 中可编辑的 SVG  Icon 组件']
+            ['/blog/custom-vuepress', 'VuePress 之自定义主题'],
+            ['/blog/edit-svg', '实现Vue 中可编辑的 SVG  Icon 组件']
           ]
         },
       ]
