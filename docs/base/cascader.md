@@ -1,19 +1,22 @@
-使用：
+先来对比使用一下：
+<cascader-demo />
+
+在 element-ui 中，它提供的多选可搜索级联组件有一个问题：当用户选中全部子节点时不会合并为显示父节点。并且我想要级联看板一直展开。
+
+要想完成这个功能，在经历过上述步骤一番探索后发现还是要修改源码才能完成。于是我基于原本多选可搜索的级联选择器，进行以下优化。
+
+优化后的组件使用方法与原本还是一样：
 ```
 <template lang="pug">
   cascader.mb-200(
-    ref="regionCascader",
-    :options="regionTree",
-    placeholder="搜索区域"
-    :props=`{
-    multiple: true,
-    value: 'code',
-    label: 'name',
-    }`
-    filterable
-    clearable
-    @change="changecascader"
-    @visible-change="visibleChange")
+      ref="cascader",
+      :options="options",
+      placeholder="试试搜索：指南"
+      :props=`{ multiple: true }`
+      filterable
+      clearable
+      @change="changecascader"
+      @visible-change="visibleChange")
 </template>
 
 <style lang="less" scoped>
