@@ -58,7 +58,8 @@ module.exports = {
           children: [
             ['/blog/ECMAScript2021', 'ECMAScript 2021新特性'],
             ['/blog/custom-vuepress', 'VuePress 之自定义主题'],
-            ['/blog/edit-svg', '实现Vue 中可编辑的 SVG  Icon 组件']
+            ['/blog/edit-svg', '实现Vue 中可编辑的 SVG  Icon 组件'],
+            ['/blog/encapsulate-components', '前端如何修改组件库源码来封装符合自己需求的组件？'],
           ]
         },
       ]
