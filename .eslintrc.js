@@ -18,3 +18,4 @@ module.exports = {
     'import/no-duplicates': 'off'
   }
 }
+
