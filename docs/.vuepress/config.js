@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Vue-Demo-Collection',
+  base: '/vue-demo-collection/',
   description: 'A documentation of the excellent components encountered in VUE development',
   themeConfig: {
     nav: [

@@ -1,6 +1,8 @@
 # 前言
 
-该项目用于收集前端开发过程中常用的基础组件。
+该项目用于收集前端开发过程中常用的基础组件（不限于Vue、javascript、CSS、Echarts等）。
+
+你可以在 https://gesj-yean.github.io/vue-demo-collection/ 预览所有的博客和组件实例。
 
 注：此项目纯属个人在学习前端过程中的总结，代码或内容有借鉴别人的地方会注明出处。
 

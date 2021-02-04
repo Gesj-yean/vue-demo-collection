@@ -1,6 +1,6 @@
 <template lang="pug">
 el-form(:model="form" ref="form" label="180px" :label-suffix="'：'" :rules="rules")
-    priceInput(:form.sync = "form" :width = "200" label = "金额" prop = "deceivedAmount" :rules = "rules")
+    priceInput(:form.sync="form" :width="200" label="金额" prop="deceivedAmount" :rules="rules")
 </template>
 
 <script>

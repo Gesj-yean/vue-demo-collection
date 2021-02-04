@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 npm run docs:build && bash deploy-gh.sh"
   },
   "dependencies": {
     "async-validator": "^1.11.5",
