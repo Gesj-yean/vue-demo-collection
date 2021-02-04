@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>移动端 scroll 组件 | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.03b49229.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.fdcc63ac.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/39.09ecffe5.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.48d4f956.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.41f595e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.03c2dbfa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.ec8870bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.ede813e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.291f234a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.d762d078.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.cf2a5897.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.9699a66f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.d451b371.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.d70a5665.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.5775e264.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.7b5ce634.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.537412f8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.8fe72308.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.fc3f1224.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.d5500851.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.881f89fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.4d27bd46.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.db2ec90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.7e3e7866.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.4a0ecf31.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.204e7bdf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.a16d3ea5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.2c45f4a4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.cf57703e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.01dee90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.b022962b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.49ed3cb7.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.913aa748.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.3f3b2b2c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.d7e03ab2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.2909db9f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.857386bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.87998ba3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.40d8a088.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.80e9ca36.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.67cc6eb5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.ed0bcd2d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.150a249d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.1b9ff918.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.3ded1520.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/6.d560d581.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.a7776c62.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.ef300739.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><!----> <span class="site-name">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>Vue 组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/pagination.html" class="sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/slider.html" class="sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/scroll.html" aria-current="page" class="active sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/tree.html" class="sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/banner.html" class="sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>CSS 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/line-text.html" class="sidebar-link">flex实现中间文字，两边横线（1px）</a></li><li><a href="/vue-demo-collection/base/css-style.html" class="sidebar-link">结合《CSS揭秘》整理的可实用代码笔记</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>Echarts 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/tooltip.html" class="sidebar-link">Tooltip 进阶之交互</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="移动端-scroll-组件"><a href="#移动端-scroll-组件" class="header-anchor">#</a> 移动端 scroll 组件</h1> <p>学习了黄轶老师的课程后，想要对better-scroll的应用进行总结。better-scroll是常用的移动端解决滚动需求的插件。 今天就利用它实现一个scroll的基础组件，可以解决获取滑动的实时位置、上拉加载、下拉刷新等功能。抽象出来的scroll组件以后可以用个各个项目中，功能可以根据better-scroll继续完善下去。</p> <ol><li>在src/base/scroll.vue</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+	&lt;div ref=&quot;wrapper&quot;&gt;
+		&lt;slot&gt;&lt;/slot&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import BScroll from 'better-scroll'
+export default {
+	props: {
+		data: {   // data是scroll需要滚动的数据，data改变时需要触发refresh()刷新
+			type: Array,
+			default: null
+		},
+		probeType: { // 有时候我们需要知道滚动的位置。当 probeType 为 1 的时候，会非实时（屏幕滑动超过一定时间后）派发scroll 事件；当 probeType 为 2 的时候，会在屏幕滑动的过程中实时的派发 scroll 事件；当 probeType 为 3 的时候，不仅在屏幕滑动的过程中，而且在 momentum 滚动动画运行过程中实时派发 scroll 事件。
+			type: Number,
+			default: 1
+		},
+		click: { // false会阻止浏览器的原生 click 事件。当设置为 true，better-scroll 会派发一个 click 事件
+			type: Boolean,
+			default: true
+		},
+		getScrollPos:{ // 决定是否开启获得滚动的实时坐标
+			type: Boolean,
+			default: false
+		},
+		pullingDown: { // 是否开启下拉刷新
+			type: Boolean,
+			default: false
+		},
+		pullingUp: { // 是否开启上拉加载
+			type: Boolean,
+			default: false
+		}
+	},
+	mounted() { // 等dom结构渲染完成后再初始化scroll组件
+		setTimeout(() =&gt; {
+			this._initScroll()
+		}, 20)
+	},
+	methods: {
+		_initScroll() {
+			if(!this.$refs.wrapper) {
+				return
+			}
+			this.scroll = new BScroll(this.$ref.wrapper, {
+				probeType: this.probeType,
+				click: this.click
+			})
+			if(this.getScrollPos) {
+				this.scroll.on('scroll', (pos) =&gt; {
+					this.$emit('scroll', pos) // 暴露出实时滚动的位置{Object} {x, y}
+				})
+			}
+			if(this.pullingDown) {
+				this.scroll.on('pullingDown', () =&gt; {
+					this.$emit('pullingDown') // 暴露出下拉刷新动作
+				})
+			}
+			if(this.pullingUp) {
+				this.scroll.on('pullingUp', () =&gt; {
+					this.$emit('pullingUp') // 暴露出上拉加载动作
+				})
+			}
+		},
+		refresh() { // 刷新scroll
+			this.scroll &amp;&amp; this.scroll.refresh()
+		},
+		scrollTo() { // 滚动到指定位置
+			this.scroll &amp;&amp; this.scroll.scrollTo.apply(this.scroll, arguments)
+		},
+		scrollToElement() { // 滚动到列表指定元素
+			this.scroll &amp;&amp; this.scroll.scrollToElement(this.scroll, arguments)
+		},
+	}
+}
+&lt;/script&gt;
+</code></pre></div><ol start="2"><li>在应用组件中使用：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+	&lt;Scroll :data=&quot;list&quot; @scroll=&quot;scroll&quot; @pullingDown=&quot;pullingDown&quot; @pullingUp=&quot;pullingUp&quot;&gt;
+		&lt;ul&gt;
+			&lt;li v-for=&quot;(item, index) in list&quot; :key=&quot;index&quot;&gt;
+				&lt;div style=&quot;font-size: 20px&quot;&gt;{{index}}。{{item}}&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/Scroll&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Scroll from '@/base/scroll'
+export default {
+	data() {
+		return {
+			item: &quot;data是scroll需要滚动的数据，data改变时需要触发refresh()刷新&quot;,
+			list: []
+		}
+	},
+	created() {
+		for(let i = 0; i&lt;20; i++) {
+			this.list.push(this.item)
+		}
+	},
+	methods: {
+		scroll(pos) {
+			console.log(pos.x, pos.y)
+		},
+		pullingDown() {
+			this.list = []
+			for(leti = 0; i&lt;20; i++) {
+				this.list.push(this.item)
+			}
+		},
+		pullingUp() {
+			for(leti = 0; i&lt;10; i++) {
+				this.list.push(this.item)
+			}
+		}
+	},
+	components: {
+		Scroll
+	}
+}
+&lt;/script&gt;
+</code></pre></div><p>这篇文章转载于黄轶老师的，https://zhuanlan.zhihu.com/p/27407024</p> <p><strong><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer">如果想要demo的话，请前往我的github获取源码。<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></strong></p> <p>https://github.com/Gesj-yean/vue-demo-collection 记录了更多优秀插件的使用方法。有时间的同学请看我的置顶博客，可太感谢啦。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/slider.html" class="prev">
+        轮播图 Slider
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/tree.html">
+        树形控件 Tree (Vue递归组件)
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.03b49229.js" defer></script><script src="/vue-demo-collection/assets/js/7.fdcc63ac.js" defer></script><script src="/vue-demo-collection/assets/js/39.09ecffe5.js" defer></script>
+  </body>
+</html>

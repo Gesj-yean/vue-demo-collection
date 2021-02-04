@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>flex实现中间文字，两边横线（1px） | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.03b49229.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.fdcc63ac.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/36.913aa748.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.48d4f956.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.41f595e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.03c2dbfa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.ec8870bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.ede813e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.291f234a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.d762d078.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.cf2a5897.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.9699a66f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.d451b371.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.d70a5665.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.5775e264.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.7b5ce634.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.537412f8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.8fe72308.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.fc3f1224.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.d5500851.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.881f89fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.4d27bd46.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.db2ec90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.7e3e7866.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.4a0ecf31.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.204e7bdf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.a16d3ea5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.2c45f4a4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.cf57703e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.01dee90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.b022962b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.49ed3cb7.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.3f3b2b2c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.d7e03ab2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/39.09ecffe5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.2909db9f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.857386bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.87998ba3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.40d8a088.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.80e9ca36.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.67cc6eb5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.ed0bcd2d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.150a249d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.1b9ff918.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.3ded1520.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/6.d560d581.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.a7776c62.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.ef300739.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><!----> <span class="site-name">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>Vue 组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/pagination.html" class="sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/slider.html" class="sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/scroll.html" class="sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/tree.html" class="sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/banner.html" class="sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>CSS 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/line-text.html" aria-current="page" class="active sidebar-link">flex实现中间文字，两边横线（1px）</a></li><li><a href="/vue-demo-collection/base/css-style.html" class="sidebar-link">结合《CSS揭秘》整理的可实用代码笔记</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>Echarts 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/tooltip.html" class="sidebar-link">Tooltip 进阶之交互</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="flex实现中间文字-两边横线-1px"><a href="#flex实现中间文字-两边横线-1px" class="header-anchor">#</a> flex实现中间文字，两边横线（1px）</h1> <p>学习了实现1px边框的实现方法。迫不及待的想要记录一下。顺便利用flex布局+1px边框实现一个 简单的中间文字，两边横线的组件。</p> <h2 id="演示"><a href="#演示" class="header-anchor">#</a> 演示</h2> <p>首先来看组件的需求：</p> <ul><li>左右两边的横线在移动端显示为1px。</li> <li>中间内容部分可以随意传入文字内容。</li> <li>同时不论文字的多少，两边的横线会随着内容增大而减小，直到内容占据的最大宽度为40%。
+<img src="https://img-blog.csdnimg.cn/20200224175207994.png" alt="在这里插入图片描述">
+根据以上需求，我们来制定步骤。</li></ul> <h2 id="_1px边框实现"><a href="#_1px边框实现" class="header-anchor">#</a> 1px边框实现</h2> <h3 id="mixin-styl"><a href="#mixin-styl" class="header-anchor">#</a> mixin.styl</h3> <p>首先在mixin.styl中定义一个方法border-1px。此时宽度在drp为1.5的设备下显示的是1.5px。 在dpr为2的设备下显示的是2px。接下来要在base.styl中设置缩放才能真正实现1px。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>no-wrap<span class="token punctuation">(</span><span class="token punctuation">)</span> //  文字超出省略
+  text-overflow ellipsis
+  overflow hidden
+  white-space nowrap
+
+border-1px<span class="token punctuation">(</span><span class="token variable">$color</span><span class="token punctuation">)</span> // 底部1px的边框，可传入颜色
+  position: relative
+  <span class="token operator">&amp;</span>::after 
+    display block
+    position absolute
+    left <span class="token number">0</span>
+    bottom <span class="token number">0</span>
+    width <span class="token number">100</span>%
+    border-top 1px solid <span class="token variable">$color</span>
+    content <span class="token string">' '</span>
+</code></pre></div><h3 id="base-styl"><a href="#base-styl" class="header-anchor">#</a> base.styl</h3> <p>在base.styl下，查询设备dpr。再乘以缩放倍数使其达到1px的效果。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>@media <span class="token punctuation">(</span>-webkit-min-device-pixel-ratio: <span class="token number">1.5</span><span class="token punctuation">)</span>, <span class="token punctuation">(</span>min-device-pixel-ratio: <span class="token number">1.5</span><span class="token punctuation">)</span>
+    .border-1px
+        <span class="token operator">&amp;</span>::after
+            -webkit-transform scaleY <span class="token punctuation">(</span><span class="token number">0.7</span><span class="token punctuation">)</span>
+            transform scaleY<span class="token punctuation">(</span><span class="token number">0.7</span><span class="token punctuation">)</span>
+@media <span class="token punctuation">(</span>-webkit-min-device-pixel-ratio: <span class="token number">2</span><span class="token punctuation">)</span>, <span class="token punctuation">(</span>min-device-pixel-ratio: <span class="token number">2</span><span class="token punctuation">)</span>
+    .border-1px
+        <span class="token operator">&amp;</span>::after
+            -webkit-transform scaleY <span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+            transform scaleY<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="基础组件-line-text-vue"><a href="#基础组件-line-text-vue" class="header-anchor">#</a> 基础组件：line-text.vue</h2> <p>这里利用了flex布局的flex-shrink属性，当flex-shrink为1表示能够被压缩，所以设置横线部分的该属性为1， 同理，内容层应该被撑起宽度，直到40%。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;box-wrapper&quot;</span><span class="token operator">&gt;</span>                <span class="token operator">&lt;</span><span class="token operator">!</span>-- 外层 --<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;left border-1px&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>    <span class="token operator">&lt;</span><span class="token operator">!</span>-- 左侧横线 --<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;text&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>content<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>    <span class="token operator">&lt;</span><span class="token operator">!</span>-- 内容文字 --<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;right border-1px&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>   <span class="token operator">&lt;</span><span class="token operator">!</span>-- 右侧横线 --<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">'text/ecmascript-6'</span><span class="token operator">&gt;</span>
+<span class="token builtin class-name">export</span> default <span class="token punctuation">{</span>
+  props: <span class="token punctuation">{</span>
+    content: <span class="token punctuation">{</span> /* 根据外部传入的content显示内容 */
+      type: String,
+      default: <span class="token string">'加载中加载中加载中加载中加载中加载中加载中加载中加载中。。。'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>style <span class="token assign-left variable">lang</span><span class="token operator">=</span><span class="token string">&quot;stylus&quot;</span><span class="token operator">&gt;</span>
+@import <span class="token string">'../common/stylus/mixin'</span>
+.box-wrapper
+  display flex                    /* 外层设置flex布局 */
+  width <span class="token number">100</span>%                      /* 宽度100% */
+  height 50px                     /* 高度50px，可自定义 */
+  overflow hidden                 /* 超出隐藏 */
+  .left, .right
+    flex-shrink <span class="token number">1</span>                 /* 横线设置为可压缩 */
+    width <span class="token number">49</span>%                     /* 初始时横线宽度 */
+    margin <span class="token number">0</span> 10px
+    transform translate<span class="token punctuation">(</span><span class="token number">0</span>, -50%<span class="token punctuation">)</span>  /* 向上偏移50% */
+    border-1px<span class="token punctuation">(</span><span class="token comment">#ccc)              /* mixin.styl中定义的border-1px方法 */</span>
+  .text
+    flex-shrink <span class="token number">0</span>                 /* 内容设置为不可压缩 */
+    text-align center
+    line-height 50px
+    max-width <span class="token number">40</span>%
+    no-wrap<span class="token punctuation">(</span><span class="token punctuation">)</span>                     /* 文字超出省略 */
+<span class="token operator">&lt;</span>/style<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="应用组件-line-text-apply-vue"><a href="#应用组件-line-text-apply-vue" class="header-anchor">#</a> 应用组件：line-text-apply.vue</h2> <p>示例如何将该组件放入应用组件中，传入的内容将被显示：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+   <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+     <span class="token operator">&lt;</span>LineText :content<span class="token operator">=</span><span class="token string">&quot;content&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>/LineText<span class="token operator">&gt;</span>
+   <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">'text/ecmascript-6'</span><span class="token operator">&gt;</span>
+<span class="token function">import</span> LineText from <span class="token string">'base/line-text'</span>
+<span class="token builtin class-name">export</span> default <span class="token punctuation">{</span>
+  <span class="token function-name function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token builtin class-name">return</span> <span class="token punctuation">{</span>
+      content: <span class="token string">'未完待续'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>,
+  components: <span class="token punctuation">{</span>
+    LineText
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>/style<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/cascader.html" class="prev">
+        级联选择器（element-ui）Cascader
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/css-style.html">
+        结合《CSS揭秘》整理的可实用代码笔记
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.03b49229.js" defer></script><script src="/vue-demo-collection/assets/js/7.fdcc63ac.js" defer></script><script src="/vue-demo-collection/assets/js/36.913aa748.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>横向滚动通知栏 | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.03b49229.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.fdcc63ac.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/31.2c45f4a4.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/17.9699a66f.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.48d4f956.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.41f595e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.03c2dbfa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.ec8870bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.ede813e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.291f234a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.d762d078.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.cf2a5897.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.d451b371.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.d70a5665.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.5775e264.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.7b5ce634.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.537412f8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.8fe72308.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.fc3f1224.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.d5500851.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.881f89fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.4d27bd46.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.db2ec90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.7e3e7866.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.4a0ecf31.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.204e7bdf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.a16d3ea5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.cf57703e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.01dee90d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.b022962b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.49ed3cb7.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.913aa748.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.3f3b2b2c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.d7e03ab2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/39.09ecffe5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.2909db9f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.857386bc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.87998ba3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.40d8a088.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.80e9ca36.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.67cc6eb5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.ed0bcd2d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.150a249d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.1b9ff918.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.3ded1520.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/6.d560d581.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.a7776c62.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.ef300739.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.5a1bca2d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><!----> <span class="site-name">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/blog/" class="nav-link">
+  博客
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>Vue 组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/pagination.html" class="sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/slider.html" class="sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/scroll.html" class="sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/tree.html" class="sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/banner.html" aria-current="page" class="active sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>CSS 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/line-text.html" class="sidebar-link">flex实现中间文字，两边横线（1px）</a></li><li><a href="/vue-demo-collection/base/css-style.html" class="sidebar-link">结合《CSS揭秘》整理的可实用代码笔记</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active"><span>Echarts 相关组件</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/tooltip.html" class="sidebar-link">Tooltip 进阶之交互</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="横向滚动通知栏"><a href="#横向滚动通知栏" class="header-anchor">#</a> 横向滚动通知栏</h1> <p>横向滚动通知栏，预览：</p> <div class="notice-board-wrapper" data-v-17b23cf5><div class="left" data-v-17b23cf5><div class="animate" data-v-17b23cf5>横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏。</div></div><div class="right" data-v-17b23cf5><i class="el-icon-close" data-v-17b23cf5></i>×</div></div> <h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>show</td> <td>是否显示公告滚动条</td> <td>Bollean</td> <td>-</td> <td>false</td></tr> <tr><td>content</td> <td>公告内容</td> <td>String</td> <td>-</td> <td>''</td></tr></tbody></table> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>banner</span>
+<span class="token attr-name">:show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+<span class="token attr-name">:content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏，横向滚动通知栏。<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="dom-结构"><a href="#dom-结构" class="header-anchor">#</a> Dom 结构</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>pug<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+.notice-board-wrapper(v-show=&quot;show&quot;)
+  .left(ref=&quot;animateParent&quot;)
+    .animate(ref=&quot;animate&quot;) {{content}}
+  .right(@click=&quot;handleClose&quot;)
+    i.el-icon-close
+    | ×
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> debounce <span class="token keyword">from</span> <span class="token string">'lodash.debounce'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    show<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    content<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 监听窗口变化，优化滚动栏，debounce防止多次触发</span>
+    window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+      <span class="token string">'resize'</span><span class="token punctuation">,</span>
+      <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">calcAnimateWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">calcAnimateWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">calcAnimateWidth</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>animateParent<span class="token punctuation">)</span> <span class="token keyword">return</span>
+        <span class="token comment">// 计算keyframes偏移距离，使得滚动字段可以衔接</span>
+        <span class="token keyword">const</span> animateParentWidth <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>animateParent<span class="token punctuation">.</span>clientWidth
+        <span class="token keyword">const</span> animateWidth <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>animate<span class="token punctuation">.</span>clientWidth
+        <span class="token keyword">const</span> itemsLength <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>animateParentWidth <span class="token operator">/</span> animateWidth<span class="token punctuation">)</span>
+        <span class="token comment">// 将样式加入样式表</span>
+        document<span class="token punctuation">.</span>styleSheets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">insertRule</span><span class="token punctuation">(</span>
+          <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@keyframes wordsLoop { 0% { transform: translateX(100%); -webkit-transform: translateX(100%); } 100% { transform: translateX(-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>itemsLength<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">00%); -webkit-transform: translateX(-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>itemsLength<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">00%);}}</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+          <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
+        <span class="token comment">// 若insertRule报错，使用以下方法，并在index.html中添加： &lt;style id=&quot;banner&quot;&gt;&lt;/style&gt;</span>
+        <span class="token comment">// let test = document.getElementById('banner').sheet</span>
+        <span class="token comment">// test = document.styleSheets[0]</span>
+        <span class="token comment">// test.insertRule(</span>
+        <span class="token comment">//   `@keyframes wordsLoop { 0% { transform: translateX(100%); -webkit-transform: translateX(100%); } 100% { transform: translateX(-${itemsLength}00%); -webkit-transform: translateX(-${itemsLength}00%);}}`,</span>
+        <span class="token comment">//   0,</span>
+        <span class="token comment">// )</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">handleClose</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'请在父组件中设置 show 为 false。'</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> $route<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="less"><a href="#less" class="header-anchor">#</a> Less</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style lang=&quot;less&quot; scoped&gt;
+.notice-board-wrapper</span> <span class="token punctuation">{</span>
+  // <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  // <span class="token property">top</span><span class="token punctuation">:</span> 58px<span class="token punctuation">;</span>
+  // <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #34a3c9<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 20px<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> 2<span class="token selector">;
+  .left</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token selector">;
+    .animate</span> <span class="token punctuation">{</span>
+      <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+      <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token selector">;
+      // hover暂停动画
+      &amp;:hover</span> <span class="token punctuation">{</span>
+        <span class="token property">animation-play-state</span><span class="token punctuation">:</span> paused<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 960px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+        <span class="token property">animation</span><span class="token punctuation">:</span> 14s wordsLoop linear infinite normal<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 961px<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 1200px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+        <span class="token property">animation</span><span class="token punctuation">:</span> 16s wordsLoop linear infinite normal<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token atrule"><span class="token rule">@media</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1201px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+        <span class="token property">animation</span><span class="token punctuation">:</span> 18s wordsLoop linear infinite normal<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/star.html" class="prev">
+        评分组件 Rating
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/price-input.html">
+        表单金额输入框（element-ui）PriceInput
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.03b49229.js" defer></script><script src="/vue-demo-collection/assets/js/7.fdcc63ac.js" defer></script><script src="/vue-demo-collection/assets/js/31.2c45f4a4.js" defer></script><script src="/vue-demo-collection/assets/js/17.9699a66f.js" defer></script>
+  </body>
+</html>
