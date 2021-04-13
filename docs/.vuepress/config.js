@@ -7,6 +7,8 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },
       { text: '博客', link: '/blog/' },
+      { text: '阅读笔记', link: '/note/' },
+      { text: '其他', link: '/essays/' },
       { text: 'Github', link: 'https://github.com/Gesj-yean/vue-demo-collection' },
     ],
     sidebar: {
@@ -27,6 +29,7 @@ module.exports = {
             ['/base/banner', '横向滚动通知栏 Banner'],
             ['/base/price-input', '表单金额输入框（element-ui）PriceInput'],
             ['/base/cascader', '级联选择器（element-ui）Cascader'],
+            ['/base/loading-btn', '加载按钮 LoadingButton'],
           ]
         },
         {
@@ -63,7 +66,21 @@ module.exports = {
             ['/blog/encapsulate-components', '前端如何修改组件库源码来封装符合自己需求的组件？'],
           ]
         },
-      ]
+      ],
+      '/note/': [{
+        title: '笔记',
+        path: '/note/',
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 0,    // 可选的, 默认值是 1
+        children: []
+      },],
+      '/essays/': [{
+        title: '随笔',
+        path: '/essays/',
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 0,    // 可选的, 默认值是 1
+        children: []
+      },]
     }
   }
 }
