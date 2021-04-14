@@ -66,7 +66,7 @@ import submitBtn from '@/components/submit-btn'
 submit-btn(:submit="confrmSubmit" round) 确定
 ```
 
-以 `element-ui` 表单提交按钮为例：
+例子 1：以 `element-ui` 表单提交按钮为例，先进行表单校验，通过后发送请求：
 ```
 // 确认信息
 confrmSubmit () {
@@ -86,6 +86,19 @@ operateUser () {
     })
 }
 
+```
+例子 2：普通发送请求，直接返回一个 `Promise`：
+```
+// 发送请求
+confrmSubmit () {
+  return api.editUser({
+    page: 1,
+    count: 10
+  })
+    .then(res => {
+      // todo
+    })
+},
 ```
 总结：
 在发送请求后按钮变为 `loading` 状态，请求结束后，`loading` 结束。

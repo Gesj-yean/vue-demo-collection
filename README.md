@@ -14,10 +14,10 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 
 | 分类 | 内容 |
 | --- | --- |
-|Vue 组件|   - 面包屑 Breadcrumb<br> - 对话框 Dialog<br> - 分页器 Pagination<br> - 轮播图 Slider<br> - 无滚动条组件 Scroll<br> - 树形控件 Tree (Vue递归组件)<br> - 评分组件 Rating<br> - 横向滚动通知栏 Banner <br> - 加载按钮 LoadingButton <br> - 表单金额输入框（element-ui）PriceInput<br> - 前端如何修改组件库源码来封装符合自己需求的组件？|
+|Vue 组件|   - 面包屑 Breadcrumb<br> - 对话框 Dialog<br> - 分页器 Pagination<br> - 轮播图 Slider<br> - 无滚动条组件 Scroll<br> - 树形控件 Tree (Vue递归组件)<br> - 评分组件 Rating<br> - 横向滚动通知栏 Banner <br> - 加载按钮 LoadingButton <br> - 表单金额输入框（element-ui）PriceInput|
 |CSS 相关组件|- flex实现中间文字，两边横线（1px）<br>- 结合《CSS揭秘》整理的可实用代码笔记|
 |Echarts 相关组件|- Tooltip 进阶之交互|
-|其他博客|- VuePress 之自定义主题<br>- 实现Vue 中可编辑的 SVG  Icon 组件|
+|其他博客| - 前端如何修改组件库源码来封装符合自己需求的组件？<br> - VuePress 之自定义主题<br>- 实现Vue 中可编辑的 SVG  Icon 组件|
 
 ## 项目运行
 
