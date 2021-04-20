@@ -33,6 +33,16 @@ module.exports = {
           ]
         },
         {
+          title: 'Vue 指令',   // 必要的
+          path: '/base/directive',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 0,    // 可选的, 默认值是 1
+          children: [
+            ['/base/directive/expandClick', '元素点击范围扩展指令 v-expandClick'],
+            ['/base/directive/ellipsis', '文字超出省略 v-ellipsis'],
+          ]
+        },
+        {
           title: 'CSS 相关组件',   // 必要的
           path: '/base/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: false, // 可选的, 默认值是 true,
