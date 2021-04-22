@@ -7,7 +7,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },
       { text: '博客', link: '/blog/' },
-      { text: '阅读笔记', link: '/note/' },
+      { text: '笔记', link: '/note/' },
       { text: '其他', link: '/essays/' },
       { text: 'Github', link: 'https://github.com/Gesj-yean/vue-demo-collection' },
     ],
@@ -82,7 +82,9 @@ module.exports = {
         path: '/note/',
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
-        children: []
+        children: [
+          ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21 '],
+        ]
       },],
       '/essays/': [{
         title: '随笔',
