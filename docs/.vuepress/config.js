@@ -40,6 +40,7 @@ module.exports = {
           children: [
             ['/base/directive/expandClick', '元素点击范围扩展指令 v-expandClick'],
             ['/base/directive/ellipsis', '文字超出省略 v-ellipsis'],
+            ['/base/directive/tooltip', '元素说明指令 v-tooltip'],
           ]
         },
         {
