@@ -52,3 +52,4 @@ npm run docs:dev
 ![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part1.png)
 ![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part2.png)
 ![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part3.png)
+![项目示例](https://github.com/Gesj-yean/vue-demo-collection/raw/master/src/common/images/part4.png)
