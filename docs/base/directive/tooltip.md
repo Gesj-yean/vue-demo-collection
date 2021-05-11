@@ -36,6 +36,9 @@ function structureIcon (content, attrs) {
 | content | 传给指令的参数。例如 `v-tooltip:content` 中，参数为 "content" ，tooltip中展示的内容为："content"| / | String | 可选 |
 | tootipParams | `element-ui` 支持的 `tooltip` 属性 | / | Object | 可选 |
 ## 使用 Usage
+然后你可以在模板中任何元素上使用新的 `v-tooltip` `property`，如下：
+
+
 ```html
 <div v-tooltip:content='tootipParams'> 提示 </div>
 ```

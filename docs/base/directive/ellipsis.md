@@ -25,7 +25,7 @@ export default function (el, binding) {
 | -----   | ----   | --- | --- | --- |
 | width | 元素宽度 | 100 | Number | 必填 |
 ## 使用 Usage
-
+然后你可以在模板中任何元素上使用新的 `v-ellipsis` `property`，如下：
 ```html
 <div v-ellipsis:100> 需要省略的文字是阿萨的副本阿萨的副本阿萨的副本阿萨的副本</div>
 ```

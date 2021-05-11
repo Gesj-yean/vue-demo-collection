@@ -30,6 +30,8 @@ export default function (el, binding) {
 
 
 ## 使用 Usage
+然后你可以在模板中任何元素上使用新的 `v-expandClick` `property`，如下：
+
 ```html
 <div v-expandClick="20,30,40,50" @click="glabClickoutside"> 点击范围扩大</div>
 ```
