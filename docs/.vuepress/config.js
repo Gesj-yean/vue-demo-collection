@@ -42,6 +42,7 @@ module.exports = {
             ['/base/directive/ellipsis', '文字超出省略 v-ellipsis'],
             ['/base/directive/tooltip', '元素说明指令 v-tooltip'],
             ['/base/directive/copy', '文本内容复制指令 v-copy'],
+            ['/base/directive/screenfull', '元素全屏指令 v-screenfull'],
           ]
         },
         {
