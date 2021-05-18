@@ -43,6 +43,8 @@ module.exports = {
             ['/base/directive/tooltip', '元素说明指令 v-tooltip'],
             ['/base/directive/copy', '文本内容复制指令 v-copy'],
             ['/base/directive/screenfull', '元素全屏指令 v-screenfull'],
+            ['/base/directive/backtop', '回到顶部指令 v-backtop'],
+            ['/base/directive/empty', '空状态指令 v-empty'],
           ]
         },
         {
