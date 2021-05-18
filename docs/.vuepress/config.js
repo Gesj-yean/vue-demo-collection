@@ -45,6 +45,7 @@ module.exports = {
             ['/base/directive/screenfull', '元素全屏指令 v-screenfull'],
             ['/base/directive/backtop', '回到顶部指令 v-backtop'],
             ['/base/directive/empty', '空状态指令 v-empty'],
+            ['/base/directive/badge', '徽标指令 v-badge'],
           ]
         },
         {
