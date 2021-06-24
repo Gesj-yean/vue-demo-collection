@@ -91,6 +91,7 @@ module.exports = {
         children: [
           ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21 '],
           ['/note/custom-vuepress', 'VuePress 之自定义主题'],
+          ['/note/new-begin', '前端装机必备教程'],
         ]
       },],
       '/essays/': [{

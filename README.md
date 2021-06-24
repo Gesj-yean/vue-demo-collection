@@ -19,7 +19,7 @@ vue2 + vuepress + vuex + vue-router + ES6/7 + stylus/less + axios
 |CSS 相关组件|- [flex实现中间文字，两边横线（1px）](https://gesj-yean.github.io/vue-demo-collection/base/line-text.html)<br>- [结合《CSS揭秘》整理的可实用代码笔记](https://gesj-yean.github.io/vue-demo-collection/base/css-style.html)|
 |Echarts 相关组件|- [Tooltip 进阶之交互](https://gesj-yean.github.io/vue-demo-collection/base/tooltip.html)|
 |其他博客| - [ECMAScript 2021新特性](https://gesj-yean.github.io/vue-demo-collection/blog/ECMAScript2021.html)<br>- [Vue 拦截离开页面操作](https://gesj-yean.github.io/vue-demo-collection/blog/page-exit-block.html)<br>- [前端如何修改组件库源码来封装符合自己需求的组件？](https://gesj-yean.github.io/vue-demo-collection/blog/encapsulate-components.html)<br>- [实现Vue 中可编辑的 SVG  Icon 组件](https://gesj-yean.github.io/vue-demo-collection/blog/edit-svg.html)|
-| 笔记 | - [浏览器兼容性记录2021-04-21 ](https://gesj-yean.github.io/vue-demo-collection/note/browser-compatibility.html)<br>- [VuePress 之自定义主题](https://gesj-yean.github.io/vue-demo-collection/note/custom-vuepress.html)|
+| 笔记 | - [浏览器兼容性记录2021-04-21 ](https://gesj-yean.github.io/vue-demo-collection/note/browser-compatibility.html)<br>- [VuePress 之自定义主题](https://gesj-yean.github.io/vue-demo-collection/note/custom-vuepress.html)<br>- [前端装机必备教程](https://gesj-yean.github.io/vue-demo-collection/note/new-begin.html)|
 
 ## 项目运行
 
