@@ -8,7 +8,7 @@ module.exports = {
       { text: '组件', link: '/base/' },
       { text: '博客', link: '/blog/' },
       { text: '笔记', link: '/note/' },
-      { text: '其他', link: '/essays/' },
+      { text: '随笔', link: '/essays/' },
       { text: 'Github', link: 'https://github.com/Gesj-yean/vue-demo-collection' },
     ],
     sidebar: {
@@ -89,7 +89,7 @@ module.exports = {
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
-          ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21 '],
+          ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21'],
         ]
       },],
       '/essays/': [{
@@ -97,7 +97,9 @@ module.exports = {
         path: '/essays/',
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
-        children: []
+        children: [
+          ['/essays/mid-2021-summary', '要好好长大啊！｜2021 年中总结'],
+        ]
       },]
     }
   }

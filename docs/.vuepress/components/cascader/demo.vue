@@ -9,7 +9,7 @@
       filterable
       clearable
     )
-  div(class="demonstration") 优化版：多选可搜索（级联看板会一直展开）
+  div(class="demonstration") 优化版：多选可搜索
     br
     cascader.mb-200(
       ref="cascader",
@@ -18,8 +18,7 @@
       :props=`{ multiple: true }`
       filterable
       clearable
-      @change="changecascader"
-      @visible-change="visibleChange(true)")
+      @change="changecascader")
 </template>
 
 <script>
@@ -228,18 +227,18 @@ export default {
     cascader
   },
   mounted () {
-    this.visibleChange(true)
+    // this.visibleChange(true)
   },
   methods: {
     changecascader () {
       this.$refs.cascader.handleDropdownLeave()
     },
-    visibleChange (e) {
-      this.$nextTick(() => {
-        // 调用组件内部的方法
-        this.$refs.cascader.toggleDropDownVisible(e)
-      })
-    }
+    // visibleChange (e) {
+    //   this.$nextTick(() => {
+    //     // 调用组件内部的方法
+    //     this.$refs.cascader.toggleDropDownVisible(e)
+    //   })
+    // }
   }
 };
 </script>
