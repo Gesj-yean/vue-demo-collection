@@ -77,7 +77,7 @@ module.exports = {
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/blog/ECMAScript2021', 'ECMAScript 2021新特性'],
-            ['/blog/custom-vuepress', 'VuePress 之自定义主题'],
+            ['/blog/page-exit-block', 'Vue 拦截离开页面操作'],
             ['/blog/edit-svg', '实现Vue 中可编辑的 SVG  Icon 组件'],
             ['/blog/encapsulate-components', '前端如何修改组件库源码来封装符合自己需求的组件？'],
           ]
@@ -89,7 +89,9 @@ module.exports = {
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
-          ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21'],
+          ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21 '],
+          ['/note/custom-vuepress', 'VuePress 之自定义主题'],
+          ['/note/new-begin', '前端装机必备教程'],
         ]
       },],
       '/essays/': [{
