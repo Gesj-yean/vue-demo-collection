@@ -45,9 +45,12 @@
 - Turbo Console Log
 - Vetur
 - wxml
+- Auto Close Tag
+- Auto Rename Tag
 
 ## Chrome 插件
 - Vue.js devtools
 - Octotree - GitHub code tree
 - Proxy SwitchyOmega
 - 自选基金助手 - 实时查看基金涨跌幅
+- WAVE Evaluation Tool - Evaluate web accessibility within the Chrome browser.
