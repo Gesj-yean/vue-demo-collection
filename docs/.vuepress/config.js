@@ -30,6 +30,7 @@ module.exports = {
             ['/base/price-input', '表单金额输入框（element-ui）PriceInput'],
             ['/base/cascader', '级联选择器（element-ui）Cascader'],
             ['/base/loading-btn', '加载按钮 LoadingButton'],
+            ['/base/table-pagination', '表格-分页器 TablePagination'],
           ]
         },
         {
