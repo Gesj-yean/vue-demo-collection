@@ -81,6 +81,7 @@ module.exports = {
             ['/blog/page-exit-block', 'Vue 拦截离开页面操作'],
             ['/blog/edit-svg', '实现Vue 中可编辑的 SVG  Icon 组件'],
             ['/blog/encapsulate-components', '前端如何修改组件库源码来封装符合自己需求的组件？'],
+            ['/blog/table-checkbox-show-tooltip', 'element-ui 多选表格，当复选框禁用，鼠标覆盖显示 tooltip']
           ]
         },
       ],
