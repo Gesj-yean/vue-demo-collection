@@ -95,7 +95,16 @@ module.exports = {
           ['/note/custom-vuepress', 'VuePress 之自定义主题'],
           ['/note/new-begin', '前端装机必备教程'],
         ]
+      },{
+        title: 'Vue2 源码学习',
+        path: '/note/vue2/',
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 0,    // 可选的, 默认值是 1
+        children: [
+          ['/note/vue2/part1-start', 'part1-从这里开始了解一些基本知识'],
+        ]
       },],
+      
       '/essays/': [{
         title: '随笔',
         path: '/essays/',
