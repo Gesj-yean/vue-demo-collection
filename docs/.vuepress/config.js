@@ -3,6 +3,7 @@ module.exports = {
   base: '/vue-demo-collection/',
   description: 'A documentation of the excellent components encountered in VUE development',
   themeConfig: {
+    lastUpdated: '上次更新',
     nav: [
       { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },
