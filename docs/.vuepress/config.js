@@ -102,8 +102,8 @@ module.exports = {
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
-          ['/note/vue2/part1-start', 'part1-从这里开始了解一些基本知识'],
-          ['/note/vue2/part2-build', 'part2-Vue + Rollup 构建过程'],
+          ['/note/vue2/part1-start', 'part1-基本知识：Flow'],
+          ['/note/vue2/part2-build', 'part2- Vue + Rollup 构建过程'],
         ]
       },],
       

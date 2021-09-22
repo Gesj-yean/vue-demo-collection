@@ -147,6 +147,7 @@ function blue (str) {
 -   `iife` – 一个自动执行的功能，适合作为`<script>`标签。（如果要为应用程序创建一个捆绑包，您可能想要使用它，因为它会使文件大小变小。）
 -   `umd` – 通用模块定义，以`amd`，`cjs` 和 `iife` 为一体
 -   `system` - SystemJS 加载器格式
+
 其中了解一下 `rollup plugin` 的作用：
 ```
 const buble = require('rollup-plugin-buble') // 是 rollup 的 ES6 编译插件，功能如同简化版 babel
