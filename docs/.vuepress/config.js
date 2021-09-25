@@ -17,7 +17,7 @@ module.exports = {
         {
           title: 'Vue 组件',   // 必要的
           path: '/base/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
+          collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/base/breadcrumb', '面包屑 Breadcrumb'],
@@ -37,7 +37,7 @@ module.exports = {
         {
           title: 'Vue 指令',   // 必要的
           path: '/base/directive',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
+          collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/base/directive/expandClick', '元素点击范围扩展指令 v-expandClick'],
@@ -53,7 +53,7 @@ module.exports = {
         {
           title: 'CSS 相关组件',   // 必要的
           path: '/base/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
+          collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/base/line-text', 'flex实现中间文字，两边横线（1px）'],
@@ -63,7 +63,7 @@ module.exports = {
         {
           title: 'Echarts 相关组件',   // 必要的
           path: '/base/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
+          collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/base/tooltip', 'Tooltip 进阶之交互']
@@ -75,7 +75,7 @@ module.exports = {
         {
           title: '博客',
           path: '/blog/',
-          collapsable: false, // 可选的, 默认值是 true,
+          collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
             ['/blog/ECMAScript2021', 'ECMAScript 2021新特性'],
@@ -89,7 +89,7 @@ module.exports = {
       '/note/': [{
         title: '笔记',
         path: '/note/',
-        collapsable: false, // 可选的, 默认值是 true,
+        collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
           ['/note/browser-compatibility', '浏览器兼容性记录2021-04-21 '],
@@ -99,7 +99,7 @@ module.exports = {
       },{
         title: 'Vue2 源码学习',
         path: '/note/vue2/',
-        collapsable: false, // 可选的, 默认值是 true,
+        collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
           ['/note/vue2/part1-start', 'part1-基本知识：Flow'],
@@ -110,10 +110,9 @@ module.exports = {
       '/essays/': [{
         title: '随笔',
         path: '/essays/',
-        collapsable: false, // 可选的, 默认值是 true,
+        collapsable: true, // 可选的, 默认值是 true,
         sidebarDepth: 0,    // 可选的, 默认值是 1
         children: [
-          ['/essays/mid-2021-summary', '要好好长大啊！｜2021 年中总结'],
         ]
       },]
     }
