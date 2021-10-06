@@ -8,8 +8,9 @@
 
 ### Vue2 源码
 
-- [基本知识：Flow](http://localhost:8081/vue-demo-collection/note/vue2/part1-start.html)
-- [Vue.js + Rollup 构建](http://localhost:8081/vue-demo-collection/note/vue2/part2-build.html)
+- [基本知识：Flow](https://gesj-yean.github.io/vue-demo-collection/note/vue2/part1-start.html)
+- [Vue.js + Rollup 构建](https://gesj-yean.github.io/vue-demo-collection/note/vue2/part2-build.html)
+- [Vue.js 入口文件分析](https://gesj-yean.github.io/vue-demo-collection/note/vue2/part3-entry.html)
 ### Vue 组件
 
 - [面包屑 Breadcrumb](https://gesj-yean.github.io/vue-demo-collection/base/breadcrumb.html)
