@@ -96,7 +96,7 @@ module.exports = {
           ['/note/custom-vuepress', 'VuePress 之自定义主题'],
           ['/note/new-begin', '前端装机必备教程'],
         ]
-      },{
+      }, {
         title: 'Vue2 源码学习',
         path: '/note/vue2/',
         collapsable: true, // 可选的, 默认值是 true,
@@ -106,8 +106,16 @@ module.exports = {
           ['/note/vue2/part2-build', 'part2 - Vue + Rollup 构建过程'],
           ['/note/vue2/part3-entry', 'part3 - Vue.js 入口文件分析']
         ]
-      },],
-      
+      }, {
+        title: 'Javascript 高级程序设计',
+        path: '/note/js/',
+        collapsable: true,
+        sidebarDepth: 0,
+        children: [
+          ['/note/js/garbage-collection', '垃圾回收'],
+        ]
+      }],
+
       '/essays/': [{
         title: '随笔',
         path: '/essays/',
