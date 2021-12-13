@@ -113,7 +113,7 @@ module.exports = {
         sidebarDepth: 0,
         children: [
           ['/note/js/garbage-collection', '垃圾回收'],
-          ['/note/js/map-and-set', 'Map 和 Set'],
+          ['/note/js/map', 'Map'],
         ]
       }],
 

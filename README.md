@@ -54,6 +54,8 @@
 - [浏览器兼容性记录2021-04-21 ](https://gesj-yean.github.io/vue-demo-collection/note/browser-compatibility.html)
 - [VuePress 之自定义主题](https://gesj-yean.github.io/vue-demo-collection/note/custom-vuepress.html)
 - [前端装机必备教程](https://gesj-yean.github.io/vue-demo-collection/note/new-begin.html)
+- [垃圾回收](https://gesj-yean.github.io/vue-demo-collection/note/js/garbage-collection.html)
+- [Map](https://gesj-yean.github.io/vue-demo-collection/note/js/map.html)
 
 ## 掘金相关文章
 - [实现基于Vue的Dialog对话框组件](https://juejin.im/post/5e687f7be51d4526cc3b3942)
