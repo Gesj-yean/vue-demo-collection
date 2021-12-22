@@ -114,6 +114,7 @@ module.exports = {
         children: [
           ['/note/js/garbage-collection', '垃圾回收'],
           ['/note/js/map', 'Map'],
+          ['/note/js/set', 'Set'],
         ]
       }],
 

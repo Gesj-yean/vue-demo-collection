@@ -35,13 +35,21 @@
 - [回到顶部指令 v-backtop](https://gesj-yean.github.io/vue-demo-collection/base/directive/backtop.html)
 - [空状态指令 v-empty](https://gesj-yean.github.io/vue-demo-collection/base/directive/empty.html)
 - [徽标指令 v-badge](https://gesj-yean.github.io/vue-demo-collection/base/directive/badge.html)
+
+### JavaScript 笔记
+- [垃圾回收](https://gesj-yean.github.io/vue-demo-collection/note/js/garbage-collection.html)
+- [Map](https://gesj-yean.github.io/vue-demo-collection/note/js/map.html)
+- [Set](https://gesj-yean.github.io/vue-demo-collection/note/js/set.html)
+
 ### CSS 相关组件
 
 - [flex实现中间文字，两边横线（1px）](https://gesj-yean.github.io/vue-demo-collection/base/line-text.html)
 - [结合《CSS揭秘》整理的可实用代码笔记](https://gesj-yean.github.io/vue-demo-collection/base/css-style.html)
+
 ### Echarts 相关组件
 
 - [Tooltip 进阶之交互](https://gesj-yean.github.io/vue-demo-collection/base/tooltip.html)
+
 ### 其他博客
 
 - [ECMAScript 2021新特性](https://gesj-yean.github.io/vue-demo-collection/blog/ECMAScript2021.html)
