@@ -4,6 +4,7 @@ module.exports = {
   description: 'A documentation of the excellent components encountered in VUE development',
   themeConfig: {
     lastUpdated: '上次更新',
+    logo:'/logo.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },

@@ -2,7 +2,7 @@
 
 该项目用于收集前端开发过程中常用的基础组件（不限于Vue、javascript、CSS、Echarts等）。
 
-你可以在 [这里](https://gesj-yean.github.io/vue-demo-collection/) 预览所有的博客和组件实例，或是点击下方的链接直接访问具体页面。
+你可以在 :tada: [这里](https://gesj-yean.github.io/vue-demo-collection/) :tada: 预览所有的博客和组件实例，或是点击下方的链接直接访问具体页面。
 
 ## 导航
 
