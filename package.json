@@ -15,7 +15,7 @@
     "axios": "^0.21.1",
     "better-scroll": "^1.15.2",
     "core-js": "^3.6.4",
-    "echarts": "^4.9.0",
+    "echarts": "^5.1.2",
     "element-ui": "^2.14.1",
     "less": "^3.12.2",
     "less-loader": "^7.0.2",

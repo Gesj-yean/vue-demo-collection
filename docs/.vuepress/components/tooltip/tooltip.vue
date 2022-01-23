@@ -8,7 +8,30 @@
 
 
 <script>
-import echarts from 'echarts'
+import * as echarts from "echarts/core";
+import { BarChart } from "echarts/charts";
+import {
+  TitleComponent,
+  TooltipComponent,
+  GridComponent,
+  DatasetComponent,
+  TransformComponent,
+  LegendComponent
+} from "echarts/components";
+import { LabelLayout, UniversalTransition } from "echarts/features";
+import { CanvasRenderer } from "echarts/renderers";
+echarts.use([
+  LegendComponent,
+  TitleComponent,
+  TooltipComponent,
+  GridComponent,
+  DatasetComponent,
+  TransformComponent,
+  BarChart,
+  LabelLayout,
+  UniversalTransition,
+  CanvasRenderer,
+]);
 export default {
   name: 'Home',
 
@@ -112,6 +135,7 @@ ${dataTip}
     display: inline-block;
     background: #5f82ff;
     cursor: pointer;
+    color: #fff;
   }
 }
 .copy-input {

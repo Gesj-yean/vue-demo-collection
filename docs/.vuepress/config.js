@@ -55,7 +55,8 @@ module.exports = {
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 0,    // 可选的, 默认值是 1
           children: [
-            ['/base/echart/tooltip', 'Tooltip 进阶之交互']
+            ['/base/echart/tooltip', 'Tooltip 进阶之交互'],
+            ['/base/echart/markline', 'Markline 添加时间阶段标注']
           ]
         },
         // {
