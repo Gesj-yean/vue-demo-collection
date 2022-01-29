@@ -1,11 +1,15 @@
 # Vue.js 入口文件分析
 
-`Vue` 是多个文件一层一层 `import` 来，最初的 `Vue` 是一个 `function`，在每次引入时都为它添加了一些全局方法。每次都添加了：
+ `Runtime + compiler` 和 `Runtime only` 两种模式中（Runtime only 没有 template -> ast 过程），他们的入口文件是 `entry-runtime-with-compiler.js` 和 `entry-runtime.js` 。而这两个文件里的 Vue 都 import 自 `/runtime/index.js`。
+
+所以我们从 `/runtime/index.js`开始看， `Vue` 是多个文件一层一层 `import` 来的，最初的 `Vue` 是一个 `function`，在每次导出时都为它添加了一些全局方法。这样分层引入可以使结构更加清晰。
+
+封装过程可以分为三个阶段：
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/44c67b41d74a415a84e6a3200df1a6cc~tplv-k3u1fbpfcp-watermark.image?)
-`src/core/instance/index.js`：
+## `src/core/instance/index.js`
 
-`function` 定义了 `Vue`，并添加了一些 mixin。
+最里层的文件中，用 `function` 定义了 `Vue`，并添加了一些 mixin。
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4ea7c4d77444dcda3c2d1467916c4af~tplv-k3u1fbpfcp-watermark.image?)
 ```js
@@ -33,8 +37,8 @@ renderMixin(Vue)
 
 export default Vue
 ```
-`src/core/index.js`：
-在 `initGlobalAPI` 方法中定义了一些全局 `API`。
+## `src/core/index.js`
+第二步，在 `initGlobalAPI` 方法中定义了一些全局 `API`。
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/33c8976446d54d3a918b7c8d6bbd6fad~tplv-k3u1fbpfcp-watermark.image?)
 ```js
@@ -65,7 +69,9 @@ Vue.version = '__VERSION__'
 
 export default Vue
 ```
-`src/platforms/web/runtime/index.js`:
+## `src/platforms/web/runtime/index.js`
+
+最后，定义了一些静态方法，_patch_和 $mount。
 
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c2a335463a53466db82e0d1d5d1b42bc~tplv-k3u1fbpfcp-watermark.image?)
 ```js
