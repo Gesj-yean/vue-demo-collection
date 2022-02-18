@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>分页器组件 | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.41da42df.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.f5b96e8e.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.ac4e68a0.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/39.dabd2123.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.2e2b4322.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.6fe83197.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.607bf541.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.240a3ba2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.5f3ec41a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.c64dd16f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.04283614.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.833af79b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.4daaa688.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.088bf1a8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.b9758386.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.2d5faf37.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.3b799ac1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.ac51364b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.c44a5a8f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.75b8ffb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.7553e43b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.cd523bbf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.b58a03fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.e4741fa3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.9dbdb2e3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.1c444fa8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.da5e3f9c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.d656d726.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.ae9630e4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.8a6fd8e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.877edd59.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.a357b142.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.2d0c38e2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.18bacde9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.186a837c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.f2fc3138.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.20b3f9b2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.c511b4c2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.4cad3d23.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.9136ea93.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.9678c4e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.09158630.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.76503459.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.756f2a47.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.fa58ae45.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.9b745272.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/49.d1bf558f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/5.90b8032d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/50.ac5f466d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/51.38a211b6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/52.960e4db6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/53.73267aeb.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/54.434a97c0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/55.57400b27.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/56.e828cd7c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/57.794280cf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/58.e0e41a13.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/59.374c4057.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/60.a292140c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/61.d6e64963.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/62.951cb72d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/63.ab7ebef5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/64.ea299191.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/65.35bb57b8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/66.96b69f7d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/67.9f43214c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/68.acad029f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/69.4dd36d2f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/70.8514f7a6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/71.a1e6d21e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/72.85e4760a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/73.82d83fb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/74.94a16f58.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/75.c1fdfff9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/76.6dbd6ea2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/77.431a65f0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/78.ffce0429.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/79.a8b30c75.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.7b37b1dc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/80.c5fc458b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/81.294e85c3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.7075ed80.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.41da42df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><img src="/vue-demo-collection/logo.png" alt="Vue-Demo-Collection" class="logo"> <span class="site-name can-hide">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>Vue 组件</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/component/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/component/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/component/pagination.html" aria-current="page" class="active sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/component/slider.html" class="sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/component/scroll.html" class="sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/component/tree.html" class="sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/component/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/component/banner.html" class="sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/component/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/component/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li><li><a href="/vue-demo-collection/base/component/loading-btn.html" class="sidebar-link">加载按钮 LoadingButton</a></li><li><a href="/vue-demo-collection/base/component/table-pagination.html" class="sidebar-link">表格-分页器 TablePagination</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/directive" class="sidebar-heading clickable"><span>Vue 指令</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/echart" class="sidebar-heading clickable"><span>Echarts </span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="分页器组件"><a href="#分页器组件" class="header-anchor">#</a> 分页器组件</h1> <p>今天来实现一个基础的 Pagination 分页器组件~</p> <h2 id="需求"><a href="#需求" class="header-anchor">#</a> 需求</h2> <ul><li>能够根据外部传入的total(数据总数)，以每页10条数据变化页面总数。</li> <li>页数pages小于8时，显示全部页码。</li> <li>页数pages大于7时，自动调整显示的页码，其余页码省略代替。</li> <li>页数pages大于7时，页码显示规则为显示当前页（current）+-2个页码以及第一页和最后一页页码。</li></ul> <h2 id="演示"><a href="#演示" class="header-anchor">#</a> 演示</h2> <p>不知道为啥录屏的时候不能录入鼠标的状态= =，否则会显示红色圆圈禁用和手指覆盖的图标= =</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/11/170c7b446fcfe2cc?w=471&amp;h=141&amp;f=gif&amp;s=10588" alt=""></p> <h2 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h2> <p>对于html元素，需要【上一页】【页码】【下一页】三个部分。分别用button，ul，button实现。</p> <ul><li>【上一页】需要添加禁用属性preDisable；前往上一页的点击事件goPre；</li> <li>【页码】需要判断是否展示页码button还是省略号…；</li> <li>【下一页】需要添加禁用属性nextDisable；前往下一页的点击事件goNext；</li></ul> <p>对于组件，我们需要用到Vue的props,data,computed,watch,created,methods这些属性或钩子。</p> <ul><li>【props】接收参数数据总数total。</li> <li>【data】定义当前页current，每页显示数据pageSize，页码列表pages，页码长度pageLength。</li> <li>【computed】用于计算是否禁用上一页preDisable或下一页按钮nextDisable。</li> <li>【watch】监听数据总数total的改变在计算页码列表getPagesLength();监听当前页current改变，向父组件传递参数当前页。</li> <li>【created】初始化计算页码列表getPagesLength()。</li> <li>【methods】计算页码列表getPagesLength()；点击页码jumpToPage (index)；上一页goPre ()；下一页goNext ()；页码是否被省略isShowBtn (index)；是否显示省略号isShowEllipsis (index)。</li></ul> <h2 id="基础组件pagination-vue"><a href="#基础组件pagination-vue" class="header-anchor">#</a> 基础组件pagination.vue</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;pagination-wrapper&quot;&gt;
+    &lt;button :disabled=&quot;preDisable&quot; @click=&quot;goPre&quot;&gt;&amp;#60;&lt;/button&gt; &lt;!--上一页按钮--&gt;
+    &lt;ul&gt;                                                         &lt;!--页码列表--&gt;
+      &lt;li v-for=&quot;index in pages&quot; :key=&quot;index&quot;  ref=&quot;pages&quot;&gt;
+        &lt;button @click=&quot;jumpToPage(index)&quot; v-if=&quot;isShowBtn(index)&quot; :class=&quot;current===index?'active':''&quot;&gt;{{index}}&lt;/button&gt;
+        &lt;div v-else-if=&quot;isShowEllipsis (index)&quot; class=&quot;ellipsis&quot;&gt;&amp;#8230;&lt;/div&gt; &lt;!--省略号--&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;button :disabled=&quot;nextDisable&quot; @click=&quot;goNext&quot;&gt;&amp;#62;&lt;/button&gt; &lt;!--上一页按钮--&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+export default {
+  props: {
+    total: {
+      type: Number,
+      default: 200
+    }
+  },
+  data () {
+    return {
+      current: 1, // 定义当前页current
+      pageSize: 10, // 每页显示数据pageSize
+      pages: [], // 页码列表pages
+      pageLength: 0 // 页码长度pageLength
+    }
+  },
+  computed: {
+    preDisable () { // 是否禁用上一页
+      return this.current === 1
+    },
+    nextDisable () { // 是否禁用下一页
+      return this.current === this.pageLength
+    }
+  },
+  watch: {
+    total (val) { // 监听数据总数total的改变在计算页码列表getPagesLength()
+      this.getPagesLength()
+    },
+    current (val) { // 监听当前页current改变，向父组件传递参数当前页
+      this.$emit('change', val)
+    }
+  },
+  created () { // 初始化计算页码列表getPagesLength()
+    this.getPagesLength()
+  },
+  methods: {
+    getPagesLength () { // 计算页码列表
+      const more = this.total % this.pageSize ? 1 : 0
+      this.pageLength = this.total / this.pageSize + more
+      this.pages = new Array(this.pageLength)
+      for (let i = 0; i &lt; this.pageLength; i++) {
+        this.pages[i] = i + 1
+      }
+    },
+    jumpToPage (index) { // 点击页码
+      this.current = index
+    },
+    goPre () { // 上一页
+      this.current -= this.current === 1 ? 0 : 1
+    },
+    goNext () { // 下一页
+      this.current += this.current === this.pageLength ? 0 : 1
+    },
+    isShowBtn (index) { // 页码是否被省略
+      if (this.pageLength &lt; 8) {
+        return true
+      } else {
+        if (index === 1 || index === this.pageLength) {
+          return true
+        } else {
+          if (this.current &lt; 4 &amp;&amp; index &lt; 6) {
+            return true
+          } else if (this.current &gt; this.pageLength - 4 &amp;&amp; index &gt; this.pageLength - 6) {
+            return true
+          } else if (index &lt; this.current + 3 &amp;&amp; index &gt; this.current - 3) {
+            return true
+          } else {
+            return false
+          }
+        }
+      }
+    },
+    isShowEllipsis (index) { // 是否显示省略号
+      return index === 2 || index === this.pageLength - 1
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;stylus&quot; scoped&gt;
+.pagination-wrapper
+	width 100%
+	margin 10px
+	display flex
+	ul
+		display flex
+		.active
+			border solid 1px #1296db
+		.ellipsis
+			font-weight bold
+			color #999
+			line-height 24px
+	button
+		height 30px
+		width 30px
+		margin 0 5px
+		border-radius 3px
+		border solid 1px #ccc
+		color #777
+		font-weight bold
+		background #fff
+		overflow hidden
+		user-select none
+		&amp;:hover
+			border solid 1px #1296db
+			cursor pointer
+		&amp;:disabled
+			border solid 1px #ccc
+			color #ccc
+			cursor not-allowed
+&lt;/style&gt;
+
+</code></pre></div><h2 id="应用组件pagination-apply-vue"><a href="#应用组件pagination-apply-vue" class="header-anchor">#</a> 应用组件pagination-apply.vue</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+	&lt;div&gt;
+		&lt;Pagination :total=&quot;total&quot; @change=&quot;changePagination&quot;&gt;&lt;/Pagination&gt;
+		&lt;div class=&quot;desc&quot;&gt;当前页： {{current}}&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+import Pagination from 'base/pagination'
+export default {
+  data () {
+    return {
+      total: 200, // 必传传递参数total
+      current: 1
+    }
+  },
+  methods: {
+    changePagination (current) {
+      this.current = current
+    }
+  },
+  components: {
+    Pagination
+  }
+}
+&lt;/script&gt;
+</code></pre></div><h2 id="优化"><a href="#优化" class="header-anchor">#</a> 优化</h2> <ul><li>我们可以设置鼠标覆盖时显示手指图标cursor pointer，禁用时显示红色圆圈斜线表示禁用cursor not-allowed。</li> <li>使用user-select none来禁止用户选中按钮中的文字，优化体验。</li></ul> <h2 id="更多推荐"><a href="#更多推荐" class="header-anchor">#</a> 更多推荐</h2> <ul><li><a href="https://juejin.im/post/1" target="_blank" rel="noopener noreferrer">实现基于Vue的Dialog对话框组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844904083124404232" target="_blank" rel="noopener noreferrer">利用better-scroll实现Vue轮播图组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844904081610260488" target="_blank" rel="noopener noreferrer">理解Vue递归组件，实现Tree树形控件实例~<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/21/2022, 5:24:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/component/dialog.html" class="prev">
+        对话框 Dialog
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/component/slider.html">
+        轮播图 Slider
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.f5b96e8e.js" defer></script><script src="/vue-demo-collection/assets/js/7.ac4e68a0.js" defer></script><script src="/vue-demo-collection/assets/js/39.dabd2123.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>理解Vue递归组件，实现Tree树形控件实例~ | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.41da42df.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.f5b96e8e.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.ac4e68a0.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/45.76503459.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.2e2b4322.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.6fe83197.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.607bf541.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.240a3ba2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.5f3ec41a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.c64dd16f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.04283614.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.833af79b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.4daaa688.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.088bf1a8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.b9758386.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.2d5faf37.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.3b799ac1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.ac51364b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.c44a5a8f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.75b8ffb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.7553e43b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.cd523bbf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.b58a03fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.e4741fa3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.9dbdb2e3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.1c444fa8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.da5e3f9c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.d656d726.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.ae9630e4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.8a6fd8e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.877edd59.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.a357b142.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.2d0c38e2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.18bacde9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.186a837c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.f2fc3138.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/39.dabd2123.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.20b3f9b2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.c511b4c2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.4cad3d23.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.9136ea93.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.9678c4e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.09158630.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.756f2a47.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.fa58ae45.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.9b745272.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/49.d1bf558f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/5.90b8032d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/50.ac5f466d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/51.38a211b6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/52.960e4db6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/53.73267aeb.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/54.434a97c0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/55.57400b27.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/56.e828cd7c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/57.794280cf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/58.e0e41a13.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/59.374c4057.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/60.a292140c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/61.d6e64963.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/62.951cb72d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/63.ab7ebef5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/64.ea299191.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/65.35bb57b8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/66.96b69f7d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/67.9f43214c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/68.acad029f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/69.4dd36d2f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/70.8514f7a6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/71.a1e6d21e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/72.85e4760a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/73.82d83fb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/74.94a16f58.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/75.c1fdfff9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/76.6dbd6ea2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/77.431a65f0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/78.ffce0429.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/79.a8b30c75.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.7b37b1dc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/80.c5fc458b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/81.294e85c3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.7075ed80.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.41da42df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><img src="/vue-demo-collection/logo.png" alt="Vue-Demo-Collection" class="logo"> <span class="site-name can-hide">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>Vue 组件</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/component/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/component/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/component/pagination.html" class="sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/component/slider.html" class="sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/component/scroll.html" class="sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/component/tree.html" aria-current="page" class="active sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/component/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/component/banner.html" class="sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/component/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/component/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li><li><a href="/vue-demo-collection/base/component/loading-btn.html" class="sidebar-link">加载按钮 LoadingButton</a></li><li><a href="/vue-demo-collection/base/component/table-pagination.html" class="sidebar-link">表格-分页器 TablePagination</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/directive" class="sidebar-heading clickable"><span>Vue 指令</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/echart" class="sidebar-heading clickable"><span>Echarts </span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="理解vue递归组件-实现tree树形控件实例"><a href="#理解vue递归组件-实现tree树形控件实例" class="header-anchor">#</a> 理解Vue递归组件，实现Tree树形控件实例~</h1> <p>思考了两天时间，准备仿照ant-design-vue实现一个基于vue的树形控件。主要用到了vue递归组件思想、input的CheckBox类型输入框的使用。</p> <h2 id="需求"><a href="#需求" class="header-anchor">#</a> 需求</h2> <ul><li>能够将传入的Json数据生成树形目录。</li> <li>能够初始化选中节点。</li> <li>能够手动选中节点，最终可将所有选中节点打印出来。</li> <li>能够在初始化禁用节点。</li> <li>能够折叠树形目录。</li> <li>修改原生CheckBox样式。</li></ul> <h2 id="实例截图"><a href="#实例截图" class="header-anchor">#</a> 实例截图</h2> <p>做好的树形控件如下所示，点击获取选中节点key将弹出所有选中的节点：
+<img src="https://user-gold-cdn.xitu.io/2020/3/4/170a5a1f0b31d3fc?w=1100&amp;h=1066&amp;f=png&amp;s=50660" alt="在这里插入图片描述"></p> <h2 id="手把手实现"><a href="#手把手实现" class="header-anchor">#</a> 手把手实现</h2> <h3 id="了解vue递归组件"><a href="#了解vue递归组件" class="header-anchor">#</a> 了解Vue递归组件</h3> <p>在vue的文档（https://cn.vuejs.org/v2/guide/components-edge-cases.html#%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6）中说明组件是可以在它们自己的模板中调用自身的。但是他需要两个条件：</p> <ul><li>组件有name属性</li> <li>递归调用需要有条件</li></ul> <p>根据以上说明创建了基础树形控件tree.vue:</p> <h3 id="全局变量-global-js"><a href="#全局变量-global-js" class="header-anchor">#</a> 全局变量：global.js</h3> <p>在写组件获取节点内容是发现由于是递归组件，并不好拿到每级选中的节点。因此在这里创建global.js全局变量记录所有选中节点。也便于删除和加入节点。
+默认选中的节点如下：</p> <div class="language- extra-class"><pre class="language-text"><code>const nodes = ['1', '1-1', '1-1-2', '1-2-2']
+
+export default {
+  nodes
+}
+
+</code></pre></div><p>写好后需要在main.js上挂载。</p> <div class="language- extra-class"><pre class="language-text"><code>import global from 'common/js/global'
+Vue.prototype.$global = global
+</code></pre></div><h3 id="基础组件-递归组件-tree-vue"><a href="#基础组件-递归组件-tree-vue" class="header-anchor">#</a> 基础组件（递归组件）：tree.vue</h3> <p>说明：这里不需要再用components属性去声明自己了，有了name属性后直接在template中就可以调用名为name值的组件。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;ul class=&quot;ul-wrapper&quot;&gt;                                    &lt;!-- 包裹层--&gt;
+    &lt;li v-for=&quot;item in list&quot; :key=&quot;item.key&quot;&gt;                &lt;!-- 遍历--&gt;
+      &lt;div&gt;                                                  &lt;!-- 是否展开图标--&gt;
+          &lt;img class=&quot;icon&quot;
+            v-show=&quot;item.children&quot;
+            @click=&quot;changeShow&quot;
+            :src=&quot;require(`../../common/images/${imgUrl}`)&quot;
+          &gt;                                                  &lt;!-- CheckBox--&gt;
+        &lt;input
+          type=&quot;checkbox&quot;
+          :name=&quot;item.key&quot;
+          @click=&quot;clickbox&quot;
+          :checked=&quot;isChecked(item.key)&quot;
+          :disabled=&quot;item.disabled&quot;
+        &gt;
+        &lt;div class=&quot;checkbox-title&quot;&gt;{{item.title}}&lt;/div&gt;      &lt;!-- CheckBox内容--&gt;
+      &lt;/div&gt;
+      &lt;tree v-if=&quot;showChildren&quot; :list=&quot;item.children&quot;&gt;&lt;/tree&gt; &lt;!-- 遍历children--&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+export default {
+  name: 'tree',
+  props: {
+    list: { // 所有树节点
+      type: Array,
+      default: () =&gt; {
+        return []
+      }
+    }
+  },
+  data () {
+    return {
+      showChildren: true // 是否展开根目录
+    }
+  },
+  computed: { // computed属性计算展开图标
+    imgUrl () {
+      return this.showChildren ? 'down.png' : 'right.png'
+    }
+  },
+  methods: {
+    clickbox (e) { // 点击CheckBox时需要加入或删除已选中this.$global.nodes的节点数组中
+      const checked = e.target.checked
+      const key = e.target.name
+      const nodes = this.$global.nodes // this.$global.nodes是全局变量，便于递归组件记录选中节点
+      if (checked) {
+        if (!nodes.includes(key)) {
+          this.$global.nodes.push(key)
+        }
+      } else {
+        this.$global.nodes = nodes.filter((item) =&gt; {
+          return key !== item
+        })
+      }
+    },
+    changeShow () { // 点击是否展开根目录，当前状态取反即可
+      this.showChildren = !this.showChildren
+    },
+    isChecked (key) { // 查看是否已经存在于选中节点中
+      return this.$global.nodes.includes(key)
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;stylus&quot;&gt;
+.ul-wrapper                            // ul包裹层，每层需要向右偏移30px
+  margin 10px 30px 0
+  .checkbox-title, .icon
+    display inline-block
+    vertical-align middle
+  .icon
+    margin-left -20px
+    height 18px
+    width 18px
+
+input[type=&quot;checkbox&quot;]                  // CheckBox样式修改
+  position relative
+  display inline-block
+  vertical-align middle
+  padding 0
+  margin-right 5px
+  height 18px
+  width 18px
+  border 1px solid #ccc
+  border-radius 3px
+input[type=&quot;checkbox&quot;]:checked::before // CheckBox选中状态时样式修改
+  position absolute
+  top 0
+  left 0
+  padding-left 2px
+  content: &quot;\2713&quot;;
+  height 15px
+  width 13px
+  font-size 12px
+  font-weight: bold;
+  background #1296db
+  color #fff
+  border-radius 3px
+  border 0
+input[type=&quot;checkbox&quot;]:disabled::before // CheckBox禁用状态时样式修改
+  position absolute
+  top 0
+  left 0
+  padding-left 2px
+  content: &quot;&quot;;
+  height 15px
+  width 13px
+  font-size 12px
+  font-weight: bold;
+  background #ccc
+  color #fff
+  border-radius 3px
+  border 0
+&lt;/style&gt;
+
+</code></pre></div><h3 id="应用组件-tree-apply-vue"><a href="#应用组件-tree-apply-vue" class="header-anchor">#</a> 应用组件 tree-apply.vue</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;tree-wrapper&quot;&gt;
+    &lt;div class=&quot;btn&quot; @click=&quot;showNodes&quot;&gt;
+      点击获取选中节点key
+    &lt;/div&gt;
+    &lt;Tree :list=&quot;treeData&quot;&gt;&lt;/Tree&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+import Tree from 'base/tree'
+export default {
+  data () {
+    return {
+      treeData: []  // 全部节点
+    }
+  },
+  created () {
+    this.getData()
+  },
+  methods: {
+    getData () {
+      this.axios.get('/tree').then((res) =&gt; { // 获取mock数据
+        this.treeData = res.data
+      })
+    },
+    showNodes () {
+      alert(this.$global.nodes)
+    }
+  },
+  components: {
+    Tree
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;stylus&quot;&gt;
+.btn
+  margin 20px
+  text-align center
+&lt;/style&gt;
+
+</code></pre></div><h3 id="mock数据tree-json"><a href="#mock数据tree-json" class="header-anchor">#</a> mock数据tree.json</h3> <p>这里采用了模拟数据的方法，mock的具体使用方法在我上一篇写的《better-scroll实现轮播图组件》中有提到：https://blog.csdn.net/qq_39083496/article/details/104259280</p> <ul><li>是否禁用CheckBox是根据 &quot;disabled&quot;: &quot;true&quot;,决定的。</li> <li>title（必须）是显示的label名。</li> <li>key（必须）才是真正的关键字，理解为最后提交时的必要字段。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[{
+    &quot;title&quot;: &quot;1&quot;,
+    &quot;key&quot;: &quot;1&quot;,
+    &quot;children&quot;: [
+        {
+            &quot;title&quot;: &quot;1-1&quot;,
+            &quot;key&quot;: &quot;1-1&quot;,
+            &quot;children&quot;: [
+                { &quot;title&quot;: &quot;1-1-1&quot;, &quot;key&quot;: &quot;1-1-1&quot; },
+                { &quot;title&quot;: &quot;1-1-2&quot;, &quot;key&quot;: &quot;1-1-2&quot; },
+                { &quot;title&quot;: &quot;1-1-3&quot;, &quot;key&quot;: &quot;1-1-3&quot; }
+            ]
+        }, 
+        {
+            &quot;title&quot;: &quot;1-2&quot;,
+            &quot;key&quot;: &quot;1-2&quot;,
+            &quot;children&quot;: [
+                { &quot;title&quot;: &quot;1-2-1&quot;, &quot;key&quot;: &quot;1-2-1&quot; },
+                { &quot;title&quot;: &quot;1-2-2&quot;, &quot;key&quot;: &quot;1-2-2&quot; },
+                { &quot;title&quot;: &quot;1-2-3&quot;, &quot;key&quot;: &quot;1-2-3&quot; }
+            ]
+        }, 
+        {
+            &quot;title&quot;: &quot;1-3&quot;,
+            &quot;key&quot;: &quot;1-3&quot;
+        }
+    ]
+  }, 
+  {
+    &quot;title&quot;: &quot;2&quot;,
+    &quot;key&quot;: &quot;2&quot;,
+    &quot;disabled&quot;: &quot;true&quot;,
+    &quot;children&quot;: [
+        { &quot;title&quot;: &quot;2-1&quot;, &quot;key&quot;: &quot;2-1&quot; },
+        { &quot;title&quot;: &quot;2-2&quot;, &quot;key&quot;: &quot;2-2&quot; },
+        { &quot;title&quot;: &quot;2-3&quot;, &quot;key&quot;: &quot;2-3&quot; }
+    ]
+  }, 
+  {
+    &quot;title&quot;: &quot;3&quot;,
+    &quot;key&quot;: &quot;3&quot;
+  }]
+</code></pre></div><p>接口：</p> <div class="language- extra-class"><pre class="language-text"><code>const Mock = require('mockjs')
+
+Mock.mock('/tree', 'get', require('./json/tree.json'))
+</code></pre></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>到此就完成了树形控件的生成，需求部分都已经满足。如果通过以上代码片段不能明白的话，可以在我的github上找到源码。欢迎来访，欢迎Star~<br>
+https://github.com/Gesj-yean/vue-demo-collection</p> <h2 id="更多推荐"><a href="#更多推荐" class="header-anchor">#</a> 更多推荐</h2> <ul><li><a href="https://juejin.im/post/1" target="_blank" rel="noopener noreferrer">实现基于Vue的Dialog对话框组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844903972570955790" target="_blank" rel="noopener noreferrer">实现基于Vue的Pagination分页器组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844904083124404232" target="_blank" rel="noopener noreferrer">利用better-scroll实现Vue轮播图组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/21/2022, 5:24:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/component/scroll.html" class="prev">
+        无滚动条组件 Scroll
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/component/star.html">
+        评分组件 Rating
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.f5b96e8e.js" defer></script><script src="/vue-demo-collection/assets/js/7.ac4e68a0.js" defer></script><script src="/vue-demo-collection/assets/js/45.76503459.js" defer></script>
+  </body>
+</html>

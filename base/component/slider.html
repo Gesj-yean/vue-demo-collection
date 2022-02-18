@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>移动端轮播图组件 | Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.41da42df.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.f5b96e8e.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.ac4e68a0.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/42.9136ea93.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.2e2b4322.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.6fe83197.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.607bf541.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.240a3ba2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.5f3ec41a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.c64dd16f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.04283614.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.833af79b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.4daaa688.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.088bf1a8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.b9758386.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.2d5faf37.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.3b799ac1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.ac51364b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.c44a5a8f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.75b8ffb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.7553e43b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.cd523bbf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.b58a03fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.e4741fa3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.9dbdb2e3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.1c444fa8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.da5e3f9c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.d656d726.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.ae9630e4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.8a6fd8e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.877edd59.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.a357b142.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.2d0c38e2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.18bacde9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.186a837c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.f2fc3138.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/39.dabd2123.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.20b3f9b2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.c511b4c2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.4cad3d23.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.9678c4e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.09158630.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.76503459.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.756f2a47.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.fa58ae45.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.9b745272.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/49.d1bf558f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/5.90b8032d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/50.ac5f466d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/51.38a211b6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/52.960e4db6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/53.73267aeb.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/54.434a97c0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/55.57400b27.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/56.e828cd7c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/57.794280cf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/58.e0e41a13.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/59.374c4057.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/60.a292140c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/61.d6e64963.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/62.951cb72d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/63.ab7ebef5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/64.ea299191.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/65.35bb57b8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/66.96b69f7d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/67.9f43214c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/68.acad029f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/69.4dd36d2f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/70.8514f7a6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/71.a1e6d21e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/72.85e4760a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/73.82d83fb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/74.94a16f58.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/75.c1fdfff9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/76.6dbd6ea2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/77.431a65f0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/78.ffce0429.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/79.a8b30c75.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.7b37b1dc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/80.c5fc458b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/81.294e85c3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.7075ed80.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.41da42df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><img src="/vue-demo-collection/logo.png" alt="Vue-Demo-Collection" class="logo"> <span class="site-name can-hide">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link router-link-active">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/" class="sidebar-heading clickable router-link-active open"><span>Vue 组件</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/base/component/breadcrumb.html" class="sidebar-link">面包屑 Breadcrumb</a></li><li><a href="/vue-demo-collection/base/component/dialog.html" class="sidebar-link">对话框 Dialog</a></li><li><a href="/vue-demo-collection/base/component/pagination.html" class="sidebar-link">分页器 Pagination</a></li><li><a href="/vue-demo-collection/base/component/slider.html" aria-current="page" class="active sidebar-link">轮播图 Slider</a></li><li><a href="/vue-demo-collection/base/component/scroll.html" class="sidebar-link">无滚动条组件 Scroll</a></li><li><a href="/vue-demo-collection/base/component/tree.html" class="sidebar-link">树形控件 Tree (Vue递归组件)</a></li><li><a href="/vue-demo-collection/base/component/star.html" class="sidebar-link">评分组件 Rating</a></li><li><a href="/vue-demo-collection/base/component/banner.html" class="sidebar-link">横向滚动通知栏 Banner</a></li><li><a href="/vue-demo-collection/base/component/price-input.html" class="sidebar-link">表单金额输入框（element-ui）PriceInput</a></li><li><a href="/vue-demo-collection/base/component/cascader.html" class="sidebar-link">级联选择器（element-ui）Cascader</a></li><li><a href="/vue-demo-collection/base/component/loading-btn.html" class="sidebar-link">加载按钮 LoadingButton</a></li><li><a href="/vue-demo-collection/base/component/table-pagination.html" class="sidebar-link">表格-分页器 TablePagination</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/directive" class="sidebar-heading clickable"><span>Vue 指令</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/vue-demo-collection/base/echart" class="sidebar-heading clickable"><span>Echarts </span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="移动端轮播图组件"><a href="#移动端轮播图组件" class="header-anchor">#</a> 移动端轮播图组件</h1> <h2 id="起步"><a href="#起步" class="header-anchor">#</a> 起步</h2> <p>上一次基于better-scroll实现了移动端纵向滚动的演示。这一次继续利用它实现一个横向滚动——轮播图组件。演示如下：</p> <p>首先来整理一下需求：</p> <ul><li>能够根据异步请求到的图片数据进行轮播图展示。</li> <li>能够控制它是否自动播放，是否循环播放，自动播放间隔。</li> <li>能够提示当前播放页。</li></ul> <p><img src="https://img-blog.csdnimg.cn/20200221094146763.gif" alt="在这里插入图片描述"></p> <h2 id="mock数据"><a href="#mock数据" class="header-anchor">#</a> Mock数据</h2> <p>由于是一个demo，从网上找了几张图片写成json格式，数据用于模拟接口数据。这里用到了mock.js。Axios。安装方法如下：</p> <div class="language- extra-class"><pre class="language-text"><code>npm install mockjs
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>npm install --save axios vue-axios
+</code></pre></div><p>axios使用方法不多赘述，简述一下mock数据。在mock文件夹下新建json文件夹放置json数据文件。新建index.js导出接口。就可以使用axios请求接口了。</p> <div class="language- extra-class"><pre class="language-text"><code>[
+	&quot;https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png&quot;,
+    &quot;https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png&quot;,
+    &quot;https://img3.mukewang.com/5aeecb1d0001e5ea06000338-360-202.jpg&quot;
+]
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>const Mock = require('mockjs')
+
+Mock.mock('/slider', 'get', require('./json/slider.json'))
+</code></pre></div><h2 id="基础组件-slider-vue"><a href="#基础组件-slider-vue" class="header-anchor">#</a> 基础组件：slider.vue</h2> <p>将轮播图组件抽象出来，接收isLoop、isAutoPlay、interval属性控制轮播图。从mounted方法调用顺序可以知道思路是</p> <ul><li>setSliderWidth()中先获取再设置显示层和图片包裹层高度。</li> <li>initDots()根据图片包裹层子元素的个数设置数组放置圆点。</li> <li>initSlider()初始化better-scroll。</li> <li>autoPlay()设置自动播放。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;slider-apply&quot; ref=&quot;slider&quot;&gt;  &lt;!-- 显示层 --&gt;
+    &lt;div class=&quot;slider-group&quot; ref=&quot;group&quot;&gt; &lt;!-- 所有图片包裹层 --&gt;
+      &lt;slot&gt;&lt;/slot&gt;                        &lt;!-- 插槽显示图片内容 --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dots&quot;&gt;                     &lt;!-- 提示圆点 --&gt;
+      &lt;div class=&quot;dot&quot; v-for=&quot;(item, index) in dots&quot; :key=&quot;index&quot; :class=&quot;currentIndex===index?'active':''&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+import BScroll from 'better-scroll'
+export default {
+  data () {
+    return {
+      dots: [],
+      currentIndex: 0 /* 当前页下标 */
+    }
+  },
+  props: {
+    isLoop: { /* 循环播放 */
+      type: Boolean,
+      default: true
+    },
+    isAutoPlay: { /* 自动播放 */
+      type: Boolean,
+      default: true
+    },
+    interval: { /* 播放间隔 */
+      type: Number,
+      default: 2000
+    }
+  },
+  mounted () { /* mounted阶段dom渲染完，20ms确保刷新 */
+    setTimeout(() =&gt; {
+      this.setSliderWidth()
+      this.initDots()
+      this.initSlider()
+      if (this.isAutoPlay) {
+        this.autoPlay()
+      }
+    }, 20)
+  },
+  methods: {
+    setSliderWidth () { /* 获取显示层宽度，计算内容层宽度 */
+      const clientWidth = this.$refs.slider.clientWidth
+      let sliderWidth = 0
+      this.children = this.$refs.group.children
+      for (let i = 0; i &lt; this.children.length; i++) {
+        this.children[i].style.width = clientWidth + 'px'
+        sliderWidth += clientWidth
+      }
+      if (this.isLoop) { /* 循环播放需要增加前后两个宽度 */
+        sliderWidth += clientWidth * 2
+      }
+      this.$refs.group.style.width = sliderWidth + 'px' /* 设置内容层宽度 */
+    },
+    initDots () {
+      this.dots = new Array(this.children.length)
+    },
+    initSlider () {
+      this.slider = new BScroll(this.$refs.slider, {
+        scrollX: true, /* 横向滚动 */
+        scrollY: false,
+        snap: { /* 循环滚动设置 */
+          loop: this.isLoop,
+          threshold: 0.3,
+          speed: 400
+        }
+      })
+      this.slider.on('scrollEnd', () =&gt; {
+        const pageIndex = this.slider.getCurrentPage().pageX /* 获取当前轮播页，用于圆点提示 */
+        this.currentIndex = pageIndex
+        if (this.isAutoPlay) {
+          clearTimeout(this.timer) /* 重新设置自动播放，否则无法自动播放 */
+          this.autoPlay()
+        }
+      })
+    },
+    autoPlay () {
+      this.timer = setTimeout(() =&gt; {
+        this.slider.next(400)
+      }, this.interval)
+    }
+  },
+  destroyed () { /* 确保清除定时器 */
+    clearTimeout(this.timer)
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;stylus&quot; scoped&gt;
+.slider-apply
+  position relative             // 让dots找准位置
+  height 200px
+  width 100%                    // slider-apply会依据父元素宽度显示宽度
+  overflow hidden               //  超出元素隐藏
+  border-radius 5px
+  .dots
+    position absolute
+    bottom 10px
+    left 50%
+    transform translate(-50%, 0) // 居中
+    display flex
+    .dot
+      margin 0 10px
+      height 7px
+      width 7px
+      background #fff
+      border-radius 50%
+    .active                     // 当前dot样式
+      width 15px
+      border-radius 50% 5px
+&lt;/style&gt;
+
+</code></pre></div><h2 id="应用组件-slider-apply-vue"><a href="#应用组件-slider-apply-vue" class="header-anchor">#</a> 应用组件：slider-apply.vue</h2> <p>可以根据alider-apply.vue中的使用方法应用在自己的项目中。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div class=&quot;slider-wrapper&quot;&gt;
+    &lt;Slider v-if=&quot;showSlider&quot;&gt; &lt;!-- showSlider使得数据请求完成后再显示，否则better-scroll可能会计算错误 --&gt;
+      &lt;div v-for=&quot;item in imageList&quot; :key=&quot;item&quot; class=&quot;slider-item&quot;&gt;
+        &lt;img :src=&quot;item&quot; class=&quot;img&quot;&gt;
+      &lt;/div&gt;
+    &lt;/Slider&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type='text/ecmascript-6'&gt;
+import Slider from 'base/slider'
+export default {
+  data () {
+    return {
+      imageList: [], // 图片列表
+      showSlider: false // 显示slider标志位
+    }
+  },
+  created () {
+    this.getImages() // 获取数据
+  },
+  methods: {
+    getImages () {
+      this.axios.get('/slider').then((res) =&gt; {
+        this.imageList = res.data
+        this.showSlider = true
+      }).catch((err) =&gt; {
+        console.log(err)
+      })
+    }
+  },
+  components: {
+    Slider
+  }
+}
+&lt;/script&gt;
+
+&lt;style lang=&quot;stylus&quot; scoped&gt;
+
+.slider-wrapper
+  margin 0 auto
+  height 200px  // 固定轮播图显示高度
+  width 500px   // 固定轮播图显示宽度，可设置百分比
+  background #000
+  border-radius 5px
+  .slider-item
+    float left // 元素向左浮动
+    width 100%
+    overflow hidden
+    text-align center
+  .img
+    height 200px
+    width 100%
+
+&lt;/style&gt;
+
+</code></pre></div><p><strong>如果以上步骤没有看明白的话，可以在我的github中找到源码https://github.com/Gesj-yean/vue-demo-collection。</strong></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/21/2022, 5:24:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/base/component/pagination.html" class="prev">
+        分页器 Pagination
+      </a></span> <span class="next"><a href="/vue-demo-collection/base/component/scroll.html">
+        无滚动条组件 Scroll
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.f5b96e8e.js" defer></script><script src="/vue-demo-collection/assets/js/7.ac4e68a0.js" defer></script><script src="/vue-demo-collection/assets/js/42.9136ea93.js" defer></script>
+  </body>
+</html>

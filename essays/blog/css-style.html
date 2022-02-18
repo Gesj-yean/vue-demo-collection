@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue-Demo-Collection</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="A documentation of the excellent components encountered in VUE development">
+    
+    <link rel="preload" href="/vue-demo-collection/assets/css/0.styles.41da42df.css" as="style"><link rel="preload" href="/vue-demo-collection/assets/js/app.f5b96e8e.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/7.ac4e68a0.js" as="script"><link rel="preload" href="/vue-demo-collection/assets/js/61.d6e64963.js" as="script"><link rel="prefetch" href="/vue-demo-collection/assets/js/1.2e2b4322.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/10.6fe83197.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/11.607bf541.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/12.240a3ba2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/13.5f3ec41a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/14.c64dd16f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/15.04283614.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/16.833af79b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/17.4daaa688.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/18.088bf1a8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/19.b9758386.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/2.2d5faf37.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/20.3b799ac1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/21.ac51364b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/22.c44a5a8f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/23.75b8ffb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/24.7553e43b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/25.cd523bbf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/26.b58a03fa.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/27.e4741fa3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/28.9dbdb2e3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/29.1c444fa8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/3.da5e3f9c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/30.d656d726.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/31.ae9630e4.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/32.8a6fd8e6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/33.877edd59.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/34.a357b142.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/35.2d0c38e2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/36.18bacde9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/37.186a837c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/38.f2fc3138.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/39.dabd2123.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/4.20b3f9b2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/40.c511b4c2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/41.4cad3d23.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/42.9136ea93.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/43.9678c4e1.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/44.09158630.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/45.76503459.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/46.756f2a47.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/47.fa58ae45.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/48.9b745272.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/49.d1bf558f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/5.90b8032d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/50.ac5f466d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/51.38a211b6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/52.960e4db6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/53.73267aeb.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/54.434a97c0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/55.57400b27.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/56.e828cd7c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/57.794280cf.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/58.e0e41a13.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/59.374c4057.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/60.a292140c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/62.951cb72d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/63.ab7ebef5.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/64.ea299191.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/65.35bb57b8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/66.96b69f7d.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/67.9f43214c.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/68.acad029f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/69.4dd36d2f.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/70.8514f7a6.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/71.a1e6d21e.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/72.85e4760a.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/73.82d83fb8.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/74.94a16f58.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/75.c1fdfff9.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/76.6dbd6ea2.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/77.431a65f0.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/78.ffce0429.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/79.a8b30c75.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/8.7b37b1dc.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/80.c5fc458b.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/81.294e85c3.js"><link rel="prefetch" href="/vue-demo-collection/assets/js/9.7075ed80.js">
+    <link rel="stylesheet" href="/vue-demo-collection/assets/css/0.styles.41da42df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-demo-collection/" class="home-link router-link-active"><img src="/vue-demo-collection/logo.png" alt="Vue-Demo-Collection" class="logo"> <span class="site-name can-hide">Vue-Demo-Collection</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link router-link-active">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-demo-collection/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/vue-demo-collection/base/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/vue-demo-collection/note/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/vue-demo-collection/essays/" class="nav-link router-link-active">
+  随笔
+</a></div><div class="nav-item"><a href="https://github.com/Gesj-yean/vue-demo-collection" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/essays/" class="sidebar-heading clickable router-link-active"><span>随笔</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/essays/other/browser-compatibility.html" class="sidebar-link">浏览器兼容性记录2021-04-21 </a></li><li><a href="/vue-demo-collection/essays/other/new-begin.html" class="sidebar-link">前端装机必备教程</a></li><li><a href="/vue-demo-collection/essays/other/encapsulate-components.html" class="sidebar-link">前端如何修改组件库源码来封装符合自己需求的组件？</a></li><li><a href="/vue-demo-collection/essays/other/2021.html" class="sidebar-link">2021 年终总结</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/vue-demo-collection/essays/blog" class="sidebar-heading clickable router-link-active open"><span>其他</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-demo-collection/essays/blog/line-text.html" class="sidebar-link">CSS: flex 实现中间文字，两边横线（1px）</a></li><li><a href="/vue-demo-collection/essays/blog/css-style.html" aria-current="page" class="active sidebar-link">CSS: 《CSS揭秘》可实用代码笔记</a></li><li><a href="/vue-demo-collection/essays/blog/ECMAScript2021.html" class="sidebar-link">ECMAScript 2021新特性</a></li><li><a href="/vue-demo-collection/essays/blog/table-checkbox-show-tooltip.html" class="sidebar-link">Element-ui: 多选表格，当复选框禁用，鼠标覆盖显示 tooltip</a></li><li><a href="/vue-demo-collection/essays/blog/page-exit-block.html" class="sidebar-link">Vue 拦截离开页面操作</a></li><li><a href="/vue-demo-collection/essays/blog/edit-svg.html" class="sidebar-link">Vue 中可编辑的 SVG  Icon 组件</a></li><li><a href="/vue-demo-collection/essays/blog/custom-vuepress.html" class="sidebar-link">VuePress 之自定义主题</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><blockquote><p>注：本文案例来源于《CSS揭秘》这本书。</p></blockquote> <h2 id="常用的背景与边框技巧"><a href="#常用的背景与边框技巧" class="header-anchor">#</a> 常用的背景与边框技巧</h2> <h3 id="设置半透明边框无效"><a href="#设置半透明边框无效" class="header-anchor">#</a> 设置半透明边框无效？</h3> <p>使用 <strong>background-clip padding-box</strong> 解决。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f000fa657?w=335&amp;h=201&amp;f=png&amp;s=31817" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f02e5849d?w=332&amp;h=199&amp;f=png&amp;s=11241" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>background white
+background-clip padding-box // 通过background-clip属性来调整，初始值是border-box，意味着背景会被元素的border  box（边框的外沿框）裁切掉
+border 20px solid rgba<span class="token punctuation">(</span><span class="token number">255,255</span>,255, <span class="token number">0.3</span><span class="token punctuation">)</span>
+height 100px
+width 100px
+</code></pre></div><h3 id="用多个元素来模拟多重边框"><a href="#用多个元素来模拟多重边框" class="header-anchor">#</a> 用多个元素来模拟多重边框？</h3> <p>No，使用<strong>box-shadow</strong>解决。</p> <ul><li>box-shadow不会影响布局，需要给元素设置合适的外边距或内边距。
+<img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f03103de4?w=379&amp;h=246&amp;f=png&amp;s=46281" alt="在这里插入图片描述"></li></ul> <div class="language- extra-class"><pre class="language-text"><code>box-shadow 0 0 0 10px rgba(102,102,102, .3),
+           0 0 0 20px rgba(102,102,102, .1)
+</code></pre></div><ul><li>还可以通过outline设置虚线类型</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>outline 2px dashed white
+outline-offset -10px
+</code></pre></div><h3 id="如何做灵活的背景定位"><a href="#如何做灵活的背景定位" class="header-anchor">#</a> 如何做灵活的背景定位？</h3> <p>使用<strong>background-position</strong>解决。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f051aaeff?w=356&amp;h=231&amp;f=png&amp;s=10071" alt="在这里插入图片描述"></p> <div class="language- extra-class"><pre class="language-text"><code>background: url(../common/images/arrow-right.png) no-repeat bottom right #FFFDE4 // bottom right是background-position的回退方案
+background-position: calc(100% - 20px) calc(100% - 10px) // 更加灵活定位
+padding 10px
+background-origin: content-box // 使图片跟着内容层走
+</code></pre></div><h3 id="边框内圆角-外直角"><a href="#边框内圆角-外直角" class="header-anchor">#</a> 边框内圆角，外直角？</h3> <p>使用 <strong>border-radius+box-shadow+outline</strong>。</p> <ul><li>box-shadow会跟着内容的圆角转弯，宽度约为border-radius的一半。</li> <li>outline是直线，宽度约为border-radius的一半。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f05f6babe?w=370&amp;h=235&amp;f=png&amp;s=38026" alt="在这里插入图片描述"></p> <h3 id="条纹图案背景"><a href="#条纹图案背景" class="header-anchor">#</a> 条纹图案背景？</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f05222802?w=372&amp;h=220&amp;f=png&amp;s=6447" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f36ab080c?w=364&amp;h=220&amp;f=png&amp;s=16086" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.linear1
+  background linear-gradient<span class="token punctuation">(</span>to bottom, <span class="token comment">#fb3 50%, #58a 50%)</span>
+  background-size <span class="token number">100</span>% 30px
+.linear2
+  background: repeating-linear-gradient<span class="token punctuation">(</span>60deg, <span class="token comment">#fb3, #fb3 15px, #58a 0, #58a 30px) // 第二个色标的位置值设置为0，那它的位置就总是会被浏览器调整为前一个色标的位置值</span>
+</code></pre></div><h3 id="网格"><a href="#网格" class="header-anchor">#</a> 网格</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f33ce62a7?w=335&amp;h=208&amp;f=png&amp;s=21991" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>background: white
+background-image: linear-gradient<span class="token punctuation">(</span>90deg, rgba<span class="token punctuation">(</span><span class="token number">200,0</span>,0,.5<span class="token punctuation">)</span> <span class="token number">50</span>%, transparent <span class="token number">0</span><span class="token punctuation">)</span>,
+                  linear-gradient<span class="token punctuation">(</span>rgba<span class="token punctuation">(</span><span class="token number">200,0</span>,0,.5<span class="token punctuation">)</span> <span class="token number">50</span>%, transparent <span class="token number">0</span><span class="token punctuation">)</span>
+background-size: 30px 30px
+</code></pre></div><h3 id="伪随机背景"><a href="#伪随机背景" class="header-anchor">#</a> 伪随机背景</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f37854f9c?w=334&amp;h=208&amp;f=png&amp;s=8120" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f37a125c5?w=340&amp;h=211&amp;f=png&amp;s=7970" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>background: hsl<span class="token punctuation">(</span><span class="token number">20</span>, <span class="token number">40</span>%, <span class="token number">90</span>%<span class="token punctuation">)</span>
+background-image: linear-gradient<span class="token punctuation">(</span>90deg, <span class="token comment">#fb3 10px, transparent 0),</span>
+                  linear-gradient<span class="token punctuation">(</span>90deg, <span class="token comment">#ab4 20px, transparent 0),</span>
+                  linear-gradient<span class="token punctuation">(</span>90deg, <span class="token comment">#655 20px, transparent 0)</span>
+background-size: 80px <span class="token number">100</span>%, 60px <span class="token number">100</span>%, 40px <span class="token number">100</span>%<span class="token punctuation">;</span>
+</code></pre></div><h3 id="如何让图片作为边框"><a href="#如何让图片作为边框" class="header-anchor">#</a> 如何让图片作为边框？</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/6/170ad82f3afe6c93?w=375&amp;h=245&amp;f=png&amp;s=14815" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>padding: 10px
+border: 10px solid transparent
+background: linear-gradient<span class="token punctuation">(</span>white, white<span class="token punctuation">)</span> padding-box,url<span class="token punctuation">(</span>https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png<span class="token punctuation">)</span> border-box <span class="token number">0</span> / cover
+</code></pre></div><h2 id="形状技巧"><a href="#形状技巧" class="header-anchor">#</a> 形状技巧</h2> <h3 id="自适应的椭圆"><a href="#自适应的椭圆" class="header-anchor">#</a> 自适应的椭圆</h3> <p>用 <strong>border-radius 50%</strong> 就可以实现一个宽高自适应的椭圆。那如果想要实现半椭圆呢？
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a6105f91?w=366&amp;h=227&amp;f=png&amp;s=8351" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>border-radius <span class="token number">50</span>% / <span class="token number">100</span>% <span class="token number">100</span>%  <span class="token number">0</span> <span class="token number">0</span>
+</code></pre></div><p>上面等同于</p> <div class="language-bash extra-class"><pre class="language-bash"><code>border-radius <span class="token number">50</span>% <span class="token number">50</span>% <span class="token number">50</span>% <span class="token number">50</span>% / <span class="token number">100</span>% <span class="token number">100</span>%  <span class="token number">0</span> <span class="token number">0</span> // 横轴方向是50%的缩放，纵轴的左上，右上为100%，右下，左下为0。
+</code></pre></div><h3 id="平行四边形"><a href="#平行四边形" class="header-anchor">#</a> 平行四边形</h3> <p>用 <strong>transform: skewX(-10deg)</strong> 来实现~</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a6f947af?w=396&amp;h=227&amp;f=png&amp;s=10789" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.box
+  position relative
+  height 180px
+  width 300px
+  margin 40px auto
+  <span class="token operator">&amp;</span>::before                     // 在伪元素中设置倾斜，不会使得元素变形。
+    content: <span class="token string">''</span>
+    position: absolute
+    top: <span class="token number">0</span>
+    right: <span class="token number">0</span>
+    bottom: <span class="token number">0</span>
+    left: <span class="token number">0</span>
+    z-index: -1                // 不会影响到内容
+    background: <span class="token comment">#678</span>
+    transform: skew<span class="token punctuation">(</span>10deg<span class="token punctuation">)</span>     // 设置变形
+</code></pre></div><h3 id="菱形图片"><a href="#菱形图片" class="header-anchor">#</a> 菱形图片</h3> <p>使用 <strong>clip-path</strong>属性。该属性可以生成多种形状。网上还找到了一个 https://bennettfeely.com/clippy/ 可以拖拽边线生成css。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a84d5803?w=425&amp;h=228&amp;f=png&amp;s=35176" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>  clip-path: polygon<span class="token punctuation">(</span><span class="token number">50</span>% <span class="token number">0</span>, <span class="token number">100</span>% <span class="token number">50</span>%, <span class="token number">50</span>% <span class="token number">100</span>%, <span class="token number">0</span> <span class="token number">50</span>%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="切角效果"><a href="#切角效果" class="header-anchor">#</a> 切角效果</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a8310c32?w=383&amp;h=214&amp;f=png&amp;s=8352" alt="在这里插入图片描述"></p> <p>mixin.styl中定义：beveled-corners()。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>beveled-corners<span class="token punctuation">(</span><span class="token variable">$bg</span>, <span class="token variable">$tl</span>:0, <span class="token variable">$tr</span><span class="token operator">=</span><span class="token variable">$tl</span>, <span class="token variable">$br</span><span class="token operator">=</span><span class="token variable">$tl</span>, <span class="token variable">$bl</span><span class="token operator">=</span><span class="token variable">$tr</span><span class="token punctuation">)</span> // 切角效果，传入背景颜色，左上、右上、右下、左下切割长度
+  background: <span class="token variable">$bg</span>
+  background: linear-gradient<span class="token punctuation">(</span>135deg, transparent <span class="token variable">$tl</span>,<span class="token variable">$bg</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token function">top</span> left,
+              linear-gradient<span class="token punctuation">(</span>225deg, transparent <span class="token variable">$tr</span>,<span class="token variable">$bg</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token function">top</span> right,
+              linear-gradient<span class="token punctuation">(</span>-45deg, transparent <span class="token variable">$br</span>,<span class="token variable">$bg</span> <span class="token number">0</span><span class="token punctuation">)</span> bottom right,
+              linear-gradient<span class="token punctuation">(</span>45deg, transparent <span class="token variable">$bl</span>,<span class="token variable">$bg</span> <span class="token number">0</span><span class="token punctuation">)</span>  bottom left<span class="token punctuation">;</span>
+  background-size: <span class="token number">50</span>% <span class="token number">50</span>%
+  background-repeat: no-repeat
+</code></pre></div><p>使用：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>beveled-corners<span class="token punctuation">(</span><span class="token comment">#58a, 15px)</span>
+</code></pre></div><h3 id="梯形标签页"><a href="#梯形标签页" class="header-anchor">#</a> 梯形标签页</h3> <p>使用 <strong>transform perspective(50) rotateX(5deg)</strong>。
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a8df7fe2?w=425&amp;h=247&amp;f=png&amp;s=11351" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>// 梯形标签页
+.trapezoid
+  height 100px
+  width 200px
+  margin 40px auto
+  padding 50px
+  color <span class="token comment">#fff</span>
+  position relative
+  display inline-block
+  <span class="token operator">&amp;</span>::before
+    content: <span class="token string">''</span>
+    position: absolute
+    <span class="token function">top</span> <span class="token number">0</span>
+    right <span class="token number">0</span>
+    bottom <span class="token number">0</span>
+    left <span class="token number">0</span>
+    z-index -1
+    background <span class="token comment">#58a</span>
+    transform perspective<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> rotateX<span class="token punctuation">(</span>5deg<span class="token punctuation">)</span>
+</code></pre></div><h3 id="简单的饼图"><a href="#简单的饼图" class="header-anchor">#</a> 简单的饼图</h3> <p>使用 <strong>conic-gradient</strong> 角向渐变。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be430a9206aa2?w=261&amp;h=230&amp;f=png&amp;s=5263" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>height 180px
+width 180px
+border-radius <span class="token number">50</span>%
+background: conic-gradient<span class="token punctuation">(</span><span class="token comment">#eea2a2 20%, #bbc1bf  0, #bbc1bf  30%, #57c6e1 0);</span>
+</code></pre></div><h2 id="视觉效果"><a href="#视觉效果" class="header-anchor">#</a> 视觉效果</h2> <h3 id="单侧投影"><a href="#单侧投影" class="header-anchor">#</a> 单侧投影</h3> <p>使用 <strong>box-shadow</strong> 的第四个参数：扩张半径。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be456c0dec9da?w=354&amp;h=229&amp;f=png&amp;s=38290" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>box-shadow <span class="token number">0</span> 8px 3px -3px rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.5<span class="token punctuation">)</span>//  扩张半径的-3px刚好抵消左右两边的3px模糊半径
+</code></pre></div><h3 id="不规则投影"><a href="#不规则投影" class="header-anchor">#</a> 不规则投影</h3> <p>使用 <strong>filter的新属性</strong> ~
+如果直接使用box-shadow属性，在透明的边框处也会有阴影，比较难看。
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be456c1bc5624?w=385&amp;h=252&amp;f=png&amp;s=50246" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>border dashed 10px orange
+filter drop-shadow<span class="token punctuation">(</span><span class="token number">0</span> 5px 3px <span class="token comment">#678)</span>
+</code></pre></div><h3 id="染色效果"><a href="#染色效果" class="header-anchor">#</a> 染色效果</h3> <p>这里选取了书中最后一种染色效果的方法。需要固定元素的长宽。鼠标覆盖后无染色效果。
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be456c4b26c01?w=362&amp;h=214&amp;f=png&amp;s=19184" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.dye
+  height: 180px
+  width: 300px
+  margin 40px auto
+  background-image url<span class="token punctuation">(</span>https://img1.mukewang.com/szimg/5d9c62fb0907ccf012000676-360-202.png<span class="token punctuation">)</span>
+  background-size: cover
+  background-color: hsl<span class="token punctuation">(</span><span class="token number">335</span>, <span class="token number">100</span>%, <span class="token number">50</span>%<span class="token punctuation">)</span>
+  background-blend-mode: luminosity
+  transition: .5s background-color
+  <span class="token operator">&amp;</span>:hover
+    background-color: transparent
+</code></pre></div><h3 id="毛玻璃效果"><a href="#毛玻璃效果" class="header-anchor">#</a> 毛玻璃效果</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be456c4f3876c?w=376&amp;h=238&amp;f=png&amp;s=98066" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;glass&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;main&quot;</span><span class="token operator">&gt;</span>ABCDEFG<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>.glass
+  height: 180px
+  width: 300px
+  margin 40px auto
+  position relative
+  font-size 50px
+  text-align center
+  background-size cover
+  background-image url<span class="token punctuation">(</span>https://timgsa.baidu.com/timg?image<span class="token operator">&amp;</span><span class="token assign-left variable">quality</span><span class="token operator">=</span><span class="token number">80</span><span class="token operator">&amp;</span><span class="token assign-left variable">size</span><span class="token operator">=</span>b9999_10000<span class="token operator">&amp;</span><span class="token assign-left variable">sec</span><span class="token operator">=</span><span class="token number">1583310555581</span><span class="token operator">&amp;</span><span class="token assign-left variable">di</span><span class="token operator">=</span>17d19c3f990900846ab8cdba69d2aed8<span class="token operator">&amp;</span><span class="token assign-left variable">imgtype</span><span class="token operator">=</span><span class="token number">0</span><span class="token operator">&amp;</span><span class="token assign-left variable">src</span><span class="token operator">=</span>http%3A%2F%2Fphoto.16pic.com%2F00%2F30%2F48%2F16pic_3048628_b.jpg<span class="token punctuation">)</span>
+  .main
+    position absolute
+    height 120px
+    width 240px
+    <span class="token function">top</span> 30px
+    left 30px
+    border-radius 7px
+    box-shadow <span class="token number">0</span> <span class="token number">0</span> 5px <span class="token comment">#666</span>
+    background hsla<span class="token punctuation">(</span><span class="token number">0,0</span>%,100%,.3<span class="token punctuation">)</span>
+    overflow hidden
+    z-index <span class="token number">100</span>
+    <span class="token operator">&amp;</span>:before
+      content <span class="token string">''</span>
+      position absolute
+      <span class="token function">top</span> <span class="token number">0</span>
+      bottom <span class="token number">0</span>
+      left <span class="token number">0</span>
+      right <span class="token number">0</span>
+      background-image url<span class="token punctuation">(</span>https://timgsa.baidu.com/timg?image<span class="token operator">&amp;</span><span class="token assign-left variable">quality</span><span class="token operator">=</span><span class="token number">80</span><span class="token operator">&amp;</span><span class="token assign-left variable">size</span><span class="token operator">=</span>b9999_10000<span class="token operator">&amp;</span><span class="token assign-left variable">sec</span><span class="token operator">=</span><span class="token number">1583310555581</span><span class="token operator">&amp;</span><span class="token assign-left variable">di</span><span class="token operator">=</span>17d19c3f990900846ab8cdba69d2aed8<span class="token operator">&amp;</span><span class="token assign-left variable">imgtype</span><span class="token operator">=</span><span class="token number">0</span><span class="token operator">&amp;</span><span class="token assign-left variable">src</span><span class="token operator">=</span>http%3A%2F%2Fphoto.16pic.com%2F00%2F30%2F48%2F16pic_3048628_b.jpg<span class="token punctuation">)</span>
+      filter blur<span class="token punctuation">(</span>20px<span class="token punctuation">)</span>
+      z-index -1
+      background-attachment: fixed
+      margin -30px  // 防止边缘效果减弱
+</code></pre></div><h3 id="折角效果"><a href="#折角效果" class="header-anchor">#</a> 折角效果</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be456c5889544?w=335&amp;h=208&amp;f=png&amp;s=11539" alt="在这里插入图片描述">
+mixin中：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>folded-corner<span class="token punctuation">(</span><span class="token variable">$background</span>, <span class="token variable">$size</span>, <span class="token variable">$angle</span><span class="token operator">=</span>30deg<span class="token punctuation">)</span>
+  position: relative
+  background:<span class="token variable">$background</span><span class="token punctuation">;</span> /* 回退样式 */
+  background: linear-gradient<span class="token punctuation">(</span><span class="token variable">$angle</span> - 180deg, transparent <span class="token variable">$size</span>, <span class="token variable">$background</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  border-radius: .5em<span class="token punctuation">;</span>
+  <span class="token variable">$x</span><span class="token operator">=</span><span class="token variable">$size</span>/ sin<span class="token punctuation">(</span><span class="token variable">$angle</span><span class="token punctuation">)</span>
+  <span class="token variable">$y</span><span class="token operator">=</span><span class="token variable">$size</span> / cos<span class="token punctuation">(</span><span class="token variable">$angle</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>::before
+    content: <span class="token string">''</span>
+    position: absolute
+    top: <span class="token number">0</span>
+    right: <span class="token number">0</span>
+    background: linear-gradient<span class="token punctuation">(</span>to left bottom, transparent <span class="token number">50</span>%, rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.2<span class="token punctuation">)</span> <span class="token number">0</span>, rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.4<span class="token punctuation">))</span> <span class="token number">100</span>% <span class="token number">0</span> no-repeat
+    width: <span class="token variable">$y</span>
+    height: <span class="token variable">$x</span>
+    transform: translateY<span class="token punctuation">(</span><span class="token variable">$y</span> - <span class="token variable">$x</span><span class="token punctuation">)</span> rotate<span class="token punctuation">(</span><span class="token number">2</span>*<span class="token variable">$angle</span> - 90deg<span class="token punctuation">)</span>
+    transform-origin: bottom right
+    border-bottom-left-radius: inherit
+    box-shadow: -.2em .2em .3em -.1em rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.2<span class="token punctuation">)</span>
+</code></pre></div><p>使用：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>.fold-angle
+  height: 180px
+  width: 300px
+  margin 40px auto
+  folded-corner<span class="token punctuation">(</span><span class="token comment">#58a, 30px, 30deg)</span>
+</code></pre></div><h2 id="字体排印"><a href="#字体排印" class="header-anchor">#</a> 字体排印</h2> <h3 id="连字符断行"><a href="#连字符断行" class="header-anchor">#</a> 连字符断行</h3> <p>使用 <strong>hyphens: auto</strong>属性就可以在英文单词占满一行且换行时使用连字符，兼具阅读和美观。
+注：在<strong>chrom、IE11上还不支持这个属性，在fiiefox上支持</strong>。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47919ca8688?w=350&amp;h=224&amp;f=png&amp;s=14430" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.break-line
+  height: 180px
+  width: 300px
+  margin 40px auto
+  border solid 1px <span class="token comment">#666</span>
+  hyphens auto
+</code></pre></div><h3 id="插入换行"><a href="#插入换行" class="header-anchor">#</a> 插入换行</h3> <p>书中使用dl dt dd来展示如下效果，现在flex布局可以完成的更好，就不介绍了。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be4791ac5075c?w=441&amp;h=87&amp;f=png&amp;s=8147" alt="在这里插入图片描述"></p> <h3 id="文本行的斑马条纹"><a href="#文本行的斑马条纹" class="header-anchor">#</a> 文本行的斑马条纹</h3> <p>之前都是对表格进行斑马纹的处理，通常使用:nth-child(even)给偶数行加上样式。但是对于文本来说不能给每行加个单独的div吧。因此使用条纹背景实现。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be4791b72893f?w=331&amp;h=210&amp;f=png&amp;s=30719" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>line-height 25px
+background-image linear-gradient<span class="token punctuation">(</span>to bottom, <span class="token comment">#f222 50%, #fff 0)</span>
+background-size auto 50px
+</code></pre></div><h3 id="调整tab的宽度"><a href="#调整tab的宽度" class="header-anchor">#</a> 调整tab的宽度</h3> <p>使用 <strong>tab-size：4</strong> 来调整缩进。一个tab表示4个空格。
+PS：vscode使用eslint自动保存时可能会变成space，这样样式就不会生效了。改回Tab Size即可。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be4791be617af?w=275&amp;h=132&amp;f=png&amp;s=3395" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.tab
+  tab-size <span class="token number">4</span>
+</code></pre></div><h3 id="连字"><a href="#连字" class="header-anchor">#</a> 连字</h3> <p>使用 <strong>font-variant-ligatures</strong> 消除连字。例如常见的Difficult waffles中fi和fl容易形成连字。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>font-variant-ligatures: no-common-ligatures<span class="token punctuation">;</span>
+</code></pre></div><h3 id="华丽的-符号"><a href="#华丽的-符号" class="header-anchor">#</a> 华丽的&amp;符号</h3> <p>暂时略过。</p> <h3 id="自定义下划线"><a href="#自定义下划线" class="header-anchor">#</a> 自定义下划线</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be4791c6661dd?w=775&amp;h=45&amp;f=png&amp;s=4634" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.underline
+	background: linear-gradient<span class="token punctuation">(</span>to right, red, blue<span class="token punctuation">)</span> no-repeat // 颜色
+	background-size: <span class="token number">100</span>% 1px // 下划线长度和宽度
+	background-position: <span class="token number">0</span> 15px // 下划线未知
+	text-shadow: 1px <span class="token number">0</span> white, -1px <span class="token number">0</span> white // 设置g,y这种下划线不会穿过字母
+</code></pre></div><h3 id="现实中的文字效果"><a href="#现实中的文字效果" class="header-anchor">#</a> 现实中的文字效果</h3> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be4791cbc717f?w=768&amp;h=179&amp;f=png&amp;s=20915" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>// 凸版印刷效果
+.print
+	background hsl<span class="token punctuation">(</span><span class="token number">210</span>, <span class="token number">13</span>%, <span class="token number">40</span>%<span class="token punctuation">)</span>
+	color hsl<span class="token punctuation">(</span><span class="token number">210</span>, <span class="token number">13</span>%, <span class="token number">75</span>%<span class="token punctuation">)</span>
+	text-shadow <span class="token number">0</span> -1px 1px black
+
+// 空心字效果
+.hollow
+	background: deeppink
+	color: white
+	text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black
+
+// 文字外发光效果
+.light
+	background: <span class="token comment">#203</span>
+	color: <span class="token comment">#ffc</span>
+	text-shadow: <span class="token number">0</span> <span class="token number">0</span> 2px, <span class="token number">0</span> <span class="token number">0</span> 3px
+
+// 文字凸起效果：主要思路就是使用一长串累加的投影，不设模糊并以1px的跨度逐渐错开，使颜色逐渐变暗，然后在底部加一层强烈模糊的暗投影，从而模拟完整的立体效果
+.bulge
+	background: <span class="token comment">#58a</span>
+	color: white
+	text-shadow: <span class="token number">0</span> 1px hsl<span class="token punctuation">(</span><span class="token number">0,0</span>%,85%<span class="token punctuation">)</span>,
+		<span class="token number">0</span> 2px hsl<span class="token punctuation">(</span><span class="token number">0,0</span>%,80%<span class="token punctuation">)</span>,
+		<span class="token number">0</span> 3px hsl<span class="token punctuation">(</span><span class="token number">0,0</span>%,75%<span class="token punctuation">)</span>,
+		<span class="token number">0</span> 4px hsl<span class="token punctuation">(</span><span class="token number">0,0</span>%,70%<span class="token punctuation">)</span>,
+		<span class="token number">0</span> 5px hsl<span class="token punctuation">(</span><span class="token number">0,0</span>%,65%<span class="token punctuation">)</span>,
+		<span class="token number">0</span> 5px 10px black // 底部加一层阴影
+</code></pre></div><h3 id="环形文字"><a href="#环形文字" class="header-anchor">#</a> 环形文字</h3> <p>viewBox：0，0（一般都写0，0），width:宽度，height:高度
+M：起始位置
+a： elliptical Arc（椭圆弧）
+Z：在起点处闭合路径</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be479407b9bdb?w=203&amp;h=188&amp;f=png&amp;s=5861" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;circular&quot;</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>svg <span class="token assign-left variable">viewBox</span><span class="token operator">=</span><span class="token string">&quot;0 0 300 300&quot;</span><span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>path <span class="token assign-left variable">d</span><span class="token operator">=</span><span class="token string">&quot;M 100,100 a 50,50 0 1,1 0,1 z&quot;</span> <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">&quot;circle&quot;</span> /<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>text<span class="token operator">&gt;</span>
+			<span class="token operator">&lt;</span>textPath xlink:href<span class="token operator">=</span><span class="token string">&quot;#circle&quot;</span><span class="token operator">&gt;</span>circular reasoning works because<span class="token operator">&lt;</span>/textPath<span class="token operator">&gt;</span> // 文字链接到path上
+		<span class="token operator">&lt;</span>/text<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>/svg<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>.circular
+	width 300px
+	height 300px
+	margin 3px auto <span class="token number">0</span>
+	path
+		fill none // 去掉填充颜色
+.circular svg
+	display block
+	overflow visible
+</code></pre></div><h2 id="用户体验"><a href="#用户体验" class="header-anchor">#</a> 用户体验</h2> <h3 id="选择合适的鼠标光标"><a href="#选择合适的鼠标光标" class="header-anchor">#</a> 选择合适的鼠标光标</h3> <p>使用 <strong>cursor</strong>  属性增强光标友好性提示~</p> <ul><li>default：默认光标（通常是一个箭头）</li> <li>crosshair：指示选中光标呈现为（十字线）。</li> <li>pointer：光标呈现为指示链接的指针（一只手）</li> <li>move：此光标指示某对象可被移动。（十字线+箭头）</li> <li>e-resize：此光标指示可被向右移动（东）。</li> <li>w-resize：此光标指示可被向左移动（西）。（在chrom和Firefox中表现与e-resize相同）</li> <li>n-resize：此光标指示可被向上（北）移动。</li> <li>s-resize：此光标的边缘可被向下移动（南）。（在chrom和Firefox中表现与n-resize相同）</li> <li>ne-resize：此光标指示可被向上及向右移动（北/东）。</li> <li>sw-resize：此光标指示可被向下及向左移动（南/西）。（在chrom和Firefox中表现与ne-resize相同）</li> <li>nw-resize：此光标指示可被向上及向左移动（北/西）。</li> <li>se-resize：此光标指示可被向下及向右移动（南/东）。（在chrom和Firefox中表现与se-resize相同）</li> <li>text：此光标指示文本（I状光标）。</li> <li>wait：此光标指示程序正忙（通常是一只表或沙漏）。</li> <li>help：此光标指示可用的帮助（通常是一个问号或一个气球）。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>	<span class="token operator">&lt;</span>div <span class="token assign-left variable">style</span><span class="token operator">=</span><span class="token string">&quot;cursor: help&quot;</span><span class="token operator">&gt;</span>	此光标指示可用的帮助（通常是一个问号或一个气球）。<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><p><strong>PS：</strong> <strong>经测试，在chrom和FireFox中</strong></p> <ul><li>e/w-resize 左右指向箭头</li> <li>s/n-resize 上下指向箭头</li> <li>ne/sw-resize 左下右上指向箭头</li> <li>nw/se-resize 左上右下指向箭头</li></ul> <p>PS：由于这边一截图光标就会消失，只好用语言描述~</p> <h3 id="扩大可点击区域"><a href="#扩大可点击区域" class="header-anchor">#</a> 扩大可点击区域</h3> <p>使用 <strong>::before 伪元素</strong>扩大点击区域。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ece3d90cd?w=155&amp;h=64&amp;f=png&amp;s=1062" alt="在这里插入图片描述"></p> <ul><li>使用他的好处是可以为元素扩大点击范围的同时而不用担心边框也会被撑大。</li> <li>推荐使用mixin的方法，后面直接调用就好~</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.button
+	position relative
+	<span class="token operator">&amp;</span>:before
+		content:<span class="token string">''</span>
+		position absolute
+		<span class="token function">top</span> -10px
+		left -10px
+		right -10px
+		bottom -10px
+		cursor pointer
+</code></pre></div><h3 id="自定义复选框"><a href="#自定义复选框" class="header-anchor">#</a> 自定义复选框</h3> <p>设置复选框的样式一直让人头疼。首先来看复选框有几种状态：</p> <ul><li>默认样式
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ecfaac657?w=118&amp;h=36&amp;f=png&amp;s=820" alt="在这里插入图片描述"></li> <li>勾选状态
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ecfc4c7f7?w=125&amp;h=35&amp;f=png&amp;s=1086" alt="在这里插入图片描述"></li> <li>选中状态
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ed03a9559?w=112&amp;h=42&amp;f=png&amp;s=1008" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ed0dc9b6c?w=116&amp;h=37&amp;f=png&amp;s=1180" alt="在这里插入图片描述"></li> <li>禁用状态
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ed2c40e98?w=127&amp;h=39&amp;f=png&amp;s=868" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ef27d358a?w=134&amp;h=43&amp;f=png&amp;s=1134" alt="在这里插入图片描述"></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>input <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span> <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">&quot;box&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>label <span class="token assign-left variable">for</span><span class="token operator">=</span><span class="token string">&quot;box&quot;</span><span class="token operator">&gt;</span>复选框~<span class="token operator">&lt;</span>/label<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>input<span class="token punctuation">[</span>type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">]</span>+label::before // label前添加自定义的复选框，+是后代元素选择器
+	content: <span class="token string">'\a0'</span>/* 不换行空格 */
+	display: inline-block
+	vertical-align middle // 与label垂直居中
+	width 16px
+	height 16px
+	margin-right 5px
+	border-radius 3px
+	background: <span class="token comment">#fff</span>
+	border solid 1px <span class="token comment">#ccc</span>
+	text-indent: 3px // 将段落的第一行缩进3px，<span class="token punctuation">\</span><span class="token number">2713</span>图标向右偏移3px
+	line-height: 16px
+input<span class="token punctuation">[</span>type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">]</span>:checked+label::before // 勾选状态
+	content:<span class="token string">'\2713'</span>
+	background: <span class="token comment">#1296db</span>
+	color <span class="token comment">#fff</span>
+input<span class="token punctuation">[</span>type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">]</span>:focus+label::before // 被点击状态
+	box-shadow: <span class="token number">0</span> <span class="token number">0</span> 1px 1px <span class="token comment">#58a</span>
+input<span class="token punctuation">[</span>type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">]</span>:disabled+ label::before // 禁用状态
+	background: gray
+	box-shadow: none
+	color: <span class="token comment">#555</span>
+input<span class="token punctuation">[</span>type<span class="token operator">=</span><span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">]</span> // 隐藏原有复选框
+	position: absolute
+	clip: rect<span class="token punctuation">(</span><span class="token number">0,0</span>,0,0<span class="token punctuation">)</span> // clip 属性剪裁绝对定位元素。
+</code></pre></div><h3 id="通过遮罩mask来弱化背景"><a href="#通过遮罩mask来弱化背景" class="header-anchor">#</a> 通过遮罩Mask来弱化背景</h3> <p>文章中推荐了4中能够增加dialog背景的方法，4种方法各有利弊。</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ef55c00d3?w=268&amp;h=186&amp;f=png&amp;s=6087" alt="在这里插入图片描述"></p> <ul><li>增加一个html元素包裹，使用fix定位
+缺点是可能增加一个额外的html元素；优点是好控制，便于加点击事件，便于控制。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.overlay<span class="token punctuation">{</span> /* 用于遮挡背景 */
+	position fixed
+	<span class="token function">top</span> <span class="token number">0</span>
+	right <span class="token number">0</span>
+	bottom <span class="token number">0</span>
+	left <span class="token number">0</span>
+	background rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.8<span class="token punctuation">)</span>
+	.lightbox /* 需要吸引用户注意的元素 */
+		position absolute
+		z-index <span class="token number">1</span>
+</code></pre></div><ul><li>before伪元素方案
+缺点是<strong>伪元素无法绑定独立的JavaScript事件处理函数</strong>。意味着无法增加点击事件了。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.dimmed::before
+	position fixed
+	<span class="token function">top</span> <span class="token number">0</span>
+	right <span class="token number">0</span>
+	bottom <span class="token number">0</span>
+	left <span class="token number">0</span>
+	z-index <span class="token number">1</span>
+	background rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.8<span class="token punctuation">)</span>
+</code></pre></div><ul><li>box-shadow方案
+1vmax相当于1vw和1vh两者中的较大值。100vw等于整个视口的宽度，100vh就是视口的高度。因此，满足我们需求的最小值就是50vmax。由于投影是同时向四个方向扩展的，这个遮罩层的最终尺寸将是100vmax加上元素本身的尺寸。
+缺点是<strong>滚动页面时，遮罩层的边缘就可能露出</strong>。也无法增加点击事件。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>box-shadow <span class="token number">0</span> <span class="token number">0</span> <span class="token number">0</span> 50vmax rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.8<span class="token punctuation">)</span>
+</code></pre></div><ul><li>backdrop方案
+缺点是兼容性差。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>dialog::backdrop
+	background rgba<span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, .8<span class="token punctuation">)</span>
+</code></pre></div><p>PS：在我自己实现的dialog对话框还是使用第一种方法。如果想要dialog功能更全的话，第一种方法可以增加更多事件交互。但会牺牲一些浏览器性能。让浏览器进行重排重绘。</p> <h3 id="通过模糊来弱化背景"><a href="#通过模糊来弱化背景" class="header-anchor">#</a> 通过模糊来弱化背景</h3> <p>还是通过<strong>blur</strong>属性实现。现在实现模糊背景都是增加html元素实现的吧。之前写了一个dialog组件，可看：<a href="https://blog.csdn.net/qq_39083496/article/details/104432006" target="_blank" rel="noopener noreferrer">基于Vue实现dialog对话框组件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>相比较于直接加上遮罩层，虚化背景个人觉得更好看一些，更适合用在PC端。</li> <li>还可以利用scale属性对元素进行缩放，使得对话框更加贴近用户。</li> <li>还可利用transition增加渐变效果。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ef68ed528?w=326&amp;h=166&amp;f=png&amp;s=5895" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;blur-bg&quot;</span><span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;main&quot;</span><span class="token operator">&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;dialog&quot;</span><span class="token operator">&gt;</span>对话框~<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>.blur-bg
+	width 300px
+	height 180px
+	margin 3px auto <span class="token number">0</span>
+	position relative
+	.main
+		filter blur<span class="token punctuation">(</span>2px<span class="token punctuation">)</span>
+	.dialog
+		position absolute
+		<span class="token function">top</span> <span class="token number">50</span>%
+		left <span class="token number">50</span>%
+		transform translate<span class="token punctuation">(</span>-50%, -50%<span class="token punctuation">)</span>
+		background <span class="token comment">#f2f2f2</span>
+		padding 10px
+</code></pre></div><h3 id="滚动提示"><a href="#滚动提示" class="header-anchor">#</a> 滚动提示</h3> <p>使用 <strong>background-attachment local, scroll</strong> 属性来优化滚动。</p> <ul><li>当滚动下方时顶部加一层阴影表示上部分还有内容。</li> <li>阴影能够逐渐消失。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47ef8bf7626?w=340&amp;h=191&amp;f=png&amp;s=6953" alt="在这里插入图片描述"><img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47efa8cfcc1?w=347&amp;h=194&amp;f=png&amp;s=9015" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>overflow auto
+	width 300px
+	height 150px
+	padding 10px
+	border solid 1px <span class="token comment">#ccc</span>
+	background linear-gradient<span class="token punctuation">(</span>white 15px, hsla<span class="token punctuation">(</span><span class="token number">0,0</span>%,100%,0<span class="token punctuation">))</span> <span class="token number">0</span> <span class="token number">0</span> / <span class="token number">100</span>% 50px,
+			radial-gradient<span class="token punctuation">(</span>at top, rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.2<span class="token punctuation">)</span>, transparent <span class="token number">70</span>%<span class="token punctuation">)</span> <span class="token number">0</span> <span class="token number">0</span> / <span class="token number">100</span>% 15px,
+      		linear-gradient<span class="token punctuation">(</span>to top, white 15px, hsla<span class="token punctuation">(</span><span class="token number">0,0</span>%,100%,0<span class="token punctuation">))</span> bottom / <span class="token number">100</span>% 50px,
+		    radial-gradient<span class="token punctuation">(</span>at bottom, rgba<span class="token punctuation">(</span><span class="token number">0,0</span>,0,.2<span class="token punctuation">)</span>, transparent <span class="token number">70</span>%<span class="token punctuation">)</span> bottom / <span class="token number">100</span>% 15px
+	background-repeat no-repeat
+	background-attachment local, scroll,local, scroll // local:会随着内容向下而向下，白色遮住阴影；scroll：随着页面滚动
+</code></pre></div><h3 id="交互式的图片对比控件"><a href="#交互式的图片对比控件" class="header-anchor">#</a> 交互式的图片对比控件</h3> <p>使用 <strong>resize: horizontal</strong> 属性即可完成图片分割。不需要用到js控制就可以来回拖动分界线分割图片显示比例。
+<img src="https://user-gold-cdn.xitu.io/2020/3/9/170be47efda9060f?w=391&amp;h=224&amp;f=png&amp;s=42598" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>.image-slider
+	position relative
+	display inline-block
+	margin-left <span class="token number">50</span>%
+	transform translate<span class="token punctuation">(</span>-50%<span class="token punctuation">)</span>
+.image-slider <span class="token operator">&gt;</span> div
+	position absolute
+	<span class="token function">top</span> <span class="token number">0</span>
+	bottom <span class="token number">0</span>
+	left <span class="token number">0</span>
+	width <span class="token number">50</span>% /* 初始宽度 */
+	max-width <span class="token number">100</span>%
+	overflow hidden /* 让它可以裁切图片 */
+	resize horizontal
+	<span class="token operator">&amp;</span>::before // 三角形箭头
+		content <span class="token string">''</span>
+		position absolute
+		bottom <span class="token number">0</span>
+		right <span class="token number">0</span>
+		width 12px
+		height 12px
+		background white
+		cursor pointer
+		padding 5px
+		background linear-gradient<span class="token punctuation">(</span>-45deg, white <span class="token number">50</span>%, transparent <span class="token number">0</span><span class="token punctuation">)</span>
+		background-clip content-box
+.image-slider img
+	display block
+</code></pre></div><h2 id="结构与布局"><a href="#结构与布局" class="header-anchor">#</a> 结构与布局</h2> <h3 id="自适应内部元素"><a href="#自适应内部元素" class="header-anchor">#</a> 自适应内部元素</h3> <p>如果不给元素一个height，它就会自适应其内部的高度，但是对于width不会。那么宽度怎么样才能让它和内部元素的宽度自适应呢？
+这里就需要 <strong>width: min-content</strong>到达 以下效果。</p> <ul><li>未使用该属性时，宽度会是默认的100%</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f2041875c66?w=1149&amp;h=253&amp;f=png&amp;s=67203" alt="在这里插入图片描述"></p> <ul><li>使用<strong>width: min-content</strong>，父元素的宽度就会随着image图片的宽度而自适应。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f2041edbce8?w=392&amp;h=268&amp;f=png&amp;s=63566" alt="在这里插入图片描述"></p> <ul><li>html</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;adaptive-ele&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>img <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token string">&quot;https://img3.mukewang.com/szimg/5df8852609e0762d12000676-360-202.png&quot;</span> <span class="token assign-left variable">alt</span><span class="token operator">=</span><span class="token string">&quot;Before&quot;</span>/<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>我们需要做到让父元素能够自适应图片的宽度，而不会被文字撑开宽度。<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>stylus</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.adaptive-ele
+  padding 5px
+  text-align center
+  border solid 1px <span class="token comment">#666</span>
+  width min-content
+</code></pre></div><h3 id="精确控制表格列宽"><a href="#精确控制表格列宽" class="header-anchor">#</a> 精确控制表格列宽</h3> <p>当我们要用到表格去展示数据时，我们希望单元格的宽度是自适应内容的宽度呢？还是希望固定列宽？</p> <ul><li>当采用自适应内容宽度，可能会造成意外的布局。通常情况下例如ant-deisgn-vue用的是固定宽度。那么我们需要用 <strong>table-layout:fixed</strong>属性。</li></ul> <p>介绍一下table-layout。</p> <ul><li><p>固定表格布局<strong>table-layout:fixed</strong>
+-- 在固定表格布局中，水平布局仅取决于表格宽度、列宽度、表格边框宽度、单元格间距，而与单元格的内容无关。
+-- 通过使用固定表格布局，用户代理在接收到第一行后就可以显示表格。</p></li> <li><p>自动表格布局<strong>table-layout:auto</strong>
+-- 在自动表格布局中，列的宽度是由列单元格中没有折行的最宽的内容设定的。
+-- 此算法有时会较慢，这是由于它需要在确定最终的布局之前访问表格中所有的内容。</p></li></ul> <p>来看看两个最终样式：</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f20434e57c0?w=725&amp;h=93&amp;f=png&amp;s=4552" alt="在这里插入图片描述"></p> <ul><li>html</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>  <span class="token operator">&lt;</span>table <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;one&quot;</span> <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;100%&quot;</span><span class="token operator">&gt;</span>  <span class="token operator">&lt;</span><span class="token operator">!</span>--自动表格布局--<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>tr<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;20%&quot;</span><span class="token operator">&gt;</span><span class="token number">100000000000000000000000000</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;40%&quot;</span><span class="token operator">&gt;</span><span class="token number">1000000</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;40%&quot;</span><span class="token operator">&gt;</span><span class="token number">10</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/tr<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/table<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>br /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>table <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;two&quot;</span> <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;100%&quot;</span><span class="token operator">&gt;</span>  <span class="token operator">&lt;</span><span class="token operator">!</span>--固定表格布局--<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>tr<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;20%&quot;</span><span class="token operator">&gt;</span><span class="token number">100000000000000000000000000</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;40%&quot;</span><span class="token operator">&gt;</span><span class="token number">1000000</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token string">&quot;40%&quot;</span><span class="token operator">&gt;</span><span class="token number">10</span><span class="token operator"><span class="token file-descriptor important">0</span>&lt;</span>/td<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>/tr<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/table<span class="token operator">&gt;</span>
+</code></pre></div><ul><li>stylus</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>// 自动表格布局
+.one
+  table-layout: automatic
+  td
+    border solid 1px <span class="token comment">#666</span>
+
+// 固定表格布局
+.two
+  table-layout: fixed
+  td
+    word-break: break-all
+    border solid 1px <span class="token comment">#666</span>
+</code></pre></div><h3 id="根据兄弟元素的数量来设置样式"><a href="#根据兄弟元素的数量来设置样式" class="header-anchor">#</a> 根据兄弟元素的数量来设置样式</h3> <p>当有这样一个场景的需求：计划列表中逐渐增加计划数，每增加一项计划，每一项计划的样式就会发生变化，该怎么实现呢？</p> <ul><li>对于只有一个列表项的特殊场景来说，解决方案显然就是:only-child，这个伪类选择符就是为这种情况而设计。
+当li元素个数大于1时，only-child样式不会生效。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f2043142505?w=68&amp;h=46&amp;f=png&amp;s=354" alt="在这里插入图片描述"></p> <p>当li只有一个元素时，样式会加上</p> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f20431b7b56?w=57&amp;h=32&amp;f=png&amp;s=279" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>li:only-child
+  color red
+</code></pre></div><ul><li>当有多个元素时，命中所有列表项</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f2048acf20d?w=67&amp;h=122&amp;f=png&amp;s=590" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>li:first-child:nth-last-child<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span>,
+li:first-child:nth-last-child<span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span> ~ li
+  color red
+</code></pre></div><h3 id="满幅的背景-定宽的内容"><a href="#满幅的背景-定宽的内容" class="header-anchor">#</a> 满幅的背景，定宽的内容</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>.wrapper
+	padding 10px calc<span class="token punctuation">(</span><span class="token number">50</span>% - 450px<span class="token punctuation">)</span>
+</code></pre></div><h3 id="垂直居中"><a href="#垂直居中" class="header-anchor">#</a> 垂直居中</h3> <ul><li>绝对定位方法</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.main
+	position absolute
+	<span class="token function">top</span> <span class="token number">50</span>%
+	left <span class="token number">50</span>%
+	transform translate<span class="token punctuation">(</span>-50%, -50%<span class="token punctuation">)</span>
+</code></pre></div><ul><li>flex布局方法</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>.main
+	display flex
+	justify-content center // 主轴居中
+	align-items center  // 交叉轴居中
+</code></pre></div><p>PS：主轴，交叉轴并不是固定的横轴纵轴，而是相对于flex-direction确定的。若设为column则主轴为竖轴。</p> <h3 id="紧贴底部的页脚-sticky-footer布局"><a href="#紧贴底部的页脚-sticky-footer布局" class="header-anchor">#</a> 紧贴底部的页脚 (Sticky Footer布局)</h3> <p>这章概括的内容在现在我们常称为 <strong>Sticky Footer</strong>，是一个较常见的方法。</p> <ul><li>指的是页面中内容不充满整个屏幕时在底部有一个页脚，当内容大于页面长度时，页脚随着内容被撑到下方而不影响阅读。</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2020/3/10/170c2f2068256d8c?w=347&amp;h=194&amp;f=png&amp;s=5718" alt="在这里插入图片描述"></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;stickey&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;main&quot;</span><span class="token operator">&gt;</span>内容<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token assign-left variable">class</span><span class="token operator">=</span><span class="token string">&quot;footer&quot;</span><span class="token operator">&gt;</span>页脚<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>.stickey
+  height 160px
+  width 300px
+  overflow auto
+  .main
+    min-height calc<span class="token punctuation">(</span><span class="token number">100</span>% - 60px<span class="token punctuation">)</span>
+  .footer
+    height 60px
+</code></pre></div><p>剩下的一章，6个技巧更新中(*^ ▽^ *)。</p> <blockquote><p>PS：这本书好难，而且其实很多技巧现在已经用不到了，不过其优化用户体验的思想还是可以多借鉴。</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/21/2022, 5:24:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-demo-collection/essays/blog/line-text.html" class="prev">
+        CSS: flex 实现中间文字，两边横线（1px）
+      </a></span> <span class="next"><a href="/vue-demo-collection/essays/blog/ECMAScript2021.html">
+        ECMAScript 2021新特性
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-demo-collection/assets/js/app.f5b96e8e.js" defer></script><script src="/vue-demo-collection/assets/js/7.ac4e68a0.js" defer></script><script src="/vue-demo-collection/assets/js/61.d6e64963.js" defer></script>
+  </body>
+</html>
