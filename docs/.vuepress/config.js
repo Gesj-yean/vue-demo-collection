@@ -4,7 +4,7 @@ module.exports = {
   description: 'A documentation of the excellent components encountered in VUE development',
   themeConfig: {
     lastUpdated: '上次更新',
-    logo:'/logo.png',
+    logo: '/logo.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '组件', link: '/base/' },
@@ -79,7 +79,8 @@ module.exports = {
         children: [
           ['/note/vue2/part1-start', 'part1 - 基本知识：Flow'],
           ['/note/vue2/part2-build', 'part2 - Vue + Rollup 构建过程'],
-          ['/note/vue2/part3-entry', 'part3 - Vue.js 入口文件分析']
+          ['/note/vue2/part3-entry', 'part3 - Vue.js 入口文件分析'],
+          ['/note/vue2/part3-observe', 'part3 - Vue.js 响应式系统依赖收集过程分析'],
         ]
       }, {
         title: 'Javascript 高级程序设计',
@@ -90,6 +91,15 @@ module.exports = {
           ['/note/js/garbage-collection', '垃圾回收'],
           ['/note/js/map', 'Map'],
           ['/note/js/set', 'Set'],
+        ]
+      }, {
+        title: 'React 学习',
+        path: '/note/react/',
+        collapsable: false,
+        sidebarDepth: 0,
+        children: [
+          ['/note/react/hook', 'React Hook 学习'],
+          ['/note/react/learn', 'React 项目配置'],
         ]
       }],
 
